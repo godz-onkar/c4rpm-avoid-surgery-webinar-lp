@@ -14,9 +14,9 @@
 /* ===== Tokens =====
    Type scale (desktop / phone): h1 44/28 · h1 lead 22/17 · h2 34/25 · h3 18/16.5 · body 17/16 · small 14/13.5 · eyebrow 12/11
    Spacing: section 72/48 · heading to content 28/20 · column gap 48/24 · card padding 28/20
-   Section backgrounds alternate so no two neighbors match: A white · B #F3F9FC · C #E7F4F9 · D #D8ECF5 · dark teal at the end */
+   Section backgrounds: three grounds (white · #E8F8FD · #D8ECF5) so no two neighbors match, a hairline on top of each tinted band, dark teal at the end */
 :root{
-  --bg-a:#FFFFFF; --bg-b:#F3F9FC; --bg-c:#E7F4F9; --bg-d:#D8ECF5;
+  --bg-a:#FFFFFF; --bg-b:#E8F8FD; --bg-c:#E8F8FD; --bg-d:#D8ECF5;
   --ink:#000000; --ink-2:#333333; --ink-3:#56616B;
   --teal:#2682A1; --teal-text:#1D6A85; --teal-btn:#23799A; --teal-hover:#1C6682; --deep:#145A70; --deep-2:#1E7896; --sky:#2B9FCF;
   --line:rgba(20,90,112,.15); --line-light:rgba(255,255,255,.18);
@@ -44,6 +44,7 @@ p{margin:0}
 /* Section backgrounds */
 section{padding:var(--sec) 0}
 .bg-a{background:var(--bg-a)} .bg-b{background:var(--bg-b)} .bg-c{background:var(--bg-c)} .bg-d{background:var(--bg-d)}
+.bg-b,.bg-c,.bg-d{border-top:1px solid rgba(20,90,112,.12)}
 .sec-h{margin-bottom:var(--head)}
 
 /* Buttons */
@@ -69,11 +70,11 @@ section{padding:var(--sec) 0}
 .presenter-row{display:none;align-items:center;gap:12px;margin-top:16px}
 .presenter-row img{width:48px;height:48px;border-radius:50%;object-fit:cover;object-position:50% 18%;border:2px solid #fff}
 .presenter-row b{display:block;font:700 15px/1.3 var(--font);color:var(--ink)}
-.presenter-row span{font-size:13.5px;line-height:1.35;color:var(--ink-3)}
+.presenter-row span{font-size:14.5px;line-height:1.35;color:var(--ink-2)}
 .act{margin-top:26px;display:flex;flex-direction:column;align-items:flex-start;gap:14px}
 .when{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;order:-1}
-.pill{display:inline-flex;align-items:center;height:26px;padding:0 11px;border-radius:999px;background:#fff;border:1.5px dashed var(--teal);color:var(--deep);font:700 12.5px/1 var(--font)}
-.when-line{font:600 15px/1.45 var(--font);color:var(--ink)}
+.pill{display:inline-flex;align-items:center;height:28px;padding:0 12px;border-radius:999px;background:#fff;border:1.5px dashed var(--teal);color:var(--deep);font:700 13.5px/1 var(--font)}
+.when-line{font:600 16px/1.45 var(--font);color:var(--ink)}
 .portrait{position:relative;margin:0 0 0 16px;justify-self:end;width:100%;max-width:430px}
 .portrait img{width:100%;aspect-ratio:5/6;object-fit:cover;object-position:50% 16%;border-radius:var(--r-card);box-shadow:-16px 16px 0 var(--sky)}
 .portrait figcaption{position:absolute;left:0;right:0;bottom:0;padding:48px 20px 16px;border-radius:0 0 var(--r-card) var(--r-card);background:linear-gradient(180deg,rgba(20,90,112,0) 0%,rgba(20,90,112,.9) 72%);display:flex;flex-direction:column;gap:2px}
@@ -81,19 +82,22 @@ section{padding:var(--sec) 0}
 .portrait figcaption span{font-size:13.5px;color:rgba(255,255,255,.9)}
 
 /* Fit card: overlaps the hero's bottom edge */
-.fitcard{position:relative;z-index:2;margin:-64px 0 0;background:#fff;border:1px solid var(--line);border-left:4px solid var(--teal);border-radius:var(--r-card);box-shadow:0 20px 50px -28px rgba(20,90,112,.45);padding:24px var(--pad)}
+.fitcard{position:relative;z-index:2;margin:-64px 0 0;background:#fff;border:0;border-radius:var(--r-card);box-shadow:0 20px 50px -28px rgba(20,90,112,.45);padding:24px var(--pad)}
 .fitcard p{font:700 16px/1.4 var(--font);color:var(--ink)}
 .fit{list-style:none;margin:10px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 36px}
-.fit li{position:relative;padding:10px 0 10px 20px;font-size:16px;line-height:1.45;color:var(--ink);border-top:1px solid var(--line)}
-.fit li::before{content:"";position:absolute;left:1px;top:18px;width:7px;height:7px;border-radius:50%;background:var(--sky)}
+.fit li{position:relative;padding:10px 0 10px 28px;font-size:16px;line-height:1.45;color:var(--ink);border-top:1px solid var(--line)}
+.fit li::before{content:"";position:absolute;left:8px;top:18px;width:7px;height:7px;border-radius:50%;background:var(--sky)}
 
-/* Credibility strip */
+/* Proof line under the hero button */
+.hero-proof{margin-top:16px;display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;font:600 15px/1.4 var(--font);color:var(--ink)}
+.hero-proof .sep{color:var(--ink-3)}
+/* (old credibility strip styles, unused) */
 .cred ul{list-style:none;margin:0 auto;padding:20px var(--gut) 24px;max-width:var(--wrap);display:flex;justify-content:center;gap:0}
 .cred li{font:600 14.5px/1.4 var(--font);color:var(--ink);display:flex;align-items:center;gap:10px;padding:4px 28px;border-left:1px solid var(--line)}
 .cred li:first-child{border-left:0}
 
 /* Problem + path */
-.problem-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--gap);align-items:center}
+.problem-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--gap);align-items:start}
 .problem h2{max-width:18ch}
 .problem p{margin-top:16px;max-width:50ch}
 .problem p:first-of-type{margin-top:var(--head)}
@@ -112,27 +116,29 @@ section{padding:var(--sec) 0}
 .rows p{grid-column:2;max-width:62ch;line-height:1.55}
 .rows strong{color:var(--ink);font-weight:700}
 
-/* How */
-.steps{position:relative;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.steps li{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--r-card);padding:20px 20px 22px}
-.steps .fol{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:var(--bg-c);border:2px solid var(--sky);font-size:12px;letter-spacing:0}
-.steps h3{margin-top:12px}
-.steps p{margin-top:6px;font-size:15.5px;line-height:1.55}
+/* How: four numbered stops on one line */
+.steps{position:relative;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.steps::before{content:"";position:absolute;left:18px;right:18px;top:17px;height:2px;background:var(--teal);opacity:.45}
+.steps li{position:relative}
+.steps .fol{position:relative;z-index:1;display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:#fff;border:2px solid var(--sky);font:700 15px/1 var(--font);letter-spacing:0;color:var(--teal-text)}
+.steps h3{margin-top:14px}
+.steps p{margin-top:6px;font-size:16px;line-height:1.55;max-width:30ch}
 
 /* Presenter */
-.pres-grid{display:grid;grid-template-columns:400px 1fr;gap:var(--gap);align-items:center}
+.pres-grid{display:grid;grid-template-columns:400px 1fr;gap:var(--gap);align-items:start}
 .pres-photo{margin:0 0 0 14px}
 .pres-photo img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 20%;border-radius:var(--r-card);box-shadow:-14px 14px 0 var(--sky)}
 .pres-copy p{margin-top:14px;max-width:60ch}
 .pres-copy h2+p{margin-top:20px}
-.quote{margin:20px 0 0;padding:16px 20px;background:#fff;border-left:4px solid var(--teal);border-radius:0 var(--r-btn) var(--r-btn) 0;font-style:italic;font-size:17px;line-height:1.55;color:var(--ink);max-width:60ch}
+.quote{position:relative;margin:22px 0 0;padding:30px 0 0;font-style:italic;font-size:18px;line-height:1.55;color:var(--ink);max-width:58ch}
+.quote::before{content:"\201C";position:absolute;top:-8px;left:-3px;font:800 60px/1 var(--font);font-style:normal;color:var(--sky)}
 .quote cite{display:block;margin-top:8px;font:normal 700 14px/1.4 var(--font);color:var(--teal-text)}
 .clinic{margin-top:20px;padding-top:16px;border-top:1px solid var(--line);max-width:60ch}
 .clinic b{color:var(--ink)}
 .pres-copy .btn{margin-top:24px}
 
 /* Reviews */
-.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:start}
 .rev{margin:0;display:flex;flex-direction:column;gap:10px;background:#fff;border:1px solid var(--line);border-radius:var(--r-card);padding:22px}
 .rev .tag{font:700 16px/1.4 var(--font);color:var(--ink)}
 .rev blockquote{margin:0;font-size:15.5px;line-height:1.6;color:var(--ink-2)}
@@ -145,30 +151,31 @@ section{padding:var(--sec) 0}
 
 /* Who it isn't for */
 .notfor-grid{max-width:760px;margin:0 auto}
-.notfor h2{text-align:center}
+.notfor h2{text-align:left}
 .notfor .fit-h{margin-top:var(--head);font:700 16px/1.4 var(--font);color:var(--ink);padding-bottom:10px}
 .notfor ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
 .notfor li{position:relative;padding:14px 0 14px 28px;border-bottom:1px solid var(--line);color:var(--ink)}
 .notfor li::before{content:"";position:absolute;left:2px;top:27px;width:14px;height:2px;background:var(--ink-3);opacity:.7}
 
 /* Form */
-.form-card{max-width:620px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:var(--r-card);box-shadow:0 20px 50px -24px rgba(20,90,112,.35);padding:32px 36px 28px;color:var(--ink)}
+.form-card{max-width:620px;margin:0 auto;background:#fff;border:0;border-radius:var(--r-card);box-shadow:0 20px 50px -24px rgba(20,90,112,.35);padding:32px 36px 28px;color:var(--ink)}
 .form-card h2{font-size:28px;line-height:1.2}
 .form-meta{display:flex;align-items:center;gap:12px;padding-bottom:16px;margin-bottom:18px;border-bottom:1px solid var(--line)}
 .form-meta img{width:40px;height:40px;border-radius:50%;object-fit:cover;object-position:50% 18%}
-.form-meta span{font:600 13.5px/1.45 var(--font);color:var(--ink-3)}
+.form-meta span{font:600 15px/1.45 var(--font);color:var(--ink)}
 form{margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .field{display:flex;flex-direction:column;gap:6px}
 .full{grid-column:1/-1}
-label,legend{font:600 14px/1.3 var(--font);color:var(--ink)}
+label,legend{font:600 15px/1.3 var(--font);color:var(--ink)}
+legend{padding:0}
 input[type=text],input[type=email],input[type=tel]{height:50px;padding:0 14px;font:400 16px var(--font);color:var(--ink);background:#F7FBFD;border:1px solid rgba(20,90,112,.3);border-radius:var(--r-btn);width:100%}
 input:focus{border-color:var(--teal)}
 fieldset{border:0;margin:0;padding:0;display:grid;gap:8px}
 .opt{display:flex;align-items:center;gap:12px;min-height:50px;padding:10px 14px;border:1px solid rgba(20,90,112,.3);border-radius:var(--r-btn);background:#F7FBFD;cursor:pointer;font:400 16px var(--font)}
 .opt input{width:20px;height:20px;margin:0;accent-color:var(--teal)}
 .opt:has(input:checked){border-color:var(--teal);box-shadow:inset 0 0 0 1px var(--teal);background:#fff}
-.ph-box{font-size:13px;line-height:1.45;color:var(--ink-3);border:1px dashed var(--line);border-radius:8px;padding:10px 12px}
-.selfpay{padding:12px 14px;background:var(--bg-c);border-radius:var(--r-btn);font-size:15.5px;line-height:1.5;color:var(--ink)}
+.ph-box{font-size:13px;line-height:1.45;color:var(--ink-3);border:1px dashed var(--line);border-radius:10px;padding:10px 12px}
+.selfpay{padding:12px 14px;background:var(--bg-b);border-radius:var(--r-btn);font-size:15.5px;line-height:1.5;color:var(--ink)}
 .ack{display:flex;align-items:center;gap:12px;min-height:48px;font:600 15.5px var(--font);cursor:pointer}
 .ack input{width:22px;height:22px;flex:none;margin:0;accent-color:var(--teal)}
 form .btn{grid-column:1/-1;width:100%;margin-top:4px}
@@ -193,7 +200,7 @@ details p{padding:0 0 18px;max-width:64ch}
 .final h2{color:#fff;font-size:38px;max-width:30ch;margin:0 auto}
 .final .when-line{margin-top:16px;display:block;color:rgba(255,255,255,.92)}
 .final .btn{margin-top:22px}
-footer{margin-top:64px;border-top:1px solid var(--line-light);padding:32px 0 104px;text-align:left}
+footer{margin-top:64px;border-top:1px solid var(--line-light);padding:32px 0 40px;text-align:left}
 .foot-grid{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:start}
 .foot-grid img{width:190px;filter:brightness(0) invert(1)}
 .nap{font-size:14px;line-height:1.7;color:rgba(255,255,255,.88)}
@@ -225,26 +232,26 @@ footer{margin-top:64px;border-top:1px solid var(--line-light);padding:32px 0 104
 
 /* Phone */
 @media (max-width:640px){
-  :root{--gut:20px;--sec:48px;--gap:24px;--head:20px;--pad:20px;--fs-body:16px;--fs-h1:28px;--fs-lead:17px;--fs-h2:25px;--fs-h3:16.5px;--fs-small:13.5px}
+  :root{--gut:20px;--sec:48px;--gap:24px;--head:20px;--pad:20px;--fs-body:16px;--fs-h1:30px;--fs-lead:17px;--fs-h2:24px;--fs-h3:16.5px;--fs-small:14px}
   body{line-height:1.55}
   .prev-flag{font-size:11.5px;padding:5px 12px}
   .hero{padding-top:12px}
   .topline{height:40px;margin-bottom:12px}
   .topline img{width:160px}
   .hero-grid{padding-bottom:24px;gap:0}
-  .eyebrow{font-size:11px;letter-spacing:.04em;margin-bottom:8px}
+  .eyebrow{font-size:11.5px;letter-spacing:.03em;margin-bottom:8px}
   .hero h1 .main{line-height:1.16;margin-top:4px}
   .hero .sub{font-size:16px;margin-top:12px}
   .portrait{display:none}
   .presenter-row{display:flex}
   .act{margin-top:16px;align-items:stretch;gap:12px}
   .when{gap:6px 10px}
-  .when-line{font-size:14px}
+  .when-line{font-size:15px}
   .btn{width:100%}
-  .fitcard{margin:0 calc(var(--gut) * -1);padding:20px var(--gut) 8px;border-radius:0;box-shadow:none;border:0;border-top:4px solid var(--teal)}
+  .fitcard{margin:0 calc(var(--gut) * -1);padding:20px var(--gut) 8px;border-radius:0;box-shadow:none;border:0;border-top:1px solid rgba(20,90,112,.12)}
   .fitcard p{font-size:15.5px}
   .fit{grid-template-columns:1fr}
-  .fit li{font-size:15.5px;padding:9px 0 9px 20px}
+  .fit li{font-size:16px;padding:9px 0 9px 28px}
   .fit li::before{top:17px}
   .cred ul{flex-direction:column;align-items:flex-start;padding:12px var(--gut) 14px;gap:8px}
   .cred li{padding:0;border-left:0;font-size:13.5px}
@@ -252,31 +259,36 @@ footer{margin-top:64px;border-top:1px solid var(--line-light);padding:32px 0 104
   .path-card{padding:20px 12px}
   .path-h{display:none}
   .path-v{display:block;max-width:300px;margin:0 auto}
-  .rows li{grid-template-columns:36px 1fr;gap:4px 10px;padding:14px 0}
+  .rows li{grid-template-columns:32px 1fr;gap:4px 12px;padding:14px 0}
   .fol{font-size:12.5px}
   .learn-head .btn,.faq-head .btn{display:none}
-  .steps{grid-template-columns:1fr;gap:20px;margin-top:4px}
-  .steps li{padding:16px;display:grid;grid-template-columns:30px 1fr;column-gap:12px}
+  .steps{grid-template-columns:1fr;gap:22px}
+  .steps::before{left:17px;right:auto;top:18px;bottom:18px;width:2px;height:auto}
+  .steps li{display:grid;grid-template-columns:36px 1fr;column-gap:14px}
   .steps .fol{grid-row:span 2}
-  .steps h3{margin-top:4px}
-  .steps p{grid-column:2}
-  .steps p{font-size:15px}
+  .steps h3{margin-top:6px}
+  .steps p{grid-column:2;font-size:15.5px;max-width:none}
   .pres-photo{margin:0 0 0 12px;max-width:240px}
   .pres-photo img{box-shadow:-12px 12px 0 var(--sky)}
-  .quote{font-size:15.5px;padding:14px 16px}
+  .quote{font-size:16px;padding-top:26px}
+  .quote::before{font-size:52px}
+  .pres-copy .btn{display:none}
+  .hero-proof{font-size:14.5px;margin-top:12px}
+  .hero-proof .sep{display:none}
+  .hero-proof span:last-child{flex-basis:100%}
   .rev-grid{grid-template-columns:1fr;gap:14px}
   .rev{padding:18px}
   .rev blockquote{font-size:15px}
-  .notfor h2{text-align:left}
   .notfor li{padding:12px 0 12px 26px}
   .notfor li::before{top:24px}
   .form-card{padding:22px 18px 20px}
   .form-card h2{font-size:22px}
+  .form-meta span{font-size:15px}
   form{grid-template-columns:1fr;gap:14px}
   summary{font-size:16px;padding:16px 0}
   .final{padding-top:52px}
   .final h2{font-size:26px}
-  footer{margin-top:48px}
+  footer{margin-top:48px;padding-bottom:104px}
   .foot-grid{grid-template-columns:1fr;gap:16px}
   .sticky{top:auto;bottom:0;transform:translateY(110%);border-bottom:0;border-top:1px solid var(--line-light);padding-bottom:env(safe-area-inset-bottom)}
   .sticky .wrap{height:auto;padding-top:10px;padding-bottom:10px}
@@ -290,7 +302,7 @@ footer{margin-top:64px;border-top:1px solid var(--line-light);padding:32px 0 104
 
 <div class="sticky" id="sticky" aria-hidden="true">
   <div class="wrap">
-    <p class="s-date num"><span class="live"><b>LIVE</b></span>Tue, Dec 1 · 7 PM Pacific</p>
+    <p class="s-date num">Free webinar · Tue, Dec 1 · 7 PM Pacific</p>
     <a class="btn btn-light" href="#register" tabindex="-1">Save My Free Seat</a>
   </div>
 </div>
@@ -317,6 +329,7 @@ footer{margin-top:64px;border-top:1px solid var(--line-light);padding:32px 0 104
             <span class="when-line num">Tuesday, December 1 · 7:00 PM Pacific · Free</span>
           </div>
         </div>
+        <p class="hero-proof"><span class="stars" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg></span><span>5.0 from 40 Google reviews</span><span class="sep" aria-hidden="true">·</span><span>Board-certified pain physician</span></p>
       </div>
       <figure class="portrait">
         <img src="assets/dr-lewis.jpg" width="660" height="800" alt="Dr. Jamie Lewis" fetchpriority="high">
@@ -338,14 +351,6 @@ footer{margin-top:64px;border-top:1px solid var(--line-light);padding:32px 0 104
   </div>
 </div>
 
-<!-- 2. Credibility bar -->
-<div class="cred">
-  <ul>
-    <li><span class="stars" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg></span><span class="num">5.0 from 40 Google reviews</span></li>
-    <li>Board-certified pain physician</li>
-  </ul>
-</div>
-
 <!-- 3. The problem -->
 <section class="problem bg-b" aria-labelledby="problem-h">
   <div class="wrap problem-grid">
@@ -357,17 +362,17 @@ footer{margin-top:64px;border-top:1px solid var(--line-light);padding:32px 0 104
       <p class="turn">In this webinar, Dr. Lewis shows how regenerative medicine works with your body's own healing, so you can see whether it could fit your knee or hip.</p>
     </div>
     <div class="path-card">
-      <svg class="path path-h" viewBox="0 0 560 230" role="img" aria-labelledby="path-t">
+      <svg class="path path-h" viewBox="0 0 560 250" role="img" aria-labelledby="path-t">
         <title id="path-t">Three steps: physical therapy and cortisone shots, regenerative medicine, joint replacement. The middle one is highlighted.</title>
-        <line x1="80" y1="90" x2="480" y2="90" stroke="#2682A1" stroke-width="2.5" stroke-linecap="round"/>
-        <circle cx="80" cy="90" r="14" fill="#fff" stroke="#2682A1" stroke-width="2.5"/>
-        <circle cx="480" cy="90" r="14" fill="#fff" stroke="#2682A1" stroke-width="2.5"/>
-        <circle cx="280" cy="90" r="44" fill="none" stroke="#A9D7E6" stroke-width="6"/>
-        <circle cx="280" cy="90" r="30" fill="#2B9FCF"/>
-        <g font-family="Open Sans, system-ui, sans-serif" font-weight="700" font-size="14.5" letter-spacing=".8" text-anchor="middle" fill="#145A70">
-          <text x="80" y="176">PHYSICAL</text><text x="80" y="195">THERAPY</text><text x="80" y="216" font-weight="600" fill="#4A5560" letter-spacing=".2" font-size="14">and cortisone shots</text>
-          <text x="280" y="176">REGENERATIVE</text><text x="280" y="195">MEDICINE</text><text x="280" y="216" font-weight="600" fill="#4A5560" letter-spacing=".2" font-size="14">PRP and bone marrow</text>
-          <text x="480" y="176">REPLACEMENT</text>
+        <line x1="85" y1="80" x2="475" y2="80" stroke="#2682A1" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="85" cy="80" r="14" fill="#fff" stroke="#2682A1" stroke-width="2.5"/>
+        <circle cx="475" cy="80" r="14" fill="#fff" stroke="#2682A1" stroke-width="2.5"/>
+        <circle cx="280" cy="80" r="44" fill="none" stroke="#A9D7E6" stroke-width="6"/>
+        <circle cx="280" cy="80" r="30" fill="#2B9FCF"/>
+        <g font-family="Open Sans, system-ui, sans-serif" font-weight="700" font-size="17" letter-spacing=".6" text-anchor="middle" fill="#145A70">
+          <text x="85" y="168">PHYSICAL</text><text x="85" y="190">THERAPY</text><text x="85" y="214" font-weight="600" fill="#333" letter-spacing="0" font-size="15">and cortisone shots</text>
+          <text x="280" y="168">REGENERATIVE</text><text x="280" y="190">MEDICINE</text><text x="280" y="214" font-weight="600" fill="#333" letter-spacing="0" font-size="15">PRP and bone marrow</text>
+          <text x="475" y="168">REPLACEMENT</text>
         </g>
       </svg>
       <svg class="path path-v" viewBox="0 0 320 340" role="img" aria-labelledby="path-tv">
@@ -405,20 +410,20 @@ footer{margin-top:64px;border-top:1px solid var(--line-light);padding:32px 0 104
 </section>
 
 <!-- 5. How the webinar works -->
-<section class="how bg-c" aria-labelledby="how-h">
+<section class="how bg-d" aria-labelledby="how-h">
   <div class="wrap">
     <h2 id="how-h" class="sec-h">How the Webinar Works</h2>
     <ol class="steps">
-      <li><span class="fol num">01</span><h3>Save your seat.</h3><p>Fill out the form below. It takes about a minute.</p></li>
-      <li><span class="fol num">02</span><h3>Check your email.</h3><p>Your webinar link arrives after you register, and reminders come by email and text before the webinar.</p></li>
-      <li><span class="fol num">03</span><h3>Bring your questions.</h3><p>Jot down what you want to ask about your knee or hip. Send them in as you watch, and our team will follow up.</p></li>
-      <li><span class="fol num">04</span><h3>Join the webinar.</h3><p>Open the link a few minutes before.</p></li>
+      <li><span class="fol num">1</span><h3>Save your seat.</h3><p>Fill out the form below. It takes about a minute.</p></li>
+      <li><span class="fol num">2</span><h3>Check your email.</h3><p>Your webinar link arrives after you register, and reminders come by email and text before the webinar.</p></li>
+      <li><span class="fol num">3</span><h3>Bring your questions.</h3><p>Jot down what you want to ask about your knee or hip. Send them in as you watch, and our team will follow up.</p></li>
+      <li><span class="fol num">4</span><h3>Join the webinar.</h3><p>Open the link a few minutes before.</p></li>
     </ol>
   </div>
 </section>
 
 <!-- 6. Meet Dr. Lewis -->
-<section class="band bg-d" aria-labelledby="pres-h">
+<section class="band bg-b" aria-labelledby="pres-h">
   <div class="wrap">
     <div class="pres-grid">
       <figure class="pres-photo">
@@ -428,7 +433,7 @@ footer{margin-top:64px;border-top:1px solid var(--line-light);padding:32px 0 104
         <h2 id="pres-h">Meet Dr. Lewis</h2>
         <p>Dr. Jamie Lewis is board-certified in Physical Medicine and Rehabilitation and in Pain Medicine. He teaches at the Washington State University School of Medicine and the St. Luke's Physical Medicine and Rehabilitation residency program.</p>
         <p>His work in regenerative medicine started at home. His wife hurt her hip about 12 years ago, and surgery left her with a year of pain. A concentrated platelet injection is what finally got her back to skiing and mountain biking.</p>
-        <blockquote class="quote">"When you see that kind of result in someone you love, naturally you want to offer that same minimally invasive path to your patients so they can hopefully avoid surgery in the first place."<cite>Dr. Lewis</cite></blockquote>
+        <blockquote class="quote">When you see that kind of result in someone you love, naturally you want to offer that same minimally invasive path to your patients so they can hopefully avoid surgery in the first place.<cite>Dr. Lewis</cite></blockquote>
         <p class="clinic"><b>About the clinic.</b> Dr. Lewis and his team see patients in person at two clinics, in Spokane (South Regal Street) and Coeur d'Alene (West Hanley Avenue).</p>
         <a class="btn" href="#register">Save My Free Seat</a>
       </div>
@@ -437,7 +442,7 @@ footer{margin-top:64px;border-top:1px solid var(--line-light);padding:32px 0 104
 </section>
 
 <!-- 7. What patients are saying -->
-<section class="band-rev bg-b" aria-labelledby="rev-h">
+<section class="band-rev bg-d" aria-labelledby="rev-h">
   <div class="wrap">
     <h2 id="rev-h" class="sec-h">What Patients Are Saying</h2>
     <div class="rev-grid">
@@ -456,7 +461,7 @@ footer{margin-top:64px;border-top:1px solid var(--line-light);padding:32px 0 104
       <figure class="rev">
         <span class="stars" role="img" aria-label="5 out of 5 stars"><svg viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg></span>
         <p class="tag">Hip operated on twice before</p>
-        <blockquote>“I have had my right hip operated on twice, so I knew what was coming, and I didn't want it. So I'm in <strong>zero pain</strong> in my back, my hip, and I had a numb foot, and it is not numb anymore.”</blockquote>
+        <blockquote>“I have had my right hip operated on twice, so I knew what was coming, and I didn't want it. So I'm in zero pain in my back, my hip, and I had a numb foot, and it is not numb anymore.”</blockquote>
         <figcaption>A patient of Dr. Lewis, from his webinar</figcaption>
       </figure>
     </div>
@@ -479,7 +484,7 @@ footer{margin-top:64px;border-top:1px solid var(--line-light);padding:32px 0 104
 </section>
 
 <!-- 9. Registration form -->
-<section class="register bg-c" id="register" aria-labelledby="form-h">
+<section class="register bg-b" id="register" aria-labelledby="form-h">
   <div class="wrap">
     <div class="form-card">
       <div class="form-meta"><img src="assets/dr-lewis.jpg" width="660" height="800" alt=""><span class="num">Tuesday, December 1 · 7:00 PM Pacific · About [running time] · Online, from home · Free</span></div>
@@ -543,28 +548,25 @@ footer{margin-top:64px;border-top:1px solid var(--line-light);padding:32px 0 104
 
 <script>
 (function(){
-  // Countdown: days left until two days out, then Tomorrow / Today (Dec 1, 2026, 7:00 PM Pacific = 03:00 UTC Dec 2)
+  // ===== Per-webinar settings: change these for each session =====
+  var EVENT={date:'2026-12-01', label:'7 PM Pacific', endHour:21}; // date and start label in Pacific time; endHour hides the pill after the session
+  // Countdown: "N days left" until two days out, then "Tomorrow at…" and "Today at…". Works in Pacific calendar days, so daylight-saving changes don't shift it.
   try{
-    var el=document.getElementById('countdown'),ev=Date.UTC(2026,11,2,3,0,0);
-    var fmt=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles',year:'numeric',month:'2-digit',day:'2-digit'});
-    var dn=function(t){var p=fmt.format(new Date(t)).split('-');return Date.UTC(+p[0],+p[1]-1,+p[2])/864e5;};
-    var d=dn(ev)-dn(Date.now());
-    if(Date.now()>ev+2*36e5){el.style.display='none';}
-    else{el.textContent=d<=0?'Today at 7 PM Pacific':d===1?'Tomorrow at 7 PM Pacific':d+' days left';}
+    var el=document.getElementById('countdown');
+    var parts=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',hour12:false}).formatToParts(new Date());
+    var g=function(t){return +parts.find(function(x){return x.type===t}).value;};
+    var today=Date.UTC(g('year'),g('month')-1,g('day'))/864e5, ev=EVENT.date.split('-'), evDay=Date.UTC(+ev[0],+ev[1]-1,+ev[2])/864e5, d=evDay-today;
+    if(d<0||(d===0&&g('hour')>=EVENT.endHour)){el.style.display='none';}
+    else{el.textContent=d===0?'Today at '+EVENT.label:d===1?'Tomorrow at '+EVENT.label:d+' days left';}
   }catch(e){}
-  // Sticky bar. Desktop: after the hero button scrolls away. Mobile: from the first screen.
-  // Both: hidden while the hero button, another in-page button, the form or the closing section is on screen.
+  // Sticky bar: shows once the hero button has scrolled off the top; hides over the form and the closing band.
   var bar=document.getElementById('sticky'),anchor=document.getElementById('hero-cta');
   if('IntersectionObserver' in window){
-    var heroOut=false,anchorVis=false,btnVis=0,formIn=false,finalIn=false,mq=window.matchMedia('(max-width:640px)');
-    var set=function(){var on=(mq.matches?!anchorVis:heroOut)&&!btnVis&&!formIn&&!finalIn;bar.classList.toggle('on',on);bar.setAttribute('aria-hidden',on?'false':'true');bar.querySelector('a').tabIndex=on?0:-1;};
-    new IntersectionObserver(function(e){anchorVis=e[0].isIntersecting;heroOut=!e[0].isIntersecting&&e[0].boundingClientRect.top<0;set();}).observe(anchor);
-    var vis=new Set();
-    var bo=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting&&x.target.offsetParent!==null){vis.add(x.target);}else{vis.delete(x.target);}});btnVis=vis.size;set();});
-    document.querySelectorAll('.learn-head .btn,.pres-copy .btn,.faq-head .btn').forEach(function(b){bo.observe(b);});
+    var heroOut=false,formIn=false,finalIn=false;
+    var set=function(){var on=heroOut&&!formIn&&!finalIn;bar.classList.toggle('on',on);bar.setAttribute('aria-hidden',on?'false':'true');bar.querySelector('a').tabIndex=on?0:-1;};
+    new IntersectionObserver(function(e){heroOut=!e[0].isIntersecting&&e[0].boundingClientRect.top<0;set();}).observe(anchor);
     new IntersectionObserver(function(e){formIn=e[0].isIntersecting;set();},{threshold:.2}).observe(document.getElementById('register'));
     new IntersectionObserver(function(e){finalIn=e[0].isIntersecting;set();},{threshold:.15}).observe(document.querySelector('.final'));
-    if(mq.addEventListener){mq.addEventListener('change',set);}
   }
   // FAQ: all closed on mobile, open on desktop
   if(window.matchMedia('(min-width:641px)').matches){document.querySelectorAll('.faq details').forEach(function(d){d.open=true;});}
