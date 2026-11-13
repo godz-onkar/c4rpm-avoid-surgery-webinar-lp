@@ -50,17 +50,17 @@ p{margin:0}
 .live{display:inline-flex;align-items:center;gap:8px;font:700 13px/1 var(--font);color:var(--deep)}
 .live b{display:inline-flex;align-items:center;gap:6px;background:#fff;color:#D32F2F;border-radius:999px;padding:5px 10px 5px 8px;font-size:11.5px;letter-spacing:.08em;box-shadow:0 1px 0 rgba(0,0,0,.06)}
 .live b::before{content:"";width:8px;height:8px;border-radius:50%;background:#E53935}
-.hero-grid{display:grid;grid-template-columns:7fr 5fr;gap:64px;align-items:center;padding-bottom:140px}
+.hero-grid{display:grid;grid-template-columns:7fr 5fr;gap:72px;align-items:center;padding:12px 0 128px}
 .eyebrow{font:700 12.5px/1.4 var(--font);letter-spacing:.12em;text-transform:uppercase;color:var(--teal);margin-bottom:18px}
 .hero h1 .lead{display:block;font-weight:700;font-size:24px;line-height:1.3;letter-spacing:-.01em;color:var(--teal)}
-.hero h1 .main{display:block;margin-top:8px;font-weight:800;font-size:50px;line-height:1.1;letter-spacing:-.025em;color:var(--ink)}
-.hero .sub{margin-top:20px;font-size:19px;line-height:1.55;color:var(--ink-2);max-width:50ch}
+.hero h1 .main{display:block;margin-top:10px;font-weight:800;font-size:46px;line-height:1.12;letter-spacing:-.025em;color:var(--ink)}
+.hero .sub{margin-top:24px;font-size:19px;line-height:1.6;color:var(--ink-2);max-width:50ch}
 .presenter-row{display:none;align-items:center;gap:12px;margin-top:20px}
 .presenter-row img{width:52px;height:52px;border-radius:50%;object-fit:cover;object-position:50% 18%;border:2px solid #fff}
 .presenter-row b{display:block;font:700 15px/1.3 var(--font);color:var(--ink)}
 .presenter-row span{font-size:14px;line-height:1.35;color:var(--ink-3)}
-.act{margin-top:30px;display:flex;align-items:center;gap:22px}
-.when{display:flex;flex-direction:column;gap:6px;flex:1 1 auto;min-width:0;max-width:320px}
+.act{margin-top:32px;display:flex;flex-direction:column;align-items:flex-start;gap:16px}
+.when{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;order:-1}
 .pill{align-self:flex-start;display:inline-flex;align-items:center;height:26px;padding:0 11px;border-radius:999px;background:#fff;border:1.5px dashed var(--teal);color:var(--deep);font:700 12.5px/1 var(--font);letter-spacing:.02em}
 .when-line{font:600 15px/1.45 var(--font);color:var(--ink)}
 .under{margin-top:14px;font-size:15px;color:var(--ink-3)}
@@ -71,7 +71,7 @@ p{margin:0}
 .portrait figcaption span{font-size:14px;line-height:1.4;color:rgba(255,255,255,.9)}
 
 /* Fit card: overlaps the hero's bottom edge */
-.fitcard{position:relative;z-index:2;margin:-100px 0 0;background:#fff;border:1px solid var(--line);border-left:4px solid var(--teal);border-radius:var(--r-card);box-shadow:0 24px 60px -28px rgba(20,90,112,.45);padding:28px 32px}
+.fitcard{position:relative;z-index:2;margin:-76px 0 0;background:#fff;border:1px solid var(--line);border-left:4px solid var(--teal);border-radius:var(--r-card);box-shadow:0 24px 60px -28px rgba(20,90,112,.45);padding:28px 32px}
 .fitcard p{font:700 16px/1.4 var(--font);color:var(--ink)}
 .fit{list-style:none;margin:14px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
 .fit li{position:relative;padding:11px 0 11px 22px;font-size:16.5px;line-height:1.45;color:var(--ink);border-top:1px solid var(--line)}
@@ -215,7 +215,7 @@ footer{margin-top:clamp(88px,11vw,128px);border-top:1px solid var(--line-light);
 @media (max-width:1024px){
   .hero-grid,.problem-grid,.learn-grid,.pres-grid,.faq-grid,.notfor-grid{grid-template-columns:1fr;gap:40px}
   .notfor-grid{gap:24px}
-  .hero-grid{padding-bottom:130px}
+  .hero-grid{padding-bottom:116px}
   .learn-head{position:static}
   .rev-grid{grid-template-columns:1fr;gap:16px}
   .steps{grid-template-columns:1fr 1fr;row-gap:36px}
@@ -235,14 +235,14 @@ footer{margin-top:clamp(88px,11vw,128px);border-top:1px solid var(--line-light);
   .topline img{width:170px}
   .topline .live span{display:none}
   .hero-grid{padding-bottom:28px;gap:0}
-  .eyebrow{font-size:11px;margin-bottom:10px}
+  .eyebrow{font-size:11px;letter-spacing:.04em;margin-bottom:10px}
   .hero h1 .lead{font-size:19px}
   .hero h1 .main{font-size:31px;line-height:1.14;margin-top:6px}
   .hero .sub{font-size:16.5px;margin-top:12px}
   .portrait{display:none}
   .presenter-row{display:flex;margin-top:16px}
-  .act{margin-top:18px;flex-direction:column;align-items:stretch;gap:14px}
-  .when{flex-direction:row;flex-wrap:wrap;align-items:center;gap:6px 10px;max-width:none;order:-1}
+  .act{margin-top:18px;align-items:stretch;gap:14px}
+  .when{gap:6px 10px}
   .when-line{font-size:14.5px}
   .btn{width:100%}
   .under{text-align:center;font-size:14.5px}
@@ -294,24 +294,24 @@ footer{margin-top:clamp(88px,11vw,128px);border-top:1px solid var(--line-light);
     </div>
     <div class="hero-grid">
       <div>
-        <p class="eyebrow">Free online webinar for the Spokane and Coeur d'Alene area</p>
+        <p class="eyebrow">Free online webinar · Spokane and Coeur d'Alene</p>
         <h1><span class="lead">Avoid Surgery:</span> <span class="main">Your Knee or Hip Has More Options Than a Replacement</span></h1>
-        <p class="sub">Dr. Jamie Lewis explains, in plain language, the options worth knowing about before you schedule a joint replacement or reconstruction. Find out whether there's a way back to the things you love without months of recovery.</p>
+        <p class="sub">Dr. Jamie Lewis explains the options worth knowing about before you schedule a joint replacement or reconstruction. Find out whether there's a way back to the things you love without months of recovery.</p>
         <div class="presenter-row">
           <img src="assets/dr-lewis.jpg" width="660" height="800" alt="">
-          <div><b>Dr. Jamie Lewis</b><span>Medical Director, Center for Regenerative and Performance Medicine</span></div>
+          <div><b>Dr. Jamie Lewis</b><span>Your presenter</span></div>
         </div>
         <div class="act">
           <a class="btn" id="hero-cta" href="#register">Save My Free Seat <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 4v12m0 0-5-5m5 5 5-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           <div class="when">
             <span class="pill num" id="countdown">10 days left</span>
-            <span class="when-line num">Tuesday, December 1 · 7:00 PM Pacific · About [running time] · Free</span>
+            <span class="when-line num">Tuesday, December 1 · 7:00 PM Pacific · Free</span>
           </div>
         </div>
       </div>
       <figure class="portrait">
         <img src="assets/dr-lewis.jpg" width="660" height="800" alt="Dr. Jamie Lewis" fetchpriority="high">
-        <figcaption><b>Dr. Jamie Lewis</b><span>Medical Director, Center for Regenerative and Performance Medicine</span></figcaption>
+        <figcaption><b>Dr. Jamie Lewis</b><span>Your presenter</span></figcaption>
       </figure>
     </div>
   </div>
@@ -475,7 +475,7 @@ footer{margin-top:clamp(88px,11vw,128px);border-top:1px solid var(--line-light);
 <section class="register" id="register" aria-labelledby="form-h">
   <div class="wrap">
     <div class="form-card">
-      <div class="form-meta"><img src="assets/dr-lewis.jpg" width="660" height="800" alt=""><span class="num">Tuesday, December 1 · 7:00 PM Pacific · Online, from home · Free</span></div>
+      <div class="form-meta"><img src="assets/dr-lewis.jpg" width="660" height="800" alt=""><span class="num">Tuesday, December 1 · 7:00 PM Pacific · About [running time] · Online, from home · Free</span></div>
       <h2 id="form-h">Where Should We Send Your Webinar Link?</h2>
       <form class="reg" novalidate>
         <div class="field"><label for="fn">First name</label><input type="text" id="fn" name="first_name" autocomplete="given-name" required></div>
