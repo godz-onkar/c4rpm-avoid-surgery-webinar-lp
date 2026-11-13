@@ -200,6 +200,10 @@ details p{padding:0 0 18px;max-width:64ch}
 .final h2{color:#fff;font-size:38px;max-width:30ch;margin:0 auto}
 .final .when-line{margin-top:16px;display:block;color:rgba(255,255,255,.92)}
 .final .btn{margin-top:22px}
+.final .form-card{margin:28px auto 0;text-align:left}
+.final .form-card h2{color:var(--ink);font-size:28px;max-width:none;margin:0}
+.final .form-card .btn{background:var(--teal-btn);color:#fff;margin-top:4px}
+.final .form-card .btn:hover{background:var(--teal-hover)}
 footer{margin-top:64px;border-top:1px solid var(--line-light);padding:32px 0 40px;text-align:left}
 .foot-grid{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:start}
 .foot-grid img{width:190px;filter:brightness(0) invert(1)}
@@ -288,6 +292,8 @@ footer{margin-top:64px;border-top:1px solid var(--line-light);padding:32px 0 40p
   summary{font-size:16px;padding:16px 0}
   .final{padding-top:52px}
   .final h2{font-size:26px}
+  .final .form-card h2{font-size:22px}
+  .final .form-card{margin-top:20px}
   footer{margin-top:48px;padding-bottom:104px}
   .foot-grid{grid-template-columns:1fr;gap:16px}
   .sticky{top:auto;bottom:0;transform:translateY(110%);border-bottom:0;border-top:1px solid var(--line-light);padding-bottom:env(safe-area-inset-bottom)}
@@ -409,20 +415,7 @@ footer{margin-top:64px;border-top:1px solid var(--line-light);padding:32px 0 40p
   </div>
 </section>
 
-<!-- 5. How the webinar works -->
-<section class="how bg-d" aria-labelledby="how-h">
-  <div class="wrap">
-    <h2 id="how-h" class="sec-h">How the Webinar Works</h2>
-    <ol class="steps">
-      <li><span class="fol num">1</span><h3>Save your seat.</h3><p>Fill out the form below. It takes about a minute.</p></li>
-      <li><span class="fol num">2</span><h3>Check your email.</h3><p>Your webinar link arrives after you register, and reminders come by email and text before the webinar.</p></li>
-      <li><span class="fol num">3</span><h3>Bring your questions.</h3><p>Jot down what you want to ask about your knee or hip. Send them in as you watch, and our team will follow up.</p></li>
-      <li><span class="fol num">4</span><h3>Join the webinar.</h3><p>Open the link a few minutes before.</p></li>
-    </ol>
-  </div>
-</section>
-
-<!-- 6. Meet Dr. Lewis -->
+<!-- 5. Meet Dr. Lewis -->
 <section class="band bg-b" aria-labelledby="pres-h">
   <div class="wrap">
     <div class="pres-grid">
@@ -441,7 +434,7 @@ footer{margin-top:64px;border-top:1px solid var(--line-light);padding:32px 0 40p
   </div>
 </section>
 
-<!-- 7. What patients are saying -->
+<!-- 6. What patients are saying -->
 <section class="band-rev bg-d" aria-labelledby="rev-h">
   <div class="wrap">
     <h2 id="rev-h" class="sec-h">What Patients Are Saying</h2>
@@ -460,16 +453,16 @@ footer{margin-top:64px;border-top:1px solid var(--line-light);padding:32px 0 40p
       </figure>
       <figure class="rev">
         <span class="stars" role="img" aria-label="5 out of 5 stars"><svg viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg></span>
-        <p class="tag">Hip operated on twice before</p>
-        <blockquote>“I have had my right hip operated on twice, so I knew what was coming, and I didn't want it. So I'm in zero pain in my back, my hip, and I had a numb foot, and it is not numb anymore.”</blockquote>
-        <figcaption>A patient of Dr. Lewis, from his webinar</figcaption>
+        <p class="tag">Had a knee and a hip replaced</p>
+        <blockquote>“I have had a right knee and left hip replacement and am now using PRP injections in my left knee and right ankle to prevent any more surgery. … I would highly recommend them to anyone that wants to stay active and not let arthritis dictate their lifestyle.”</blockquote>
+        <figcaption><svg class="gmark" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.5 12.3c0-.8-.1-1.5-.2-2.2H12v4.2h5.9a5 5 0 0 1-2.2 3.3v2.7h3.5c2.1-1.9 3.3-4.7 3.3-8z"/><path fill="#34A853" d="M12 23c3 0 5.4-1 7.2-2.7l-3.5-2.7c-1 .7-2.2 1-3.7 1-2.9 0-5.3-1.9-6.2-4.5H2.2v2.8A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.8 14.1a6.6 6.6 0 0 1 0-4.2V7.1H2.2a11 11 0 0 0 0 9.8l3.6-2.8z"/><path fill="#EA4335" d="M12 5.4c1.6 0 3.1.6 4.2 1.7l3.1-3.1A11 11 0 0 0 2.2 7.1l3.6 2.8C6.7 7.3 9.1 5.4 12 5.4z"/></svg><b>Sue H.</b> · Google review</figcaption>
       </figure>
     </div>
     <div class="rev-foot"><p class="small"><em>Individual results vary.</em></p></div>
   </div>
 </section>
 
-<!-- 8. Fit filter -->
+<!-- 7. Fit filter -->
 <section class="notfor bg-a" aria-labelledby="fit-h">
   <div class="wrap notfor-grid">
     <h2 id="fit-h">Is This Webinar a Good Fit?</h2>
@@ -483,34 +476,20 @@ footer{margin-top:64px;border-top:1px solid var(--line-light);padding:32px 0 40p
   </div>
 </section>
 
-<!-- 9. Registration form -->
-<section class="register bg-b" id="register" aria-labelledby="form-h">
+<!-- 8. How the webinar works -->
+<section class="how bg-d" aria-labelledby="how-h">
   <div class="wrap">
-    <div class="form-card">
-      <div class="form-meta"><img src="assets/dr-lewis.jpg" width="660" height="800" alt=""><span class="num">Tuesday, December 1 · 7:00 PM Pacific · About [running time] · Online, from home · Free</span></div>
-      <h2 id="form-h">Where Should We Send Your Webinar Link?</h2>
-      <form class="reg" novalidate>
-        <div class="field"><label for="fn">First name</label><input type="text" id="fn" name="first_name" autocomplete="given-name" required></div>
-        <div class="field"><label for="ln">Last name</label><input type="text" id="ln" name="last_name" autocomplete="family-name" required></div>
-        <div class="field full"><label for="em">Email</label><input id="em" name="email" type="email" inputmode="email" autocomplete="email" spellcheck="false" required></div>
-        <div class="field full"><label for="ph">Phone</label><input id="ph" name="phone" type="tel" inputmode="tel" autocomplete="tel" required></div>
-        <div class="field full"><label for="zip">ZIP code</label><input type="text" id="zip" name="zip" inputmode="numeric" autocomplete="postal-code" maxlength="10" required></div>
-        <fieldset class="full"><legend>Who's this for?</legend>
-          <label class="opt"><input type="radio" name="who" value="me" required> Me</label>
-          <label class="opt"><input type="radio" name="who" value="family"> A family member</label>
-        </fieldset>
-        <p class="ph-box full">eWebinar's SMS consent box and the age range question sit here if the form already has them (see build notes).</p>
-        <p class="selfpay full">Regenerative procedures aren't covered by insurance or Medicare. Treatment is self-pay.</p>
-        <label class="ack full"><input type="checkbox" name="ack" required> I understand</label>
-        <button class="btn" type="submit">Save My Free Seat</button>
-        <p class="form-note">Your link arrives by email right away.</p>
-        <p class="preview-msg" role="status">Preview only. On the live page this is the eWebinar widget.</p>
-      </form>
-    </div>
+    <h2 id="how-h" class="sec-h">How the Webinar Works</h2>
+    <ol class="steps">
+      <li><span class="fol num">1</span><h3>Save your seat.</h3><p>Fill out the form below. It takes about a minute.</p></li>
+      <li><span class="fol num">2</span><h3>Check your email.</h3><p>Your webinar link arrives after you register, and reminders come by email and text before the webinar.</p></li>
+      <li><span class="fol num">3</span><h3>Bring your questions.</h3><p>Jot down what you want to ask about your knee or hip. Send them in as you watch, and our team will follow up.</p></li>
+      <li><span class="fol num">4</span><h3>Join the webinar.</h3><p>Open the link a few minutes before.</p></li>
+    </ol>
   </div>
 </section>
 
-<!-- 10. FAQ -->
+<!-- 9. FAQ -->
 <section class="faq-sec bg-a" aria-labelledby="faq-h">
   <div class="wrap faq-grid">
     <div class="faq-head">
@@ -526,13 +505,31 @@ footer{margin-top:64px;border-top:1px solid var(--line-light);padding:32px 0 40p
   </div>
 </section>
 
-<!-- 11. Final call to action + footer -->
+<!-- 10. Closing band: the form + footer -->
 <div class="final" aria-labelledby="final-h">
   <div class="wrap">
     <svg class="dots" viewBox="0 0 120 24" aria-hidden="true"><line x1="10" y1="12" x2="110" y2="12" stroke="rgba(255,255,255,.5)" stroke-width="2"/><circle cx="10" cy="12" r="6" fill="#145A70" stroke="#fff" stroke-width="2"/><circle cx="60" cy="12" r="10" fill="none" stroke="#A9D7E6" stroke-width="3"/><circle cx="60" cy="12" r="6" fill="#fff"/><circle cx="110" cy="12" r="6" fill="#1E7896" stroke="#fff" stroke-width="2"/></svg>
     <h2 id="final-h">Know Your Options Before You Set a Surgery Date</h2>
-    <span class="when-line num">Tuesday, December 1 · 7:00 PM Pacific · Online, from home · Free</span>
-    <a class="btn btn-light" href="#register">Save My Free Seat</a>
+    <div class="form-card" id="register">
+        <div class="form-meta"><img src="assets/dr-lewis.jpg" width="660" height="800" alt=""><span class="num">Tuesday, December 1 · 7:00 PM Pacific · About [running time] · Online, from home · Free</span></div>
+        <h2 id="form-h">Where Should We Send Your Webinar Link?</h2>
+        <form class="reg" novalidate>
+          <div class="field"><label for="fn">First name</label><input type="text" id="fn" name="first_name" autocomplete="given-name" required></div>
+          <div class="field"><label for="ln">Last name</label><input type="text" id="ln" name="last_name" autocomplete="family-name" required></div>
+          <div class="field full"><label for="em">Email</label><input id="em" name="email" type="email" inputmode="email" autocomplete="email" spellcheck="false" required></div>
+          <div class="field full"><label for="ph">Mobile phone (for your reminder texts)</label><input id="ph" name="phone" type="tel" inputmode="tel" autocomplete="tel" required></div>
+          <div class="field full"><label for="zip">ZIP code (so we know which clinic is closer to you)</label><input type="text" id="zip" name="zip" inputmode="numeric" autocomplete="postal-code" maxlength="10" required></div>
+          <fieldset class="full"><legend>Who's this for?</legend>
+            <label class="opt"><input type="radio" name="who" value="me" required> Me</label>
+            <label class="opt"><input type="radio" name="who" value="family"> A family member</label>
+          </fieldset>
+          <p class="ph-box full">eWebinar's SMS consent box and the age range question sit here if the form already has them (see build notes).</p>
+          <label class="ack full"><input type="checkbox" name="ack" required> I understand treatment is self-pay and not covered by insurance or Medicare.</label>
+          <button class="btn" type="submit">Save My Free Seat</button>
+          <p class="form-note">Your link arrives by email right away.</p>
+          <p class="preview-msg" role="status">Preview only. On the live page this is the eWebinar widget.</p>
+        </form>
+      </div>
     <footer>
       <div class="foot-grid">
         <img src="https://assets.cdn.filesafe.space/x4CH1uPZVAKDPBRyZSlg/media/685edd5bff06533a80ba4a4c.png" width="227" height="38" alt="Center for Regenerative &amp; Performance Medicine" loading="lazy">

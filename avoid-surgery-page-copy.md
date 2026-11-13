@@ -1,4 +1,4 @@
-# Avoid Surgery: webinar registration page
+# Avoid Surgery: registration page
 
 **Prepared for Dr. Jamie Lewis and the C4RPM Spokane team** · Prepared by Guidepost Marketing · November 14, 2026
 
@@ -17,7 +17,7 @@ The page the Dec 1 Meta ads send people to. Its job is to get people in or near 
 | Reason to register | See the 15-year study and the options before scheduling surgery |
 | Replay | Never mentioned on the page. The URM no-show workflow still sends the replay to registrants who miss it. |
 | Price on the page | $299 in-office consultation, in the FAQ only |
-| Qualifying | ZIP code, the self-pay checkbox and "Who's this for?" are collected. No answer blocks registration. The fit filter (section 8) lets people opt out. |
+| Qualifying | ZIP code, the self-pay checkbox and "Who's this for?" are collected. No answer blocks registration. The fit filter (section 7) lets people opt out. |
 | Address | northwestjointcare.com/avoid-surgery |
 | Form | eWebinar registration widget 25611, synced to GHL by Zapier |
 | Workflows | URM1 to URM4, Dec 1 session tag |
@@ -28,8 +28,8 @@ The page the Dec 1 Meta ads send people to. Its job is to get people in or near 
 |---|---|---|
 | 🔴 | The Avoid Surgery video transcript, exported from eWebinar 25611, to check the hero, section 3 and the learn bullets against what the video says, including what the 15-year study is and what the close offers. The close has to offer the $299 consultation. | Ahmed to export, Onkar to check |
 | 🔴 | The webinar's running time, from eWebinar, for the form card's top line | Ahmed |
-| 🔴 | Compliance read of the page, including the subheadline's "skip the hospital stay and long recovery" claim and the WA stem cell line in the footer | Kyle |
-| ⚠️ | HSA and payment plans for webinar patients, as section 8 says. If not confirmed by Nov 20, cut the fit filter line to "It's self-pay." | Emily, with the clinic |
+| 🔴 | Compliance read of the page, including the subheadline claims and the WA stem cell line in the footer | Kyle |
+| ⚠️ | HSA and payment plans for webinar patients, as section 7 says. If not confirmed by Nov 20, cut the fit filter line to "It's self-pay." | Emily, with the clinic |
 | ⚠️ | The eWebinar title still says "Shoulder," and it shows in eWebinar's confirmation emails and on the watch page. Dr. Lewis approves a new title, or we accept the mismatch. | Emily, with Dr. Lewis |
 | ⚠️ | The Dec 1 ad copy: change any "shoulder" to match the page before the Nov 21 launch | Vijay |
 | ⚠️ | The Google rating and review count (5.0 from 40 on Nov 12), rechecked the day before launch | Ahmed |
@@ -107,18 +107,7 @@ In this webinar, Dr. Lewis shows how regenerative medicine works with your body'
 
 ---
 
-## 5. How the webinar works
-
-**Heading:** How the Webinar Works
-
-1. **Save your seat.** Fill out the form below. It takes about a minute.
-2. **Check your email.** Your webinar link arrives after you register, and reminders come by email and text before the webinar.
-3. **Bring your questions.** Jot down what you want to ask about your knee or hip. Send them in as you watch, and our team will follow up.
-4. **Join the webinar.** Open the link a few minutes before.
-
----
-
-## 6. Meet Dr. Lewis
+## 5. Meet Dr. Lewis
 
 **Heading:** Meet Dr. Lewis
 
@@ -135,7 +124,7 @@ Dr. Lewis
 
 ---
 
-## 7. What patients are saying
+## 6. What patients are saying
 
 **Heading:** What Patients Are Saying
 
@@ -143,13 +132,13 @@ Dr. Lewis
 
 **Card 2, Google review, Jan E.** Label: *Was offered knee replacement twice* · ★★★★★ "Knee replacement was the only choice I was offered- twice. That just was not the best choice for me personally. … Dr Lewis and crew came through with flying colors."
 
-**Card 3, from Dr. Lewis's webinar.** Label: *Hip operated on twice before* · Caption: A patient of Dr. Lewis, from his webinar · ★★★★★ "I have had my right hip operated on twice, so I knew what was coming, and I didn't want it. So I'm in zero pain in my back, my hip, and I had a numb foot, and it is not numb anymore."
+**Card 3, Google review, Sue H.** Label: *Had a knee and a hip replaced* · ★★★★★ "I have had a right knee and left hip replacement and am now using PRP injections in my left knee and right ankle to prevent any more surgery. … I would highly recommend them to anyone that wants to stay active and not let arthritis dictate their lifestyle."
 
 *Individual results vary.*
 
 ---
 
-## 8. Is this webinar a good fit?
+## 7. Is this webinar a good fit?
 
 **Heading:** Is This Webinar a Good Fit?
 
@@ -160,32 +149,18 @@ Dr. Lewis
 
 ---
 
-## 9. Registration form
+## 8. How the webinar works
 
-**Card top line (with Dr. Lewis's round headshot):** Tuesday, December 1 · 7:00 PM Pacific · About [running time] · Online, from home · Free
+**Heading:** How the Webinar Works
 
-**Heading:** Where Should We Send Your Webinar Link?
-
-**Fields:**
-
-- First name
-- Last name
-- Email
-- Phone
-- ZIP code
-- Who's this for? Me / A family member
-
-**Above the checkbox:** Regenerative procedures aren't covered by insurance or Medicare. Treatment is self-pay.
-
-**Checkbox (required):** I understand
-
-**Button:** Save My Free Seat
-
-**Under the button:** Your link arrives by email right away.
+1. **Save your seat.** Fill out the form below. It takes about a minute.
+2. **Check your email.** Your webinar link arrives after you register, and reminders come by email and text before the webinar.
+3. **Bring your questions.** Jot down what you want to ask about your knee or hip. Send them in as you watch, and our team will follow up.
+4. **Join the webinar.** Open the link a few minutes before.
 
 ---
 
-## 10. FAQ
+## 9. FAQ
 
 **Heading:** Common Questions
 
@@ -205,13 +180,30 @@ Yes. Choose "A family member" on the form. One registration covers everyone watc
 
 ---
 
-## 11. Final call to action
+## 10. Closing band and registration form
+
+The page ends on the ask: the closing heading, then the form card, on the dark teal band.
 
 **Heading:** Know Your Options Before You Set a Surgery Date
 
-**Event line:** Tuesday, December 1 · 7:00 PM Pacific · Online, from home · Free
+**Card top line (with Dr. Lewis's round headshot):** Tuesday, December 1 · 7:00 PM Pacific · About [running time] · Online, from home · Free
+
+**Form heading:** Where Should We Send Your Webinar Link?
+
+**Fields:**
+
+- First name
+- Last name
+- Email
+- Mobile phone (for your reminder texts)
+- ZIP code (so we know which clinic is closer to you)
+- Who's this for? Me / A family member
+
+**Checkbox (required):** I understand treatment is self-pay and not covered by insurance or Medicare.
 
 **Button:** Save My Free Seat
+
+**Under the button:** Your link arrives by email right away.
 
 ---
 
@@ -243,19 +235,20 @@ Yes. Choose "A family member" on the form. One registration covers everyone watc
 - **Countdown.** GHL's built-in countdown can't do this (it only ticks days, hours, minutes and seconds), so use the countdown script from the preview's page.html as a custom code block. It reads "N days left" down to two days out, then "Tomorrow at 7 PM Pacific," then "Today at 7 PM Pacific," and hides after the session. The date is set in one line at the top of the script (`EVENT`), in Pacific time, so daylight-saving changes don't move it. A dashed pill at the start of the date line, never flashing.
 - **The problem (section 3).** Text left; on the right, in a white card that lines up with the top of the heading, a simple three-stop line: physical therapy and cortisone shots, regenerative medicine (the highlighted middle stop, drawn as the logo ring), replacement. On mobile the line turns vertical under the text. Paste the SVG from the preview into a custom HTML block, or export it as two 2x PNGs (wide for desktop, tall for phone) with alt text.
 - **What you'll learn (section 4).** Heading and button on the left; the left column stays in view while the rows scroll on desktop, which needs `position:sticky; top:96px` in custom CSS. If GHL can't do that, stack it: heading on top, rows under it at 820px wide, button after the last row. Five rows, each with a teal 01 to 05 and the line as one sentence, bold opening first. On mobile that button is hidden; the sticky bar carries it.
-- **How the webinar works (section 5).** Four steps on one thin teal line, each with a 36px numbered circle (1 to 4), the step title and its line underneath. No cards. Desktop: four across. Mobile: the line runs down the left with the circles on it and the text beside them. No button.
-- **Meet Dr. Lewis (section 6).** Square photo left on the blue offset block, text right, both aligned to the top: bio, his wife's story, the quote (italic, no box, with a large teal quote mark above it), the clinic line under a hairline, then the button. Photo on top on mobile, and the button hidden there.
-- **Reviews (section 7).** Three white cards with a thin border, aligned to the top: 5 stars, the label, the review, then the Google mark with first name and initial. Richard E.'s and Jan E.'s reviews are copied word for word above from the Google listing "Northwest Center for Regenerative Medicine - Spokane" (trimmed with "…" only, their spelling and punctuation kept). Paste them exactly as written. Card 3 is the patient quote from Dr. Lewis's webinar, with its label, as written above. Remove the three current quotes. "Individual results vary." under the cards. Stacked on mobile.
-- **Fit filter (section 8).** One column, 760px wide and centered on the page, everything inside it left-aligned: the heading, then "Probably not a fit if:" and the two lines, each with a small grey dash, hairlines between.
-- **Form (section 9, eWebinar widget 25611).** Light cyan band, white card in the middle (620px wide). A top row inside the card with Dr. Lewis's round headshot and the card top line above, then the heading and the widget. Made in eWebinar's registration settings, not in GHL:
+- **How the webinar works (section 8).** Sits right above the FAQ and the form, so "what happens after I sign up" comes just before the ask. Four steps on one thin teal line, each with a 36px numbered circle (1 to 4), the step title and its line underneath. No cards. Desktop: four across. Mobile: the line runs down the left with the circles on it and the text beside them. No button.
+- **Meet Dr. Lewis (section 5).** Square photo left on the blue offset block, text right, both aligned to the top: bio, his wife's story, the quote (italic, no box, with a large teal quote mark above it), the clinic line under a hairline, then the button. Photo on top on mobile, and the button hidden there.
+- **Reviews (section 6).** Three white cards with a thin border, aligned to the top: 5 stars, the label, the review, then the Google mark with first name and initial. All three reviews (Richard E., Jan E., Sue H.) are copied word for word above from the Google listing "Northwest Center for Regenerative Medicine - Spokane," trimmed with "…" only, their spelling and punctuation kept. Paste them exactly as written. Remove the three current quotes on the live page. "Individual results vary." under the cards. Stacked on mobile.
+- **Fit filter (section 7).** One column, 760px wide and centered on the page, everything inside it left-aligned: the heading, then "Probably not a fit if:" and the two lines, each with a small grey dash, hairlines between.
+- **Form (section 10, eWebinar widget 25611).** Inside the dark teal closing band, under the closing heading: a white card (620px wide, soft shadow, no border). A top row inside the card with Dr. Lewis's round headshot and the card top line, then the form heading and the widget. Made in eWebinar's registration settings, not in GHL:
   - Add **ZIP code** (required), **Who's this for?** (required, two tappable options, one per line) and the **self-pay checkbox** (required).
-  - Put the self-pay line above the checkbox. If the widget can't show text there, place it on the page directly above the widget.
+  - The checkbox label carries the whole self-pay line ("I understand treatment is self-pay and not covered by insurance or Medicare."), so nothing else needs to sit above it.
+  - Field labels exactly as written above, including "Mobile phone (for your reminder texts)" and "ZIP code (so we know which clinic is closer to you)."
   - Make sure the form has an SMS consent box, since the URM workflows send texts. If it doesn't, raise it with Onkar.
   - Keep the age range question if it's already on the form. If it isn't, raise it with Onkar before adding it.
   - Text 16px minimum, tap targets 48 by 48. Widget button in #23799A with 10px corners and the same text as the page buttons.
 - **Zapier (eWebinar to GHL).** ZIP code to the contact's Postal Code field. The checkbox to "Self-pay acknowledged" (Yes/No). "Who's this for?" to a new custom field, "Registering for" (Me / A family member), so the setters see it. Nothing filters, tags out or stops on any answer.
-- **FAQ (section 10).** Heading and button on the left, questions on the right. Open list on desktop; accordion on mobile with all answers closed at first, and the button hidden (the sticky bar carries it).
-- **Closing band (section 11) and footer.** Full-width teal gradient: a small three-dot line, the heading, the event line and a white button, centered (button full width on mobile). The footer sits inside the same band: white logo, addresses and phone, then the two disclaimers.
+- **FAQ (section 9).** Heading and button on the left, questions on the right. Open list on desktop; accordion on mobile with all answers closed at first, and the button hidden (the sticky bar carries it).
+- **Closing band (section 10) and footer.** Full-width teal gradient: a small three-dot line, the closing heading, then the form card (above), centered on desktop and full width on mobile. The page ends on the form. The footer sits inside the same band under the form: white logo, addresses and phone, then the two disclaimers.
 - **Buttons.** All say Save My Free Seat and scroll to the form. Nothing links off the page.
 - **Preview-only pieces: don't rebuild these.** The yellow "Layout preview" bar at the top, the dashed placeholder box in the form (it marks where eWebinar's SMS consent and age questions go), the "Preview only" message under the form button, and "[running time]" (replace it with the real length).
 
@@ -265,16 +258,16 @@ This page is the template for the other C4RPM webinar topics. Keep the layout, d
 
 | What | Where it appears |
 |---|---|
-| Webinar date and time | Sticky bar, hero date line, form card top line, closing band, the FAQ computer answer ("7:00 PM Pacific"), and `EVENT` at the top of the countdown script |
+| Webinar date and time | Sticky bar, hero date line, form card top line, the FAQ computer answer ("7:00 PM Pacific"), and `EVENT` at the top of the countdown script |
 | eWebinar ID and running time | The form widget, the form card top line |
 | Eyebrow, headline, subheadline, "This is for you if" lines | Hero |
 | Problem section text and the three-stop graphic labels | Section 3 |
 | Learn rows | Section 4 |
-| Reviews and their labels | Section 7 (pick reviews that match the topic) |
-| Closing heading | Section 11 |
+| Reviews and their labels | Section 6 (pick reviews that match the topic) |
+| Closing heading | Section 10 |
 | Browser title, page address, workflow tag | Page settings |
 
-Everything else stays: how it works, Meet Dr. Lewis, the fit filter, the form fields and self-pay line, the FAQ, the footer and disclaimers. The new copy for each topic comes in its own MD file.
+Everything else stays: Meet Dr. Lewis, the fit filter, how it works, the FAQ, the form fields and self-pay checkbox, the footer and disclaimers. The new copy for each topic comes in its own MD file.
 
 ## Before we go live
 
