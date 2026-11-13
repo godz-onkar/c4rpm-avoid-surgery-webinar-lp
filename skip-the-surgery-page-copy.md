@@ -92,7 +92,7 @@ You've rested it, done the exercises and had the shots, and the pain still comes
 
 Now surgery is on the table, and you haven't heard much about anything between a shot and an operation.
 
-In this webinar, Dr. Lewis shows that middle ground, called regenerative medicine, and how it's used in large joints and small ones.
+In this webinar, Dr. Lewis covers that middle ground, called regenerative medicine, and how it's used in large joints and small ones.
 
 ---
 
@@ -187,7 +187,7 @@ Yes. Choose "A family member" on the form. One registration covers everyone watc
 
 The page ends on the ask: the closing heading, then the form card, on the dark teal band.
 
-**Heading:** Learn What Else You Can Do Before You Say Yes to Surgery
+**Heading:** Know All Your Choices Before You Book an Operation
 
 **Card top line (with Dr. Lewis's round headshot):** [Day], [Month] [Date] · 7:00 PM Pacific · About [running time] · Online, from home · Free
 
