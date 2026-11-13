@@ -14,7 +14,7 @@
 :root{
   --canvas:#FFFFFF; --hero:#D8ECF5; --hero-2:#E8F4FA; --canvas-alt:#E8F8FD; --canvas-deep:#D8ECF5;
   --ink:#000000; --ink-2:#333333; --ink-3:#5C6670;
-  --teal:#2682A1; --teal-btn:#23799A; --teal-hover:#1C6682; --deep:#145A70; --deep-2:#1E7896; --sky:#2B9FCF; --pale:#A9D7E6;
+  --teal:#2682A1; --teal-text:#1D6A85; --teal-btn:#23799A; --teal-hover:#1C6682; --deep:#145A70; --deep-2:#1E7896; --sky:#2B9FCF; --pale:#A9D7E6;
   --line:rgba(20,90,112,.16); --line-light:rgba(255,255,255,.18);
   --font:"Open Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
   --r-btn:10px; --r-card:16px; --r-hero:18px;
@@ -51,8 +51,8 @@ p{margin:0}
 .live b{display:inline-flex;align-items:center;gap:6px;background:#fff;color:#D32F2F;border-radius:999px;padding:5px 10px 5px 8px;font-size:11.5px;letter-spacing:.08em;box-shadow:0 1px 0 rgba(0,0,0,.06)}
 .live b::before{content:"";width:8px;height:8px;border-radius:50%;background:#E53935}
 .hero-grid{display:grid;grid-template-columns:7fr 5fr;gap:72px;align-items:center;padding:12px 0 128px}
-.eyebrow{font:700 12.5px/1.4 var(--font);letter-spacing:.12em;text-transform:uppercase;color:var(--teal);margin-bottom:18px}
-.hero h1 .lead{display:block;font-weight:700;font-size:24px;line-height:1.3;letter-spacing:-.01em;color:var(--teal)}
+.eyebrow{font:700 12.5px/1.4 var(--font);letter-spacing:.12em;text-transform:uppercase;color:var(--teal-text);margin-bottom:18px}
+.hero h1 .lead{display:block;font-weight:700;font-size:24px;line-height:1.3;letter-spacing:-.01em;color:var(--teal-text)}
 .hero h1 .main{display:block;margin-top:10px;font-weight:800;font-size:46px;line-height:1.12;letter-spacing:-.025em;color:var(--ink)}
 .hero .sub{margin-top:24px;font-size:19px;line-height:1.6;color:var(--ink-2);max-width:50ch}
 .presenter-row{display:none;align-items:center;gap:12px;margin-top:20px}
@@ -102,9 +102,9 @@ section{padding:clamp(72px,10vw,128px) 0}
 .learn-head .btn{margin-top:32px}
 .rows{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
 .rows li{display:grid;grid-template-columns:64px 1fr;gap:6px 20px;padding:28px 0;border-bottom:1px solid var(--line)}
-.fol{font:700 14px/1.6 var(--font);color:var(--teal);letter-spacing:.06em}
-.rows h3,.rows p{grid-column:2}
-.rows p{color:var(--ink-2);max-width:56ch;font-size:17px}
+.fol{font:700 14px/1.6 var(--font);color:var(--teal-text);letter-spacing:.06em}
+.rows p{grid-column:2;color:var(--ink-2);max-width:58ch;font-size:18px;line-height:1.55}
+.rows strong{color:var(--ink);font-weight:700}
 
 /* How */
 .how{background:var(--canvas)}
@@ -124,7 +124,7 @@ section{padding:clamp(72px,10vw,128px) 0}
 .pres-copy p{margin-top:18px;max-width:56ch}
 .pres-copy h2+p{margin-top:24px}
 .quote{margin:26px 0 0;padding:20px 24px;background:#fff;border-left:4px solid var(--teal);border-radius:0 var(--r-btn) var(--r-btn) 0;font-style:italic;font-size:18px;line-height:1.55;color:var(--ink);max-width:56ch}
-.quote cite{display:block;margin-top:10px;font-style:normal;font:700 15px/1.4 var(--font);color:var(--teal)}
+.quote cite{display:block;margin-top:10px;font-style:normal;font:700 15px/1.4 var(--font);color:var(--teal-text)}
 .clinic{margin-top:26px;padding-top:20px;border-top:1px solid var(--line);max-width:56ch}
 .clinic b{color:var(--ink)}
 .pres-copy .btn{margin-top:30px}
@@ -296,7 +296,7 @@ footer{margin-top:clamp(88px,11vw,128px);border-top:1px solid var(--line-light);
       <div>
         <p class="eyebrow">Free online webinar · Spokane and Coeur d'Alene</p>
         <h1><span class="lead">Avoid Surgery:</span> <span class="main">Your Knee or Hip Has More Options Than a Replacement</span></h1>
-        <p class="sub">Dr. Jamie Lewis explains the advanced, non-surgical treatments that skip the hospital stay and long recovery, so you can get back to the trips, walks and time with family you planned.</p>
+        <p class="sub">Dr. Jamie Lewis explains the advanced, non-surgical treatments that skip the hospital stay and long recovery, so you can get back to the trips and time with family you planned.</p>
         <div class="presenter-row">
           <img src="assets/dr-lewis.jpg" width="660" height="800" alt="">
           <div><b>Dr. Jamie Lewis</b><span>Your presenter</span></div>
@@ -323,7 +323,7 @@ footer{margin-top:clamp(88px,11vw,128px);border-top:1px solid var(--line-light);
     <ul class="fit">
       <li>A doctor has brought up a replacement, and you want to know your options first</li>
       <li>You've watched someone close to you recover from a replacement, and you'd rather not go through it</li>
-      <li>Pain is getting in the way of the trips and time with the grandkids you planned on</li>
+      <li>You've started turning down things you love because of the pain</li>
       <li>You want to see the evidence before you decide</li>
     </ul>
   </div>
@@ -332,8 +332,9 @@ footer{margin-top:clamp(88px,11vw,128px);border-top:1px solid var(--line-light);
 <!-- 2. Credibility bar -->
 <div class="cred">
   <ul>
-    <li><span class="stars" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg></span><span class="num">5.0 from 40 Google reviews</span></li>
-    <li>Clinics in Spokane and Coeur d'Alene</li>
+    <li><span class="stars" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg></span><span class="num">5.0 from 40 Google reviews</span></li>
+    <li>Board-certified pain physician</li>
+    <li>Image-guided injections, done in the office</li>
   </ul>
 </div>
 
@@ -342,23 +343,23 @@ footer{margin-top:clamp(88px,11vw,128px);border-top:1px solid var(--line-light);
   <div class="wrap problem-grid">
     <div>
       <h2 id="problem-h">When the Shots Wear Off and Surgery Is Next</h2>
-      <p>Stairs take a hand on the rail. Walks end sooner than you planned.</p>
+      <p>Stairs take a hand on the rail. Walks get cut short.</p>
       <p>You've done what you were told. Physical therapy helped for a while. Cortisone shots helped too, until each one wore off sooner than the last.</p>
       <p>Now the next step on the list is a replacement, and it's a big one to take without knowing what else is out there.</p>
-      <p class="turn">In this webinar, Dr. Lewis explains how regenerative medicine works with your body's own healing, so you can see whether it could fit your knee or hip before a surgery date goes on the calendar.</p>
+      <p class="turn">In this webinar, Dr. Lewis shows how regenerative medicine works with your body's own healing, so you can see whether it could fit your knee or hip.</p>
     </div>
     <div>
-      <svg class="path path-h" viewBox="0 0 540 220" role="img" aria-labelledby="path-t">
+      <svg class="path path-h" viewBox="0 0 560 230" role="img" aria-labelledby="path-t">
         <title id="path-t">Three steps: physical therapy and cortisone shots, regenerative medicine, joint replacement. The middle one is highlighted.</title>
-        <line x1="50" y1="90" x2="490" y2="90" stroke="#2682A1" stroke-width="2.5" stroke-linecap="round"/>
-        <circle cx="50" cy="90" r="14" fill="#fff" stroke="#2682A1" stroke-width="2.5"/>
-        <circle cx="490" cy="90" r="14" fill="#fff" stroke="#2682A1" stroke-width="2.5"/>
-        <circle cx="270" cy="90" r="44" fill="none" stroke="#A9D7E6" stroke-width="6"/>
-        <circle cx="270" cy="90" r="30" fill="#2B9FCF"/>
-        <g font-family="Open Sans, system-ui, sans-serif" font-weight="700" font-size="13" letter-spacing="1.1" text-anchor="middle" fill="#145A70">
-          <text x="50" y="190">PHYSICAL THERAPY</text><text x="50" y="208" font-weight="600" fill="#5C6670" letter-spacing=".3" font-size="12.5">and cortisone shots</text>
-          <text x="270" y="190">REGENERATIVE MEDICINE</text><text x="270" y="208" font-weight="600" fill="#5C6670" letter-spacing=".3" font-size="12.5">PRP and bone marrow concentrate</text>
-          <text x="490" y="190">REPLACEMENT</text>
+        <line x1="80" y1="90" x2="480" y2="90" stroke="#2682A1" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="80" cy="90" r="14" fill="#fff" stroke="#2682A1" stroke-width="2.5"/>
+        <circle cx="480" cy="90" r="14" fill="#fff" stroke="#2682A1" stroke-width="2.5"/>
+        <circle cx="280" cy="90" r="44" fill="none" stroke="#A9D7E6" stroke-width="6"/>
+        <circle cx="280" cy="90" r="30" fill="#2B9FCF"/>
+        <g font-family="Open Sans, system-ui, sans-serif" font-weight="700" font-size="14.5" letter-spacing=".8" text-anchor="middle" fill="#145A70">
+          <text x="80" y="176">PHYSICAL</text><text x="80" y="195">THERAPY</text><text x="80" y="216" font-weight="600" fill="#4A5560" letter-spacing=".2" font-size="14">and cortisone shots</text>
+          <text x="280" y="176">REGENERATIVE</text><text x="280" y="195">MEDICINE</text><text x="280" y="216" font-weight="600" fill="#4A5560" letter-spacing=".2" font-size="14">PRP and bone marrow</text>
+          <text x="480" y="176">REPLACEMENT</text>
         </g>
       </svg>
       <svg class="path path-v" viewBox="0 0 320 340" role="img" aria-labelledby="path-tv">
@@ -386,11 +387,11 @@ footer{margin-top:clamp(88px,11vw,128px);border-top:1px solid var(--line-light);
       <a class="btn" href="#register">Save My Free Seat</a>
     </div>
     <ol class="rows">
-      <li><span class="fol num">01</span><h3>What the 15-year study showed,</h3><p>and what it could mean for your knee or hip.</p></li>
-      <li><span class="fol num">02</span><h3>What platelet-rich plasma (PRP) and bone marrow concentrate are,</h3><p>and how they differ from cortisone shots and surgery.</p></li>
-      <li><span class="fol num">03</span><h3>Who can benefit,</h3><p>and what to expect if you're a candidate.</p></li>
-      <li><span class="fol num">04</span><h3>When surgery may still be the right call,</h3><p>and how to make that decision.</p></li>
-      <li><span class="fol num">05</span><h3>Your next steps,</h3><p>based on your joint and what you want to get back to.</p></li>
+      <li><span class="fol num">01</span><p><strong>What the 15-year study showed,</strong> and what it could mean for your knee or hip.</p></li>
+      <li><span class="fol num">02</span><p><strong>What platelet-rich plasma (PRP) and bone marrow concentrate are,</strong> and how they differ from cortisone shots and surgery.</p></li>
+      <li><span class="fol num">03</span><p><strong>Who can benefit,</strong> and what to expect if you're a candidate.</p></li>
+      <li><span class="fol num">04</span><p><strong>When surgery may still be the right call,</strong> and how to make that decision.</p></li>
+      <li><span class="fol num">05</span><p><strong>Your next steps,</strong> based on your joint and what you want to get back to.</p></li>
     </ol>
   </div>
 </section>
@@ -448,6 +449,7 @@ footer{margin-top:clamp(88px,11vw,128px);border-top:1px solid var(--line-light);
       </figure>
       <figure class="rev">
         <span class="stars" role="img" aria-label="5 out of 5 stars"><svg viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg></span>
+        <p class="tag">Hip operated on twice before</p>
         <span class="sk" style="width:100%"></span><span class="sk" style="width:96%"></span><span class="sk" style="width:88%"></span><span class="sk" style="width:54%"></span>
         <p class="ph">Patient quote from Dr. Lewis's webinar (text in the copy doc)</p>
         <figcaption>From Dr. Lewis's webinar</figcaption>
@@ -508,7 +510,7 @@ footer{margin-top:clamp(88px,11vw,128px);border-top:1px solid var(--line-light);
     <div class="faq">
       <details><summary>I'm not great with computers. Can I still watch?</summary><p>Yes. Click the link in your email at 7:00 PM Pacific, and the webinar opens in your web browser on a computer, tablet or phone. There's nothing to download.</p></details>
       <details><summary>Am I too old for this?</summary><p>No. Many of our patients are in their 60s, 70s and 80s. At a consultation, the physician looks at your joint and your overall health.</p></details>
-      <details><summary>Is this a sales pitch?</summary><p>It's a teaching webinar. At the end, Dr. Lewis explains the $299 in-office consultation for anyone who wants a physician to look at their knee or hip. There's no obligation to book.</p></details>
+      <details><summary>Is this a sales pitch?</summary><p>It's a teaching webinar. At the end, Dr. Lewis walks through the $299 in-office consultation for anyone who wants a physician to look at their knee or hip. There's no obligation to book.</p></details>
       <details><summary>Can I sign up for a parent?</summary><p>Yes. Choose "A family member" on the form. One registration covers everyone watching on the same screen.</p></details>
     </div>
   </div>
@@ -518,7 +520,7 @@ footer{margin-top:clamp(88px,11vw,128px);border-top:1px solid var(--line-light);
 <div class="final" aria-labelledby="final-h">
   <div class="wrap">
     <svg class="dots" viewBox="0 0 120 24" aria-hidden="true"><line x1="10" y1="12" x2="110" y2="12" stroke="rgba(255,255,255,.5)" stroke-width="2"/><circle cx="10" cy="12" r="6" fill="#145A70" stroke="#fff" stroke-width="2"/><circle cx="60" cy="12" r="10" fill="none" stroke="#A9D7E6" stroke-width="3"/><circle cx="60" cy="12" r="6" fill="#fff"/><circle cx="110" cy="12" r="6" fill="#1E7896" stroke="#fff" stroke-width="2"/></svg>
-    <h2 id="final-h">See the Study Before You Set a Surgery Date</h2>
+    <h2 id="final-h">Know Your Options Before You Set a Surgery Date</h2>
     <span class="when-line num">Tuesday, December 1 · 7:00 PM Pacific · Online, from home · Free</span>
     <a class="btn btn-light" href="#register">Save My Free Seat</a>
     <footer>
