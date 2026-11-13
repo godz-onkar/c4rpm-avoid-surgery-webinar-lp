@@ -154,6 +154,8 @@ function setView(v){
 new ResizeObserver(fit).observe(wrap);fit();
 document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{setView(b.dataset.v);history.replaceState(null,'',views[b.dataset.v]||location.pathname)});
 const h=location.hash.replace('#','');setView(h==='desktop'?'d':h==='mobile'?'m':'');
+// Always load the latest page in the frames (GitHub Pages lets browsers reuse a page for 10 minutes)
+const v='page.html?v='+Date.now();document.querySelectorAll('iframe').forEach(f=>f.src=v);document.querySelector('.top a[href="page.html"]').href=v;
 </script>
 </body>
 </html>
