@@ -18,6 +18,8 @@ h1{font-family:"Inter Tight",Inter,sans-serif;font-weight:800;font-size:28px;let
 .tabs button{border:0;background:transparent;font:600 14px Inter,sans-serif;padding:9px 16px;border-radius:999px;cursor:pointer;color:var(--ink)}
 .tabs button.on{background:var(--ink);color:#fff}
 .tabs button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.ctl{display:flex;flex-wrap:wrap;gap:10px}
+.looks button.on{background:var(--accent)}
 .stage{display:grid;grid-template-columns:1fr 430px;gap:28px;padding:8px 28px 40px;align-items:start}
 .stage.d{grid-template-columns:1fr}
 .stage.m{grid-template-columns:430px;justify-content:center}
@@ -38,32 +40,46 @@ h1{font-family:"Inter Tight",Inter,sans-serif;font-weight:800;font-size:28px;let
 <div class="top">
   <div>
     <h1>C4RPM Avoid Surgery webinar registration: layout</h1>
-    <p>Desktop at 1440 and mobile at 390. Scroll inside each frame. The form is a mock of the eWebinar widget, and grey bars stand in for the review text. Build notes are at the bottom of the page. <a href="page.html">Open the page on its own</a>.</p>
+    <p>Same copy and layout in three looks, each taken from a live C4RPM property: the webinar pages, the Spokane lead gen pages and c4rpm.com. Pick a look, then scroll inside each frame. The form is a mock of the eWebinar widget, and grey bars stand in for the review text. Build notes, with a table comparing the looks, are at the bottom of the page. <a id="solo" href="page.html?look=webinar">Open this look on its own</a>.</p>
   </div>
-  <div class="tabs" role="tablist" aria-label="View">
-    <button class="on" data-v="" role="tab">Both</button><button data-v="d" role="tab">Desktop</button><button data-v="m" role="tab">Mobile</button>
+  <div class="ctl">
+    <div class="tabs looks" role="tablist" aria-label="Look">
+      <button class="on" data-l="webinar" role="tab">Webinar look</button><button data-l="leadgen" role="tab">Lead gen look</button><button data-l="website" role="tab">Website look</button>
+    </div>
+    <div class="tabs views" role="tablist" aria-label="View">
+      <button class="on" data-v="" role="tab">Both</button><button data-v="d" role="tab">Desktop</button><button data-v="m" role="tab">Mobile</button>
+    </div>
   </div>
 </div>
 <div class="stage" id="stage">
   <div class="desk">
     <p class="label">Desktop · 1440</p>
-    <div class="dframe"><div class="bar"><i></i><i></i><i></i></div><div class="dwrap" id="dwrap"><iframe id="dfr" src="page.html" title="Desktop layout"></iframe></div></div>
+    <div class="dframe"><div class="bar"><i></i><i></i><i></i></div><div class="dwrap" id="dwrap"><iframe id="dfr" src="page.html?look=webinar" title="Desktop layout"></iframe></div></div>
   </div>
   <div class="mob">
     <p class="label">Mobile · 390</p>
-    <div class="phone"><iframe src="page.html" title="Mobile layout"></iframe></div>
+    <div class="phone"><iframe id="mfr" src="page.html?look=webinar" title="Mobile layout"></iframe></div>
   </div>
 </div>
 <script>
-const stage=document.getElementById('stage'),wrap=document.getElementById('dwrap'),fr=document.getElementById('dfr');
-const views={'':'', 'd':'#desktop', 'm':'#mobile'};
+const stage=document.getElementById('stage'),wrap=document.getElementById('dwrap'),fr=document.getElementById('dfr'),mfr=document.getElementById('mfr'),solo=document.getElementById('solo');
+let view='',look='webinar';
 function fit(){const s=Math.min(1,wrap.clientWidth/1440);fr.style.transform='scale('+s+')';wrap.style.height=(900*s)+'px';}
+function sync(){history.replaceState(null,'','?look='+look+(view==='d'?'#desktop':view==='m'?'#mobile':''));}
 function setView(v){
-  document.querySelectorAll('.tabs button').forEach(x=>{const on=x.dataset.v===v;x.classList.toggle('on',on);x.setAttribute('aria-selected',on)});
+  view=v;
+  document.querySelectorAll('.views button').forEach(x=>{const on=x.dataset.v===v;x.classList.toggle('on',on);x.setAttribute('aria-selected',on)});
   stage.className='stage'+(v?' '+v:'');requestAnimationFrame(fit);
 }
+function setLook(l){
+  look=l;const src='page.html?look='+l;
+  document.querySelectorAll('.looks button').forEach(x=>{const on=x.dataset.l===l;x.classList.toggle('on',on);x.setAttribute('aria-selected',on)});
+  if(!fr.src.endsWith(src)){fr.src=src;mfr.src=src;}solo.href=src;
+}
 new ResizeObserver(fit).observe(wrap);fit();
-document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{setView(b.dataset.v);history.replaceState(null,'',views[b.dataset.v]||location.pathname)});
+document.querySelectorAll('.views button').forEach(b=>b.onclick=()=>{setView(b.dataset.v);sync()});
+document.querySelectorAll('.looks button').forEach(b=>b.onclick=()=>{setLook(b.dataset.l);sync()});
+const q=new URLSearchParams(location.search).get('look');setLook(['webinar','leadgen','website'].includes(q)?q:'webinar');
 const h=location.hash.replace('#','');setView(h==='desktop'?'d':h==='mobile'?'m':'');
 </script>
 </body>

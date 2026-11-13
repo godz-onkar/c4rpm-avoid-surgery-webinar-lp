@@ -1,189 +1,256 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="look-webinar">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Avoid Surgery: Free Webinar with Dr. Jamie Lewis · Dec 1 (layout preview)</title>
+<script>
+// Pick the look before paint: ?look=webinar | leadgen | website
+(function(){var l=(new URLSearchParams(location.search).get('look')||'webinar').toLowerCase();if(['webinar','leadgen','website'].indexOf(l)<0)l='webinar';document.documentElement.className='look-'+l;})();
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Roboto+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Roboto+Condensed:wght@400;700;900&family=Figtree:wght@400;500;600;700&family=Barlow+Semi+Condensed:wght@600;700&family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='12' fill='none' stroke='%23239DD0' stroke-width='4'/%3E%3C/svg%3E">
 <style>
-:root{
-  --canvas:#F5F9FB;--canvas-alt:#E8F2F7;--ink:#0F2430;--ink-2:#475F6B;--navy:#0E2E3B;
-  --action:#007492;--action-hover:#005B73;--teal:#239DD0;--line:rgba(15,36,48,.14);--line-2:rgba(15,36,48,.24);
-  --display:'Roboto Condensed',system-ui,sans-serif;--body:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+/* ===== Look tokens ===== */
+/* Webinar look: northwestjointcare.com webinar pages (Reclaim, Avoid Surgery) */
+.look-webinar{
+  --display:'Open Sans',system-ui,sans-serif;--body:'Open Sans',system-ui,sans-serif;--btn-font:'Open Sans',system-ui,sans-serif;
+  --h-weight:700;--h-transform:none;--h-track:-.01em;--btn-transform:uppercase;--btn-weight:700;
+  --bg:#FFFFFF;--tint:#E8F8FD;--hero-bg:#D8ECF5;--ink:#000000;--ink-2:#333333;--ink-3:#666666;
+  --accent:#2682A1;--accent-hover:#1D6A84;--btn-ink:#FFFFFF;--eyebrow:#2682A1;--deco:#2B9FCF;
+  --hero-ink:#000000;--hero-ink-2:#333333;--hero-eyebrow:#2682A1;
+  --band-bg:#E8F8FD;--band-ink:#000000;--band-ink-2:#333333;--band-btn:#2682A1;--band-btn-ink:#FFFFFF;
+  --final-bg:linear-gradient(120deg,#1E7896 0%,#2A9BC0 100%);--final-ink:#FFFFFF;--final-btn:#FFFFFF;--final-btn-ink:#1E7896;
+  --bar-bg:linear-gradient(90deg,#1E7896 0%,#2A9BC0 100%);--bar-ink:#FFFFFF;--bar-btn:#FFFFFF;--bar-btn-ink:#1E7896;
+  --r-btn:10px;--r-card:12px;--r-img:14px;--line:rgba(0,0,0,.10);--line-2:rgba(0,0,0,.2);--star:#2682A1;
 }
+/* Lead gen look: go.spokaneregen.com pages (regen-care, schedule-discovery) */
+.look-leadgen{
+  --display:'Roboto Condensed',system-ui,sans-serif;--body:'DM Sans',system-ui,sans-serif;--btn-font:'Roboto Condensed',system-ui,sans-serif;
+  --h-weight:700;--h-transform:uppercase;--h-track:0;--btn-transform:uppercase;--btn-weight:700;
+  --bg:#FFFFFF;--tint:#F3F6FC;--hero-bg:linear-gradient(135deg,#0A4E61 0%,#0F6E87 55%,#1688A6 100%);--ink:#000000;--ink-2:#222222;--ink-3:#5A5A5A;
+  --accent:#007492;--accent-hover:#005B73;--btn-ink:#FFFFFF;--eyebrow:#007492;--deco:#239DD0;
+  --hero-ink:#FFFFFF;--hero-ink-2:#E3F1F6;--hero-eyebrow:#9FDDF2;
+  --band-bg:linear-gradient(135deg,#0A4E61 0%,#0F6E87 100%);--band-ink:#FFFFFF;--band-ink-2:#DCEDF3;--band-btn:#239DD0;--band-btn-ink:#FFFFFF;
+  --final-bg:linear-gradient(135deg,#0A4E61 0%,#1688A6 100%);--final-ink:#FFFFFF;--final-btn:#239DD0;--final-btn-ink:#FFFFFF;
+  --bar-bg:#FFFFFF;--bar-ink:#000000;--bar-btn:#007492;--bar-btn-ink:#FFFFFF;
+  --r-btn:0px;--r-card:4px;--r-img:4px;--line:rgba(0,0,0,.10);--line-2:rgba(0,0,0,.2);--star:#239DD0;
+}
+/* Website look: c4rpm.com (Proxima Nova on the site; Figtree and Barlow Semi Condensed stand in here) */
+.look-website{
+  --display:'Barlow Semi Condensed','proxima-nova-condensed',system-ui,sans-serif;--body:'Figtree','proxima-nova',system-ui,sans-serif;--btn-font:'Figtree','proxima-nova',system-ui,sans-serif;
+  --h-weight:700;--h-transform:none;--h-track:0;--btn-transform:none;--btn-weight:600;
+  --bg:#FFFFFF;--tint:#F3F6FC;--hero-bg:#FFFFFF;--ink:#0A0A0A;--ink-2:#084444;--ink-3:#4E4E4E;
+  --accent:#F97425;--accent-hover:#E0611A;--btn-ink:#FFFFFF;--eyebrow:#1C7399;--deco:#1C7399;
+  --hero-ink:#0A0A0A;--hero-ink-2:#084444;--hero-eyebrow:#1C7399;
+  --band-bg:#F3F6FC;--band-ink:#0A0A0A;--band-ink-2:#084444;--band-btn:#F97425;--band-btn-ink:#FFFFFF;
+  --final-bg:#231E4F;--final-ink:#FFFFFF;--final-btn:#F97425;--final-btn-ink:#FFFFFF;
+  --bar-bg:#FFFFFF;--bar-ink:#0A0A0A;--bar-btn:#F97425;--bar-btn-ink:#FFFFFF;
+  --r-btn:3px;--r-card:6px;--r-img:6px;--line:rgba(8,68,68,.12);--line-2:rgba(8,68,68,.22);--star:#F97425;
+}
+
+/* ===== Base ===== */
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:84px}
-body{margin:0;background:var(--canvas);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{margin:0;background:var(--bg);color:var(--ink-2);font-family:var(--body);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
 h1,h2,h3,p,ul,ol,figure{margin:0}
 ul,ol{padding:0;list-style:none}
-a{color:var(--action)}
+strong{color:var(--ink)}
+a{color:var(--accent)}
 img{max-width:100%;display:block}
 .wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 clamp(16px,4vw,40px)}
-.narrow{max-width:760px}
-.disp{font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:.005em}
-.h1{font-size:clamp(36px,4.3vw,56px);line-height:1.04}
-.h1 .kick{display:block;color:var(--action)}
-.h2{font-size:clamp(30px,3.4vw,44px);line-height:1.06}
-.lede{font-size:clamp(18px,1.6vw,20px);line-height:1.55;color:var(--ink-2);max-width:60ch}
-.eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--action)}
-.small{font-size:15px;line-height:1.5}
-.muted{color:var(--ink-2)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 30px;border-radius:6px;background:var(--action);color:#fff;font-family:var(--body);font-weight:700;font-size:18px;line-height:1.2;text-align:center;text-decoration:none;border:0;cursor:pointer;transition:background-color .15s ease-out}
-.btn:hover{background:var(--action-hover);color:#fff}
-.btn-sm{min-height:46px;padding:0 20px;font-size:16px}
-:focus-visible{outline:3px solid var(--action);outline-offset:3px}
-.sec{padding:clamp(64px,8vw,112px) 0}
-.tint{background:var(--canvas-alt)}
+.narrow{max-width:800px}
+.disp{font-family:var(--display);font-weight:var(--h-weight);text-transform:var(--h-transform);letter-spacing:var(--h-track);color:var(--ink)}
+.h1{font-size:clamp(36px,4.2vw,54px);line-height:1.1}
+.h1 .kick{display:block;color:var(--hero-eyebrow);font-size:.62em;margin-bottom:6px}
+.h2{font-size:clamp(30px,3.2vw,44px);line-height:1.12}
+.lede{font-size:clamp(18px,1.6vw,20px);line-height:1.55;max-width:60ch}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--eyebrow)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 30px;border-radius:var(--r-btn);background:var(--accent);color:var(--btn-ink);font-family:var(--btn-font);font-weight:var(--btn-weight);text-transform:var(--btn-transform);letter-spacing:.02em;font-size:17px;line-height:1.2;text-align:center;text-decoration:none;border:0;cursor:pointer;transition:background-color .15s ease-out,filter .15s ease-out}
+.btn:hover{background:var(--accent-hover);color:var(--btn-ink)}
+.btn-sm{min-height:46px;padding:0 20px;font-size:15px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.sec{padding:clamp(64px,8vw,104px) 0}
+.tint{background:var(--tint)}
 .after-btn{margin-top:36px}
-.prev-flag{background:#FDF3D8;color:#5A440C;font-size:12.5px;text-align:center;padding:8px 16px}
+.center{text-align:center}
+.prev-flag{background:#FDF3D8;color:#5A440C;font-size:12.5px;text-align:center;padding:8px 16px;font-family:system-ui,sans-serif}
 
 /* sticky bar */
-.sbar{position:sticky;top:0;z-index:30;background:rgba(245,249,251,.97);border-bottom:1px solid var(--line)}
-.sbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
-.sbar-l{display:flex;align-items:center;gap:20px}
-.sbar-l img{height:34px;width:auto}
-.sbar-date{font-weight:700;font-size:16.5px;padding-left:20px;border-left:1px solid var(--line-2)}
+.sbar{position:sticky;top:0;z-index:30;background:var(--bar-bg);color:var(--bar-ink);border-bottom:1px solid var(--line)}
+.sbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:66px}
+.sbar-l{display:flex;align-items:center;gap:18px;font-weight:700;font-size:16.5px}
+.sbar .logo{height:34px;width:auto}
+.sbar .btn{background:var(--bar-btn);color:var(--bar-btn-ink)}
+.sbar .btn:hover{filter:brightness(.94)}
+.live{display:none;align-items:center;gap:6px;background:#fff;color:#D32F2F;border-radius:999px;padding:3px 10px 3px 8px;font-size:12px;font-weight:800;letter-spacing:.06em}
+.live::before{content:"";width:8px;height:8px;border-radius:50%;background:#E53935}
+.look-webinar .live{display:inline-flex}
+.look-webinar .sbar .logo{display:none}
 .mbar{display:none}
 
 /* hero */
-.hero{padding:clamp(32px,4.5vw,64px) 0 clamp(40px,5vw,72px)}
-.hero-grid{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:clamp(32px,5vw,72px);align-items:start}
-.hero .h1{margin-top:14px}
-.hero .lede{margin-top:18px}
-.for{margin-top:26px}
-.for-h{font-weight:700;font-size:18px}
+.hero{background:var(--hero-bg);color:var(--hero-ink-2);padding:clamp(28px,4vw,56px) 0 clamp(44px,5vw,72px)}
+.hero .logo-row img{height:44px;width:auto}
+.look-leadgen .hero .logo-row,.look-website .hero .logo-row{display:none}
+.hero-grid{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:clamp(32px,5vw,72px);align-items:start;margin-top:28px}
+.look-leadgen .hero-grid,.look-website .hero-grid{margin-top:0}
+.hero .eyebrow{color:var(--hero-eyebrow)}
+.hero .h1{margin-top:12px;color:var(--hero-ink)}
+.hero .lede{margin-top:18px;color:var(--hero-ink-2)}
+.for{margin-top:24px}
+.for-h{font-weight:700;color:var(--hero-ink)}
 .for ul{margin-top:10px;display:grid;gap:8px}
-.for li{position:relative;padding-left:22px;max-width:56ch}
-.for li::before{content:"";position:absolute;left:4px;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--teal)}
-.reg{margin-top:28px}
-.pill{display:inline-flex;align-items:center;gap:8px;padding:5px 12px;border-radius:999px;background:#fff;border:1px solid var(--line-2);font-size:14.5px;font-weight:700;color:var(--ink)}
-.pill::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--teal)}
-.logi{margin-top:10px;font-weight:600;font-size:17px;font-variant-numeric:tabular-nums}
-.reg .btn{margin-top:16px}
-.under{margin-top:12px;font-size:15.5px;color:var(--ink-2)}
-.host img{border-radius:14px;aspect-ratio:33/40;object-fit:cover;width:100%}
-.host-card{margin-top:14px;padding:14px 16px;background:#fff;border:1px solid var(--line);border-radius:10px;display:flex;align-items:center;gap:14px}
-.ring-s{flex:none;width:38px;height:38px;border-radius:50%;border:2px solid var(--teal)}
-.host-card b{display:block;font-size:17px;line-height:1.3}
-.host-card span{display:block;font-size:14.5px;color:var(--ink-2);line-height:1.4}
+.for li{position:relative;padding-left:24px;max-width:56ch}
+.for li::before{content:"";position:absolute;left:4px;top:.6em;width:8px;height:8px;border-radius:50%;background:var(--deco)}
+.look-leadgen .for li::before{background:#9FDDF2}
+.reg{margin-top:26px}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:4px 12px;border-radius:999px;background:#fff;border:1px solid var(--line-2);font-size:14.5px;font-weight:700;color:var(--ink)}
+.pill::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--deco)}
+.look-leadgen .pill{border-radius:0}
+.logi{margin-top:10px;font-weight:600;font-size:17px;color:var(--hero-ink)}
+.look-webinar .logi{display:inline-block;border:1.5px dashed var(--accent);border-radius:999px;padding:10px 22px;background:rgba(255,255,255,.55);font-weight:600}
+.reg .btn{margin-top:16px;display:flex;width:max-content}
+.under{margin-top:12px;font-size:15.5px;color:var(--hero-ink-2)}
+.host img{border-radius:var(--r-img);aspect-ratio:33/40;object-fit:cover;width:100%;height:auto}
+.look-webinar .host img{box-shadow:-16px 16px 0 var(--deco)}
+.host-card{margin-top:24px;padding:14px 16px;background:#fff;border:1px solid var(--line);border-radius:var(--r-card)}
+.host-card b{display:block;font-size:17px;line-height:1.3;color:var(--ink)}
+.host-card span{display:block;font-size:14.5px;color:var(--ink-3);line-height:1.4}
 
 /* credibility */
-.cred{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}
-.cred p{text-align:center;padding:16px 0;font-weight:600;font-size:16.5px}
-.stars{color:var(--teal);letter-spacing:1px}
-.dot{color:var(--ink-2);padding:0 8px}
+.cred{border-bottom:1px solid var(--line);background:var(--bg)}
+.cred p{text-align:center;padding:16px 0;font-weight:600;font-size:16.5px;color:var(--ink)}
+.stars{color:var(--star);letter-spacing:1px}
+.dot{color:var(--ink-3);padding:0 8px}
 
 /* problem */
 .prob p{margin-top:18px;max-width:62ch}
 .prob .h2{margin-bottom:6px}
-.prob p.turn{font-weight:600}
+.prob p.turn{font-weight:600;color:var(--ink)}
 
 /* learn */
-.rows{margin-top:28px;border-top:1px solid var(--line-2)}
-.rows li{display:flex;gap:22px;align-items:flex-start;padding:22px 0;border-bottom:1px solid var(--line-2)}
-.num{flex:none;width:48px;height:48px;border-radius:50%;border:2px solid var(--teal);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:700;font-size:20px;font-variant-numeric:tabular-nums}
-.rows p{padding-top:9px;max-width:64ch}
+.rows{margin-top:28px;display:grid;gap:14px}
+.rows li{display:flex;gap:20px;align-items:flex-start;padding:20px 22px;background:#fff;border:1px solid var(--line);border-radius:var(--r-card)}
+.look-webinar .rows li{border-left:4px solid var(--accent);box-shadow:0 6px 20px rgba(0,0,0,.05)}
+.num{flex:none;width:46px;height:46px;border-radius:50%;border:2px solid var(--deco);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:700;font-size:20px;color:var(--ink)}
+.look-webinar .rows .num{border:0;width:auto;height:auto;min-width:46px;font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:38px;line-height:1;color:#A9D7E6}
+.look-leadgen .num{border-radius:0;background:var(--accent);border-color:var(--accent);color:#fff}
+.look-website .num{border-color:var(--accent);color:var(--accent)}
+.rows p{padding-top:8px;max-width:64ch}
+.look-webinar .rows p{padding-top:4px}
 
 /* how */
 .steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:28px}
-.step{background:#fff;border:1px solid var(--line);border-radius:10px;padding:24px 22px}
-.step h3{margin-top:16px;font-size:20px;line-height:1.25}
-.step p{margin-top:8px;font-size:17px;color:var(--ink-2)}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--r-card);padding:24px 22px}
+.tint .step{border-color:transparent}
+.step h3{margin-top:16px;font-size:20px;line-height:1.25;color:var(--ink);font-family:var(--body)}
+.step p{margin-top:8px;font-size:17px}
 
 /* doctor band */
-.band{background:var(--navy);color:#EAF3F7}
-.band .h2{color:#fff}
-.doc-grid{display:grid;grid-template-columns:minmax(0,8fr) minmax(0,4fr);gap:clamp(28px,4vw,56px);margin-top:32px;align-items:start}
-.doc-main{display:grid;grid-template-columns:220px minmax(0,1fr);gap:28px;align-items:start}
-.doc-main img{border-radius:10px;aspect-ratio:4/5;object-fit:cover;width:100%;height:auto}
-.host img{height:auto}
-.bio p{color:#D5E6EE;max-width:58ch}
+.band{background:var(--band-bg);color:var(--band-ink-2)}
+.band .h2{color:var(--band-ink)}
+.arrows{position:relative}
+.arw{display:none;position:absolute;top:-6px;width:64px;height:64px;color:var(--deco)}
+.look-webinar .arw{display:block}
+.arw.l{left:0}.arw.r{right:0;transform:scaleX(-1)}
+.doc-grid{display:grid;grid-template-columns:minmax(0,8fr) minmax(0,4fr);gap:clamp(28px,4vw,56px);margin-top:36px;align-items:start}
+.doc-main{display:grid;grid-template-columns:240px minmax(0,1fr);gap:32px;align-items:start}
+.doc-main img{border-radius:var(--r-img);aspect-ratio:4/5;object-fit:cover;width:100%;height:auto}
+.look-webinar .doc-main img{box-shadow:-14px 14px 0 var(--deco)}
+.bio p{max-width:58ch}
 .bio p+p{margin-top:16px}
-.quote{margin:24px 0 0;padding-top:22px;border-top:1px solid rgba(234,243,247,.2);font-size:21px;line-height:1.45;color:#fff;max-width:44ch}
-.quote cite{display:block;margin-top:10px;font-style:normal;font-size:15px;color:#B9D3DE}
-.clinic{border:1px solid rgba(234,243,247,.22);border-radius:10px;padding:24px}
-.clinic h3{font-family:var(--display);text-transform:uppercase;font-size:22px;color:#fff}
-.clinic p{margin-top:10px;color:#D5E6EE}
-.band .btn{margin-top:36px;background:#fff;color:var(--navy)}
-.band .btn:hover{background:var(--canvas-alt)}
-.band :focus-visible{outline-color:#fff}
+.quote{margin:24px 0 0;padding:20px 24px;border-left:4px solid var(--deco);background:rgba(255,255,255,.75);font-style:italic;font-size:19px;line-height:1.5;color:var(--band-ink);max-width:48ch}
+.look-leadgen .quote{background:rgba(255,255,255,.08);border-color:#9FDDF2}
+.quote cite{display:block;margin-top:10px;font-style:normal;font-weight:700;font-size:15.5px;color:var(--eyebrow)}
+.look-leadgen .quote cite{color:#9FDDF2}
+.clinic{border:1px solid var(--line-2);border-radius:var(--r-card);padding:24px;background:rgba(255,255,255,.6)}
+.look-leadgen .clinic{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.25)}
+.clinic h3{font-family:var(--display);font-weight:700;text-transform:var(--h-transform);font-size:22px;color:var(--band-ink)}
+.clinic p{margin-top:10px}
+.band .btn{margin-top:36px;background:var(--band-btn);color:var(--band-btn-ink)}
+.band .btn:hover{filter:brightness(.94)}
 
 /* reviews */
 .revs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:28px}
-.rev{background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px;display:flex;flex-direction:column;gap:12px}
-.rev .tag{font-weight:700;font-size:17px;line-height:1.35}
-.sk{display:block;height:9px;border-radius:5px;background:#E3ECF1}
-.ph{font-size:13.5px;color:var(--ink-2);border:1px dashed var(--line-2);border-radius:6px;padding:8px 10px}
-.rev .src{margin-top:auto;font-size:14px;color:var(--ink-2);display:flex;align-items:center;gap:8px}
+.rev{background:#fff;border:1px solid var(--line);border-radius:var(--r-card);padding:22px;display:flex;flex-direction:column;gap:12px}
+.rev .tag{font-weight:700;font-size:17px;line-height:1.35;color:var(--ink)}
+.sk{display:block;height:9px;border-radius:5px;background:#E6ECEF}
+.ph{font-size:13.5px;color:var(--ink-3);border:1px dashed var(--line-2);border-radius:6px;padding:8px 10px}
+.rev .src{margin-top:auto;font-size:14px;color:var(--ink-3);display:flex;align-items:center;gap:8px}
 .gmark{width:18px;height:18px;flex:none}
-.rv-note{margin-top:18px;font-size:15px;color:var(--ink-2)}
+.rv-note{margin-top:18px;font-size:15px;color:var(--ink-3)}
 
 /* fit */
-.fit{max-width:680px;margin:0 auto}
+.fit{max-width:700px;margin:0 auto}
 .fit .h2{text-align:center}
-.fit-h{margin-top:22px;font-weight:700}
+.fit-h{margin-top:22px;font-weight:700;color:var(--ink)}
 .fit ul{margin-top:10px;display:grid;gap:12px}
-.fit li{position:relative;padding-left:22px}
-.fit li::before{content:"";position:absolute;left:4px;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--ink-2)}
+.fit li{position:relative;padding-left:24px}
+.fit li::before{content:"";position:absolute;left:4px;top:.6em;width:8px;height:8px;border-radius:50%;background:var(--ink-3)}
 
 /* form */
-.formcard{max-width:600px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:14px;padding:clamp(24px,3.4vw,40px)}
-.formcard .h2{font-size:clamp(28px,3vw,38px);text-align:center}
+.formcard{max-width:600px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:calc(var(--r-card) + 4px);padding:clamp(24px,3.4vw,40px);box-shadow:0 10px 30px rgba(0,0,0,.05)}
+.formcard .h2{font-size:clamp(26px,2.8vw,36px);text-align:center}
 .fields{display:grid;gap:14px;margin-top:24px}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.lbl{display:block;font-size:15.5px;font-weight:600}
-.inp{display:block;width:100%;margin-top:6px;min-height:52px;padding:12px 14px;border:1px solid var(--line-2);border-radius:6px;background:#fff;font-family:var(--body);font-size:17px;color:var(--ink)}
+.lbl{display:block;font-size:15.5px;font-weight:600;color:var(--ink)}
+.inp{display:block;width:100%;margin-top:6px;min-height:52px;padding:12px 14px;border:1px solid var(--line-2);border-radius:min(var(--r-btn),8px);background:#fff;font-family:var(--body);font-size:17px;color:var(--ink)}
 .who{border:0;margin:0;padding:0}
-.who legend{font-size:15.5px;font-weight:600;padding:0}
-.opt{display:flex;align-items:center;gap:12px;min-height:52px;margin-top:8px;padding:10px 14px;border:1px solid var(--line-2);border-radius:6px;cursor:pointer;font-size:17px}
-.opt input{width:20px;height:20px;accent-color:var(--action);margin:0}
-.opt:has(input:checked){border-color:var(--action);background:#DDEFF5;box-shadow:inset 0 0 0 1px var(--action)}
-.selfpay{margin-top:4px;padding:14px 16px;background:var(--canvas-alt);border-radius:6px;font-size:16px;line-height:1.5}
-.ack{display:flex;align-items:center;gap:12px;min-height:48px;font-weight:600;cursor:pointer}
-.ack input{width:22px;height:22px;flex:none;margin:0;accent-color:var(--action)}
-.ph-box{font-size:13.5px;color:var(--ink-2);border:1px dashed var(--line-2);border-radius:6px;padding:10px 12px}
+.who legend{font-size:15.5px;font-weight:600;padding:0;color:var(--ink)}
+.opt{display:flex;align-items:center;gap:12px;min-height:52px;margin-top:8px;padding:10px 14px;border:1px solid var(--line-2);border-radius:min(var(--r-btn),8px);cursor:pointer;font-size:17px;color:var(--ink)}
+.opt input{width:20px;height:20px;accent-color:var(--accent);margin:0}
+.opt:has(input:checked){border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.selfpay{margin-top:4px;padding:14px 16px;background:var(--tint);border-radius:min(var(--r-btn),8px);font-size:16px;line-height:1.5;color:var(--ink)}
+.ack{display:flex;align-items:center;gap:12px;min-height:48px;font-weight:600;cursor:pointer;color:var(--ink)}
+.ack input{width:22px;height:22px;flex:none;margin:0;accent-color:var(--accent)}
+.ph-box{font-size:13.5px;color:var(--ink-3);border:1px dashed var(--line-2);border-radius:6px;padding:10px 12px}
 .formcard .btn{width:100%;margin-top:18px}
-.formcard .under{text-align:center}
-.done{display:none;margin-top:14px;text-align:center;font-weight:600;color:var(--action)}
+.formcard .under{text-align:center;color:var(--ink-3)}
+.done{display:none;margin-top:14px;text-align:center;font-weight:600;color:var(--accent)}
 
 /* faq */
-.faq{margin-top:28px;border-top:1px solid var(--line)}
-.fq{border-bottom:1px solid var(--line)}
-.fq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;align-items:center;padding:18px 0;min-height:56px;font-weight:700;font-size:19px;line-height:1.35}
+.faq{margin-top:28px;border-top:1px solid var(--line-2)}
+.fq{border-bottom:1px solid var(--line-2)}
+.fq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;align-items:center;padding:18px 0;min-height:56px;font-weight:700;font-size:19px;line-height:1.35;color:var(--ink)}
 .fq summary::-webkit-details-marker{display:none}
-.chev{flex:none;transition:transform .2s ease-out;color:var(--action)}
+.chev{flex:none;transition:transform .2s ease-out;color:var(--accent)}
 .fq[open] .chev{transform:rotate(180deg)}
-.fq p{padding:0 0 22px;color:var(--ink-2);max-width:64ch;font-size:17.5px}
+.fq p{padding:0 0 22px;max-width:64ch;font-size:17.5px}
 
 /* final */
 .final{padding:0 0 clamp(64px,8vw,104px)}
-.fband{background:var(--navy);border-radius:14px;padding:clamp(56px,7vw,96px) clamp(20px,4vw,48px);text-align:center;color:#EAF3F7}
-.fband .h2{color:#fff;max-width:26ch;margin:0 auto;text-wrap:balance}
-.fband .logi{color:#C9DDE6;margin-top:16px}
-.fband .btn{margin-top:28px;background:#fff;color:var(--navy)}
-.fband .btn:hover{background:var(--canvas-alt)}
+.look-leadgen .final,.look-webinar .final{padding:0}
+.fband{background:var(--final-bg);border-radius:calc(var(--r-card) + 4px);padding:clamp(56px,7vw,96px) clamp(20px,4vw,48px);text-align:center;color:var(--final-ink)}
+.look-leadgen .fband,.look-webinar .fband{border-radius:0}
+.look-leadgen .final .wrap,.look-webinar .final .wrap{max-width:none;padding:0}
+.fband .h2{color:var(--final-ink);max-width:26ch;margin:0 auto;text-wrap:balance}
+.fband .logi,.look-webinar .fband .logi{display:block;color:var(--final-ink);opacity:.9;margin-top:16px;border:0;background:none;padding:0}
+.fband .btn{margin-top:28px;background:var(--final-btn);color:var(--final-btn-ink)}
+.fband .btn:hover{filter:brightness(.94)}
 .fband :focus-visible{outline-color:#fff}
 
 /* footer */
-.ftr{padding:40px 0 48px;border-top:1px solid var(--line);font-size:15px;color:var(--ink-2)}
+.ftr{padding:40px 0 48px;border-top:1px solid var(--line);font-size:15px;color:var(--ink-3)}
 .ftr p+p{margin-top:12px}
 .ftr .legal{max-width:92ch;font-style:italic}
-.ftr a{color:var(--ink-2)}
+.ftr a{color:var(--ink-3)}
 
 /* build notes (preview only) */
-.notes{background:#fff;border-top:3px dashed #B58A1D;padding:56px 0 96px;font-size:16px}
-.notes h2{font-family:var(--display);text-transform:uppercase;font-size:30px}
-.notes h3{margin-top:28px;font-size:19px}
-.notes p,.notes li{margin-top:8px;color:var(--ink-2);max-width:84ch}
+.notes{background:#fff;border-top:3px dashed #B58A1D;padding:56px 0 96px;font-size:16px;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;color:#444}
+.notes h2{font-size:28px;color:#111}
+.notes h3{margin-top:28px;font-size:19px;color:#111}
+.notes p,.notes li{margin-top:8px;max-width:88ch}
 .notes ul{list-style:disc;padding-left:20px}
 .notes ul ul{margin-top:4px}
-.notes table{border-collapse:collapse;margin-top:12px;width:100%;font-size:15px}
-.notes th,.notes td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
-.notes th{width:24%;color:var(--ink)}
+.notes table{border-collapse:collapse;margin-top:12px;width:100%;font-size:14.5px}
+.notes th,.notes td{border:1px solid #ddd;padding:8px 10px;text-align:left;vertical-align:top}
+.notes th{color:#111;background:#fafafa}
+.notes strong{color:#111}
+.notes .cur{background:#FFF8E1}
 
 @media (max-width:980px){
   .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -192,60 +259,67 @@ img{max-width:100%;display:block}
 @media (max-width:760px){
   html{scroll-padding-top:12px}
   .sbar{display:none}
-  .mbar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(245,249,251,.97);border-top:1px solid var(--line);transition:transform .2s ease-out}
+  .mbar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid var(--line);transition:transform .2s ease-out}
   .mbar .btn{width:100%}
   .mbar.away{transform:translateY(110%)}
-  .mlogo{display:block!important;height:30px;width:auto;margin-bottom:18px}
-  .hero{padding-top:20px}
-  .hero-grid{grid-template-columns:minmax(0,1fr);gap:28px}
-  .h1{font-size:31px}
-  .hero .h1{margin-top:10px}
+  .prev-flag{font-size:11.5px;padding:5px 12px;line-height:1.35}
+  .hero{padding-top:18px}
+  .hero .logo-row img{height:32px}
+  .look-leadgen .hero .logo-row,.look-website .hero .logo-row{display:block}
+  .look-leadgen .hero .logo-row img{filter:brightness(0) invert(1)}
+  .hero-grid{grid-template-columns:minmax(0,1fr);gap:28px;margin-top:16px!important}
+  .h1{font-size:30px}
+  .hero .h1{margin-top:8px}
   .hero .lede{font-size:16.5px;line-height:1.5;margin-top:10px}
   .eyebrow{font-size:11.5px}
-  .for{margin-top:18px}
+  .for{margin-top:16px}
   .for ul{gap:6px}
   .for li{font-size:17px;line-height:1.5}
   .reg .btn{width:100%}
+  .look-webinar .logi{font-size:15.5px;padding:8px 14px;border-radius:14px}
   .host img{aspect-ratio:1/1;object-position:center 22%}
-  .prev-flag{font-size:11.5px;padding:5px 12px;line-height:1.35}
-  .mlogo{margin-bottom:14px!important;height:28px!important}
+  .look-webinar .host img{box-shadow:-10px 10px 0 var(--deco);margin-left:10px;width:calc(100% - 10px)}
   .cred p{font-size:15px;padding:12px 0}
   .cred .dot{display:none}.cred .br{display:block}
   .sec{padding:52px 0}
   .h2{font-size:27px}
-  .rows li{gap:16px;padding:18px 0}
+  .rows li{gap:14px;padding:16px}
   .num{width:40px;height:40px;font-size:18px}
+  .look-webinar .rows .num{font-size:30px;min-width:38px}
   .rows p{padding-top:6px;font-size:17px}
   .steps{grid-template-columns:minmax(0,1fr);gap:12px}
   .step{padding:18px;display:grid;grid-template-columns:40px minmax(0,1fr);column-gap:14px}
   .step .num{grid-row:span 2}
   .step h3{margin-top:6px;font-size:19px}
   .step p{margin-top:4px}
+  .arw{width:40px;height:40px}
   .doc-main{grid-template-columns:minmax(0,1fr)}
-  .doc-main img{max-width:170px;aspect-ratio:1/1;border-radius:50%;object-position:center 18%}
-  .quote{font-size:19px}
+  .doc-main img{max-width:170px;aspect-ratio:1/1;border-radius:50%;object-position:center 18%;box-shadow:none!important}
+  .quote{font-size:17.5px;padding:16px 18px}
   .band .btn,.sec .btn{width:100%}
   .revs{grid-template-columns:minmax(0,1fr)}
   .two{grid-template-columns:minmax(0,1fr)}
   .fq summary{font-size:18px;min-height:52px;padding:14px 0}
   .fq p{font-size:17px}
-  .fband{padding:44px 20px}
+  .fband{padding:48px 20px}
   .fband .btn{width:100%}
   .ftr{padding-bottom:110px}
+  .notes table{display:block;overflow-x:auto;max-width:100%}
+  .notes th,.notes td{min-width:150px}
 }
-@media (min-width:761px){.mlogo{display:none!important}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
 </head>
 <body>
-<div class="prev-flag">Layout preview for review. The form is a mock (the live page uses the eWebinar widget), and the review cards are placeholders. Build notes are at the bottom.</div>
+<div class="prev-flag" id="flag">Layout preview for review. The form is a mock (the live page uses the eWebinar widget), and the review cards are placeholders. Build notes are at the bottom.</div>
 
 <!-- Sticky bar -->
 <div class="sbar" role="region" aria-label="Webinar date">
   <div class="wrap">
     <div class="sbar-l">
-      <img src="https://assets.cdn.filesafe.space/x4CH1uPZVAKDPBRyZSlg/media/685edd5bff06533a80ba4a4c.png" alt="Center for Regenerative &amp; Performance Medicine" width="203" height="34">
-      <span class="sbar-date">Tue, Dec 1 · 7 PM Pacific</span>
+      <img class="logo" src="https://assets.cdn.filesafe.space/x4CH1uPZVAKDPBRyZSlg/media/685edd5bff06533a80ba4a4c.png" alt="Center for Regenerative &amp; Performance Medicine" width="203" height="34">
+      <span class="live">LIVE</span>
+      <span>Tue, Dec 1 · 7 PM Pacific</span>
     </div>
     <a class="btn btn-sm" href="#register">Save My Free Seat</a>
   </div>
@@ -254,32 +328,34 @@ img{max-width:100%;display:block}
 <main id="top">
 <!-- 1. Hero -->
 <section class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <img class="mlogo" style="display:none" src="https://assets.cdn.filesafe.space/x4CH1uPZVAKDPBRyZSlg/media/685edd5bff06533a80ba4a4c.png" alt="Center for Regenerative &amp; Performance Medicine" width="179" height="30">
-      <p class="eyebrow">Free online webinar for the Spokane and Coeur d'Alene area</p>
-      <h1 class="disp h1"><span class="kick">Avoid Surgery:</span> Before You Replace That Knee or Hip, See What the 15-Year Study Showed</h1>
-      <p class="lede">Dr. Jamie Lewis explains, in plain language, the options worth knowing about before you schedule a joint replacement or reconstruction. Find out whether there's a way back to the things you love without months of recovery.</p>
-      <div class="for">
-        <p class="for-h">This is for you if:</p>
-        <ul>
-          <li>A doctor has brought up a replacement, and you want to know your options first</li>
-          <li>You've watched someone close to you recover from a replacement, and you'd rather not go through it</li>
-          <li>Pain is getting in the way of the trips and time with the grandkids you planned on</li>
-          <li>You want to see the evidence before you decide</li>
-        </ul>
+  <div class="wrap">
+    <div class="logo-row"><img src="https://assets.cdn.filesafe.space/x4CH1uPZVAKDPBRyZSlg/media/685edd5bff06533a80ba4a4c.png" alt="Center for Regenerative &amp; Performance Medicine" width="263" height="44"></div>
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">Free online webinar for the Spokane and Coeur d'Alene area</p>
+        <h1 class="disp h1"><span class="kick">Avoid Surgery:</span> Before You Replace That Knee or Hip, See What the 15-Year Study Showed</h1>
+        <p class="lede">Dr. Jamie Lewis explains, in plain language, the options worth knowing about before you schedule a joint replacement or reconstruction. Find out whether there's a way back to the things you love without months of recovery.</p>
+        <div class="for">
+          <p class="for-h">This is for you if:</p>
+          <ul>
+            <li>A doctor has brought up a replacement, and you want to know your options first</li>
+            <li>You've watched someone close to you recover from a replacement, and you'd rather not go through it</li>
+            <li>Pain is getting in the way of the trips and time with the grandkids you planned on</li>
+            <li>You want to see the evidence before you decide</li>
+          </ul>
+        </div>
+        <div class="reg">
+          <span class="pill" id="countdown">10 days left</span>
+          <div><p class="logi">Tuesday, December 1 · 7:00 PM Pacific · About [running time] · Free</p></div>
+          <a class="btn" href="#register">Save My Free Seat</a>
+          <p class="under">Can't make it at 7:00? Register anyway and we'll send you the replay.</p>
+        </div>
       </div>
-      <div class="reg">
-        <span class="pill" id="countdown">10 days left</span>
-        <p class="logi">Tuesday, December 1 · 7:00 PM Pacific · About [running time] · Free</p>
-        <a class="btn" href="#register">Save My Free Seat</a>
-        <p class="under">Can't make it at 7:00? Register anyway and we'll send you the replay.</p>
-      </div>
+      <figure class="host">
+        <img src="assets/dr-lewis.jpg" alt="Dr. Jamie Lewis" width="660" height="800">
+        <figcaption class="host-card"><b>Dr. Jamie Lewis</b><span>Medical Director, Center for Regenerative and Performance Medicine</span></figcaption>
+      </figure>
     </div>
-    <figure class="host">
-      <img src="assets/dr-lewis.jpg" alt="Dr. Jamie Lewis" width="660" height="800">
-      <figcaption class="host-card"><span class="ring-s" aria-hidden="true"></span><span><b>Dr. Jamie Lewis</b><span>Medical Director, Center for Regenerative and Performance Medicine</span></span></figcaption>
-    </figure>
   </div>
 </section>
 
@@ -291,7 +367,7 @@ img{max-width:100%;display:block}
 <!-- 3. The problem -->
 <section class="sec prob">
   <div class="wrap narrow">
-    <h2 class="disp h2">When the shots wear off and surgery is next</h2>
+    <h2 class="disp h2">When the Shots Wear Off and Surgery Is Next</h2>
     <p>Stairs take a hand on the rail. Walks end sooner than you planned.</p>
     <p>You've done what you were told. Physical therapy helped for a while. Cortisone shots helped too, until each one wore off sooner than the last.</p>
     <p>Now the next step on the list is a replacement, and it's a big one to take without knowing what else is out there.</p>
@@ -302,7 +378,7 @@ img{max-width:100%;display:block}
 <!-- 4. What you'll learn -->
 <section class="sec tint">
   <div class="wrap narrow">
-    <h2 class="disp h2">What you'll learn</h2>
+    <h2 class="disp h2 center">What You'll Learn</h2>
     <ol class="rows">
       <li><span class="num">1</span><p><strong>What the 15-year study showed,</strong> and what it could mean for your knee or hip.</p></li>
       <li><span class="num">2</span><p><strong>What platelet-rich plasma (PRP) and bone marrow concentrate are,</strong> and how they differ from cortisone shots and surgery.</p></li>
@@ -310,14 +386,14 @@ img{max-width:100%;display:block}
       <li><span class="num">4</span><p><strong>When surgery may still be the right call,</strong> and how to make that decision.</p></li>
       <li><span class="num">5</span><p><strong>Your next steps,</strong> based on your joint and what you want to get back to.</p></li>
     </ol>
-    <a class="btn after-btn" href="#register">Save My Free Seat</a>
+    <div class="center"><a class="btn after-btn" href="#register">Save My Free Seat</a></div>
   </div>
 </section>
 
 <!-- 5. How the webinar works -->
 <section class="sec">
   <div class="wrap">
-    <h2 class="disp h2">How the webinar works</h2>
+    <h2 class="disp h2 center">How the Webinar Works</h2>
     <ol class="steps">
       <li class="step"><span class="num">1</span><h3>Save your seat.</h3><p>Fill out the form below. It takes about a minute.</p></li>
       <li class="step"><span class="num">2</span><h3>Check your email.</h3><p>Your webinar link arrives after you register, and reminders come by email and text before the webinar.</p></li>
@@ -330,7 +406,11 @@ img{max-width:100%;display:block}
 <!-- 6. Meet Dr. Lewis -->
 <section class="sec band">
   <div class="wrap">
-    <h2 class="disp h2">Meet Dr. Lewis</h2>
+    <div class="arrows">
+      <svg class="arw l" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 4c0 24 14 40 40 44"/><path d="M38 38l13 10-12 9"/></svg>
+      <svg class="arw r" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 4c0 24 14 40 40 44"/><path d="M38 38l13 10-12 9"/></svg>
+      <h2 class="disp h2 center">Meet Dr. Lewis</h2>
+    </div>
     <div class="doc-grid">
       <div class="doc-main">
         <img src="assets/dr-lewis.jpg" alt="Dr. Jamie Lewis" width="660" height="800" loading="lazy">
@@ -341,7 +421,7 @@ img{max-width:100%;display:block}
         </div>
       </div>
       <div class="clinic">
-        <h3>About the clinic</h3>
+        <h3>About the Clinic</h3>
         <p>Dr. Lewis and his team see patients in person at two clinics, in Spokane (South Regal Street) and Coeur d'Alene (West Hanley Avenue).</p>
       </div>
     </div>
@@ -352,7 +432,7 @@ img{max-width:100%;display:block}
 <!-- 7. What patients are saying -->
 <section class="sec">
   <div class="wrap">
-    <h2 class="disp h2">What patients are saying</h2>
+    <h2 class="disp h2 center">What Patients Are Saying</h2>
     <div class="revs">
       <article class="rev">
         <span class="stars" aria-label="5 stars">★★★★★</span>
@@ -383,7 +463,7 @@ img{max-width:100%;display:block}
 <section class="sec tint">
   <div class="wrap">
     <div class="fit">
-      <h2 class="disp h2">Is this webinar a good fit?</h2>
+      <h2 class="disp h2">Is This Webinar a Good Fit?</h2>
       <p class="fit-h">Probably not a fit if:</p>
       <ul>
         <li>You need insurance or Medicare to cover treatment. It's self-pay, with HSA and payment plan options.</li>
@@ -397,7 +477,7 @@ img{max-width:100%;display:block}
 <section class="sec" id="register">
   <div class="wrap">
     <form class="formcard" id="regform" novalidate>
-      <h2 class="disp h2">Where should we send your webinar link?</h2>
+      <h2 class="disp h2">Where Should We Send Your Webinar Link?</h2>
       <div class="fields">
         <div class="two">
           <label class="lbl">First name<input class="inp" name="first" autocomplete="given-name" required></label>
@@ -425,14 +505,14 @@ img{max-width:100%;display:block}
 <!-- 10. FAQ -->
 <section class="sec tint">
   <div class="wrap narrow">
-    <h2 class="disp h2">Common questions</h2>
+    <h2 class="disp h2 center">Common Questions</h2>
     <div class="faq">
       <details class="fq"><summary>I'm not great with computers. Can I still watch?<svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><p>Yes. Click the link in your email at 7:00 PM Pacific, and the webinar opens in your web browser on a computer, tablet or phone. There's nothing to download.</p></details>
       <details class="fq"><summary>Am I too old for this?<svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><p>No. Many of our patients are in their 60s, 70s and 80s. At a consultation, the physician looks at your joint and your overall health.</p></details>
       <details class="fq"><summary>Is this a sales pitch?<svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><p>It's a teaching webinar. At the end, Dr. Lewis explains the $299 in-office consultation for anyone who wants a physician to look at their knee or hip. There's no obligation to book.</p></details>
       <details class="fq"><summary>Can I sign up for a parent?<svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><p>Yes. Choose "A family member" on the form. One registration covers everyone watching on the same screen.</p></details>
     </div>
-    <a class="btn after-btn" href="#register">Save My Free Seat</a>
+    <div class="center"><a class="btn after-btn" href="#register">Save My Free Seat</a></div>
   </div>
 </section>
 
@@ -440,7 +520,7 @@ img{max-width:100%;display:block}
 <section class="final">
   <div class="wrap">
     <div class="fband">
-      <h2 class="disp h2">See the study before you set a surgery date</h2>
+      <h2 class="disp h2">See the Study Before You Set a Surgery Date</h2>
       <p class="logi">Tuesday, December 1 · 7:00 PM Pacific · Online, from home · Free</p>
       <a class="btn" href="#register">Save My Free Seat</a>
     </div>
@@ -461,7 +541,20 @@ img{max-width:100%;display:block}
 <aside class="notes" aria-label="Layout and build notes">
   <div class="wrap">
     <h2>Layout and build notes</h2>
-    <p>For Ahmed. The same notes sit at the end of the copy doc in the vault. Copy source: Avoid Surgery registration page copy (Nov 13), status review.</p>
+    <p>For Ahmed. The same notes sit at the end of the copy doc in the vault. Copy source: Avoid Surgery registration page copy (Nov 13), status review. The copy and layout are the same in all three looks; only the design changes.</p>
+
+    <h3>Three looks for review</h3>
+    <p>Each look follows one of C4RPM's live properties, read from the live pages on Nov 13. Onkar picks one; the other two are dropped.</p>
+    <table>
+      <tr><th></th><th id="th-webinar">Webinar look</th><th id="th-leadgen">Lead gen look</th><th id="th-website">Website look</th></tr>
+      <tr><th>Based on</th><td>northwestjointcare.com webinar pages (Reclaim Your Retirement, Avoid Surgery)</td><td>go.spokaneregen.com pages (regen-care, schedule-discovery)</td><td>c4rpm.com (WordPress)</td></tr>
+      <tr><th>Fonts</th><td>Open Sans for everything. Headings bold, title case</td><td>Roboto Condensed bold, all caps, for headings and buttons; DM Sans for body</td><td>Proxima Nova Condensed bold headings, Proxima Nova body (Adobe Fonts; this preview stands in Barlow Semi Condensed and Figtree)</td></tr>
+      <tr><th>Text</th><td>Black #000 headings, #333 body</td><td>Black #000</td><td>Near-black #0A0A0A headings, dark teal #084444 body</td></tr>
+      <tr><th>Buttons</th><td>Teal #2682A1, white caps text, 10px corners</td><td>Teal #007492 (and #239DD0), white caps text, square corners</td><td>Orange #F97425, white text, 3px corners</td></tr>
+      <tr><th>Backgrounds</th><td>Light blue hero #D8ECF5, light cyan bands #E8F8FD, white</td><td>Deep teal hero and Dr. Lewis band, light #F3F6FC bands, white</td><td>White, light #F3F6FC bands, navy #231E4F final panel</td></tr>
+      <tr><th>Signature details</th><td>Teal top bar with a LIVE badge, dashed date pill, learn cards with a teal left edge and light serif numbers, Dr. Lewis's photo on a blue offset block, hand-drawn arrows by "Meet Dr. Lewis"</td><td>White text on teal, square everything, teal line icons</td><td>Orange call to action against teal links (#1C7399)</td></tr>
+      <tr><th>In GHL</th><td>Reuses the sections already on the Reclaim page; set every font to Open Sans (the live Avoid Surgery page also mixes in Inter, DM Sans and Space Grotesk)</td><td>Reuses the regen-care sections and fonts</td><td>Needs the Proxima Nova fonts added to GHL from C4RPM's Adobe Fonts kit, or a stand-in</td></tr>
+    </table>
 
     <h3>Page settings</h3>
     <table>
@@ -477,7 +570,7 @@ img{max-width:100%;display:block}
     <ul>
       <li>Dr. Lewis's headshot is the one already on the live page (GHL media library), shown here with its blue frame cropped off. Same photo in the hero and in Meet Dr. Lewis; a second photo of him would be better for one of the two spots if the clinic has one.</li>
       <li>Logo: the C4RPM logo from the GHL media library.</li>
-      <li>No stock photos.</li>
+      <li>No stock photos. The live page's stock photos (the arm exam in the hero, the doctor and patient in the learn section, the DNA background) come off.</li>
     </ul>
 
     <h3>Section by section</h3>
@@ -490,7 +583,7 @@ img{max-width:100%;display:block}
       <li><strong>The problem (section 3).</strong> One column of short paragraphs. No image, statistic or pull quote.</li>
       <li><strong>What you'll learn (section 4).</strong> Five numbered rows, bold opening on each. One button under the list.</li>
       <li><strong>How the webinar works (section 5).</strong> Four numbered steps: four cards across on desktop, stacked on mobile. No button.</li>
-      <li><strong>Meet Dr. Lewis (section 6).</strong> The page's one navy band. Dr. Lewis's block first, with his headshot. The clinic block sits beside it on desktop and below it on mobile, without photos.</li>
+      <li><strong>Meet Dr. Lewis (section 6).</strong> Dr. Lewis's block first, with his headshot. The clinic block sits beside it on desktop and below it on mobile, without photos.</li>
       <li><strong>Google review cards (section 7).</strong> Copy Richard E.'s and Jan E.'s reviews word for word from the Google listing "Northwest Center for Regenerative Medicine - Spokane." Trim with "…" only. Show 5 stars, the Google mark, the first name and initial, and the label. Card 3 is the patient quote from Dr. Lewis's webinar, as written in the copy doc. Remove the three current quotes. Three across on desktop, stacked on mobile.</li>
       <li><strong>Fit filter (section 8).</strong> One short list, centered, at reading width on desktop and full width on mobile. Plain bullets, no ticks or crosses.</li>
       <li><strong>Form (eWebinar widget 25611).</strong> Made in eWebinar's registration settings, not in GHL:
@@ -499,7 +592,7 @@ img{max-width:100%;display:block}
           <li>Put the self-pay line above the checkbox. If the widget can't show text there, place it on the page directly above the widget.</li>
           <li>Make sure the form has an SMS consent box, since the URM workflows send texts. If it doesn't, raise it with Onkar.</li>
           <li>Keep the age range question if it's already on the form. If it isn't, raise it with Onkar before adding it.</li>
-          <li>Text 16px minimum, tap targets 48 by 48.</li>
+          <li>Text 16px minimum, tap targets 48 by 48. Match the widget's button color and corners to the chosen look.</li>
         </ul>
       </li>
       <li><strong>Zapier (eWebinar to GHL).</strong> ZIP code to the contact's Postal Code field. The checkbox to "Self-pay acknowledged" (Yes/No). "Who's this for?" to a new custom field, "Registering for" (Me / A family member), so the setters see it. Nothing filters, tags out or stops on any answer.</li>
@@ -525,6 +618,8 @@ img{max-width:100%;display:block}
 </aside>
 
 <script>
+// Mark the current look in the notes table
+(function(){var l=document.documentElement.className.replace('look-','');var th=document.getElementById('th-'+l);if(th)th.classList.add('cur');})();
 // Countdown: days left until two days out, then Tomorrow / Today (Dec 1, 2026, 7:00 PM Pacific = 03:00 UTC Dec 2)
 (function(){
   var el=document.getElementById('countdown');if(!el)return;
