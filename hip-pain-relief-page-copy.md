@@ -27,7 +27,7 @@ The page the hip webinar's Meta ads send people to. Its job is to get people in 
 | | Need | Owner |
 |---|---|---|
 | 🔴 | Next session date. It goes in the sticky bar, the hero date line, the form card top line and `EVENT` in the countdown script, and the ads need it too. | Emily, with the clinic |
-| 🔴 | Hip webinar transcript check, from eWebinar 25230. Check the hero, section 3 and the learn rows against what the video says: the four most common sources of hip pain, groin pain that starts in the hip, the hip's limited blood supply, aim, dose and image guidance in a deep joint, a limp straining the back and knees, and the price compared with a hip replacement. Also check that the close offers the $299 hip consultation (the earlier hip copy was written when the consultation was free, so the video may still describe a free one). | Onkar (Ahmed exports the transcript) |
+| 🔴 | Hip webinar transcript check, from eWebinar 25230. Check the hero, section 3 and the learn rows against what the video says: the four most common sources of hip pain, groin pain that starts in the hip, the hip's limited blood supply, aim, dose and image guidance in a deep joint, a limp straining the back and knees, the price compared with a hip replacement, and the "rest it, get a shot, wait for a replacement" advice the lead-in and section 3 now answer (the waiting-room point and "the sooner a hip is treated, the more there is to save" in the September hip copy and ads, both taken from this transcript). Also check that the close offers the $299 hip consultation (the earlier hip copy was written when the consultation was free, so the video may still describe a free one). | Onkar (Ahmed exports the transcript) |
 | 🔴 | The webinar's running time, from eWebinar, for the form card's top line | Ahmed |
 | 🔴 | Compliance read of the page, including the subheadline claims and the WA stem cell line in the footer | Kyle |
 | ⚠️ | eWebinar 25230's schedule set to 7:00 PM Pacific. The live page still says 12 PM Pacific. | Ahmed |
@@ -70,7 +70,7 @@ The page the hip webinar's Meta ads send people to. Its job is to get people in 
 - Hip pain wakes you when you roll onto your sore side
 - You've started sitting out walks or golf because of your hip
 - You've watched someone close to you recover from a hip replacement, and you'd rather not go through it
-- You want to understand where the pain is coming from before you choose surgery
+- You've been told to rest it, get another shot and wait until it's bad enough to replace
 
 ---
 
@@ -88,7 +88,7 @@ Getting out of the car takes a push with both hands. By evening, a deep ache has
 
 You've done what you were told. Physical therapy helped for a while. Cortisone shots helped too, until each one wore off sooner than the last.
 
-Now the next thing on the list is a hip replacement, and that's a big step to take before you've heard what else is out there.
+Waiting for a replacement has a cost. The joint keeps wearing in the meantime, and the longer it goes, the less of your own hip there is to save.
 
 In this webinar, Dr. Lewis shows why the hip's limited blood supply makes it slow to recover on its own, and where regenerative medicine fits before surgery.
 

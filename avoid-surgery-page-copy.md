@@ -68,7 +68,7 @@ The page the Dec 1 Meta ads send people to. Its job is to get people in or near 
 
 - A doctor has brought up a replacement, and you want to know your options first
 - You've watched someone close to you recover from a replacement, and you'd rather not go through it
-- You've started turning down things you love because of the pain
+- You've started turning down walks, hikes or a round of golf because of the pain
 - You want to see the evidence before you decide
 
 ---

@@ -69,7 +69,7 @@ The page the knee webinar's Meta ads send people to. Its job is to get people in
 
 **Lead-in (card under the hero):** This is for you if:
 
-- A doctor has said your knee may need replacing, and you want to hear about other treatments
+- A doctor has called your knee bone on bone, and you want to hear about other treatments before a replacement
 - You've watched a friend or family member go through a knee replacement, and you'd rather not
 - You've started planning your days around your knee
 - You want straight answers from a doctor, without the medical jargon

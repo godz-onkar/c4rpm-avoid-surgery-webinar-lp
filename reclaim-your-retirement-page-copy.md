@@ -66,10 +66,10 @@ The page the Nov 17 Meta ads send people to. Its job is to get retirees and near
 
 **Lead-in (card under the hero):** This is for you if:
 
-- You've started cutting rounds short or sitting out the hike
+- You've started cutting rounds short, or waiting in the car while the others finish the hike
 - You've passed on a trip because you weren't sure your knee, hip or shoulder could handle it
 - Getting down on the floor with the grandkids, and back up, takes more effort than it used to
-- The pain wakes you up at night
+- A doctor told you it's wear and tear, and you'll just have to live with it
 
 ---
 
@@ -85,9 +85,9 @@ Shown as the proof line under the hero button (section 1). There is no separate 
 
 You worked for decades to get here. You finally have the time, and the people you love are close by. Then a sore joint starts setting the schedule.
 
-Pain rarely holds still. To stay comfortable, you move less. The muscles around the joint lose strength and the joint gets stiffer, which brings more pain and even less moving.
+Pain rarely holds still. To stay comfortable, you move less. The muscles around the joint lose strength and the joint gets stiffer, which brings more pain, less moving and a higher chance of a fall.
 
-It's easy to write the pain off as normal aging and something to live with. Dr. Lewis sees pain and stiffness as signals you can act on, and the sooner the better.
+Dr. Lewis sees pain and stiffness as signals you can act on, and the sooner the better, while there's more of your own joint to work with.
 
 In the webinar, he shows where regenerative medicine fits between living with the pain and having surgery.
 
@@ -98,10 +98,10 @@ In the webinar, he shows where regenerative medicine fits between living with th
 **Heading:** What You'll Learn
 
 1. **Why cartilage and tendons wear down over time,** and how regenerative medicine targets the spots your blood supply barely reaches.
-2. **What platelet-rich plasma (PRP) and bone marrow concentrate are,** and why the dose and the lab that prepares them matter.
+2. **What platelet-rich plasma (PRP) and bone marrow concentrate are, and what the research shows,** including why a weak dose explains most of the studies where PRP fell short.
 3. **Whether age counts you out,** and what researchers found when they grew cells from patients in their 60s and 70s.
 4. **How the cost compares with surgery,** once you add in the weeks of recovery and the therapy bills that follow an operation.
-5. **What to expect if you go ahead,** from the first exam with a physician to treatment day and the weeks after.
+5. **What treatment involves,** from the first exam with a physician to treatment day, recovery and when people usually start to notice a change.
 
 **Button:** Save My Free Seat
 
