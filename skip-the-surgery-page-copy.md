@@ -12,7 +12,7 @@ The page the next session's ads send people to. Its job is to get people in or n
 
 | | |
 |---|---|
-| What it is | Dr. Jamie Lewis's webinar "Skip The Surgery: Regenerative Treatments for Joint Pain," covering the shoulder, knee, hip, ankle, elbow and wrist. Free, online, from home. The last session ran live at 7:00 PM Pacific on a weeknight. Whether the next one is live (Zoom) or pre-recorded (eWebinar) is not confirmed. This is C4RPM Spokane's webinar, not Dr. Grattan's C4RPM Vancouver webinar of the same name. |
+| What it is | Dr. Jamie Lewis's webinar "Skip The Surgery: Regenerative Treatments for Joint Pain," covering joint and spine pain (the shoulder, knee, hip and back in the patient stories). Free, online, from home. The last session ran live on Zoom at 7:00 PM Pacific on a weeknight; that recording is now in eWebinar as 22303 (transcript: Skip The Surgery transcript (22303)). Whether the next session plays that recording or runs live again is not confirmed. This is C4RPM Spokane's webinar, not Dr. Grattan's C4RPM Vancouver webinar of the same name. |
 | Date | [Day], [Month] [Date] · 7:00 PM Pacific |
 | Reason to register | Hear about the non-surgical choices for any joint before deciding on surgery |
 | Replay | Never mentioned on the page. The old page's replay and live Q&A answers come off. |
@@ -26,12 +26,11 @@ The page the next session's ads send people to. Its job is to get people in or n
 
 | | Need | Owner |
 |---|---|---|
-| 🔴 | Whether the next session is live or pre-recorded, on which platform (Zoom or eWebinar), and with which registration form (GHL form or eWebinar widget). Until it's confirmed, the page never calls the webinar "live," section 8 step 3 says only "Send in your questions during the webinar," and the FAQ computer answer leaves out the template's "opens in your web browser… There's nothing to download" (Zoom may ask people to install its app). If eWebinar is confirmed, that line goes back in. | Emily (with the clinic), Ahmed |
+| 🔴 | Whether the next session plays the Oct 2025 recording already in eWebinar 22303 or runs live on Zoom again, and with which registration form (eWebinar widget 22303 or the GHL form). The recording opens "See if everyone's on here," so it plays like a live session. Until it's confirmed, the page never calls the webinar "live," section 8 step 3 says only "Send in your questions during the webinar," and the FAQ computer answer leaves out the template's "opens in your web browser… There's nothing to download" (Zoom may ask people to install its app). If eWebinar is confirmed, that line goes back in. | Emily (with the clinic), Ahmed |
 | 🔴 | The next session date, and confirmation that it's still 7:00 PM Pacific. It fills the sticky bar, the hero date line, the form card top line, the FAQ computer answer and `EVENT` in the countdown script. | Emily |
-| 🔴 | The offer. The old pages asked for a "priority consult" request (first 10 requests); the other C4RPM webinars use the $299 in-office consultation, and the FAQ is written with that. Confirm it, and make sure the session's close offers the same thing. | Emily |
+| 🔴 | The offer. The recording in eWebinar 22303 closes on a $499 consultation, with $200 off for the first three people who call the scheduler "tomorrow" (30:08 to 30:34 in the transcript). The other Spokane webinars offer the $299 in-office consultation, and the FAQ is written with that. If the next session plays this recording, re-record or cut the close so it offers the $299 consultation; if it runs live, Dr. Lewis closes on the $299 offer. | Emily, with Dr. Lewis |
 | 🔴 | The page address: a live domain (like the other webinars on northwestjointcare.com) or the GHL funnel as it is now | Emily, Ahmed |
-| 🔴 | A transcript or recording of the Oct 27, 2025 live session (a Zoom recording, if one was kept), to check the hero, section 3 and the learn rows against what Dr. Lewis covers. Until then the learn rows stay to what the old page lists. | Onkar |
-| 🔴 | The webinar's running time, for the form card's top line (from the recording, or from Dr. Lewis if the session stays live) | Ahmed |
+| 🔴 | The webinar's running time, for the form card's top line. The recording in 22303 runs about 31 minutes (content ends 31:24). Use that if the next session plays the recording; ask Dr. Lewis if it runs live. | Ahmed |
 | 🔴 | Compliance read of the page, including the subheadline claims and the WA stem cell line in the footer | Kyle |
 | ⚠️ | HSA and payment plans for webinar patients, as section 7 says. If not confirmed before the page goes live, cut the fit filter line to "It's self-pay." | Emily, with the clinic |
 | ⚠️ | Workflows: the current WF3 sends people to the old priority consult request. Set the workflows and session tag for the confirmed offer and date (or URM1 to URM4 if the session moves to eWebinar), and confirm the reminders go out by email and text, as section 8 step 2 says. | Ahmed |
@@ -55,7 +54,7 @@ The page the next session's ads send people to. Its job is to get people in or n
 
 **Headline:** Skip The Surgery: Before You Agree to Joint Surgery, Hear What Else Is Possible
 
-**Subheadline:** Dr. Jamie Lewis explains the non-surgical treatments for shoulders, knees, hips and smaller joints that skip the hospital stay and long recovery.
+**Subheadline:** Dr. Jamie Lewis explains the non-surgical treatments for shoulder, knee, hip and back pain that skip the hospital stay and long recovery.
 
 **Host card:** Dr. Jamie Lewis · Your presenter
 
@@ -71,7 +70,7 @@ The page the next session's ads send people to. Its job is to get people in or n
 
 - A doctor has brought up surgery on a shoulder, knee or hip, and you want to know your options first
 - You've had surgery on one joint and don't want to go through it again
-- The trouble is in a smaller joint, like an ankle, elbow or wrist
+- Pain has cut into your golf, your travel or your time with friends and family
 - You want a doctor to explain it all in plain English
 
 ---
@@ -86,13 +85,13 @@ Shown as the proof line under the hero button (section 1). There is no separate 
 
 **Heading:** When Each Treatment Only Helps for a While
 
-It might be a shoulder that won't let you reach the top shelf, or a knee or hip that cuts every walk short.
+It might be a shoulder that won't let you reach the top shelf, a knee or hip that cuts every walk short, or a back that won't let you sleep through the night.
 
 You've rested it, done the exercises and had the shots, and the pain still comes back.
 
 Now surgery is on the table, and you haven't heard much about anything between a shot and an operation.
 
-In this webinar, Dr. Lewis covers that middle ground, called regenerative medicine, and how it's used in large joints and small ones.
+In this webinar, Dr. Lewis covers that middle ground, called regenerative medicine, and how it puts your body's own healing system to work.
 
 ---
 
@@ -100,11 +99,11 @@ In this webinar, Dr. Lewis covers that middle ground, called regenerative medici
 
 **Heading:** What You'll Learn
 
-1. **Why joint pain can hang on** after the treatments most people try first.
-2. **What platelet-rich plasma (PRP) and bone marrow concentrate are,** and how each one works.
-3. **How to tell when surgery is needed,** and when it may not be.
-4. **Who tends to be a good candidate** for regenerative treatment, and who isn't.
-5. **The common traps in managing joint pain,** and how to stay out of them.
+1. **Why cortisone and gel shots tend to wear off,** and what the research says about them over time.
+2. **What platelet-rich plasma (PRP) and bone marrow concentrate are,** and why tissue with a poor blood supply is slow to heal on its own.
+3. **Four common myths about regenerative medicine,** from "I'm too old for it" to "every clinic's version is the same."
+4. **What treatment day and recovery look like,** compared with recovering from surgery.
+5. **What a 15-year study found** when people had one knee replaced and the other treated with their own cells.
 
 **Button:** Save My Free Seat
 
@@ -135,7 +134,7 @@ Dr. Lewis
 
 **Card 2, Google review, Christine H.** Label: *Walking easier on both knees* · ★★★★★ "After a year of struggling to walk due to both of my knees being in so much pain, … I didn't want surgery, since I had already experienced and was not happy with the results. … A couple of weeks after the injections, I was walking so much easier and for the most part without my cane because the pain was so much less."
 
-**Card 3, Google review, Sue H.** Label: *PRP in a knee and an ankle* · ★★★★★ "I have had a right knee and left hip replacement and am now using PRP injections in my left knee and right ankle to prevent any more surgery. … I would highly recommend them to anyone that wants to stay active and not let arthritis dictate their lifestyle."
+**Card 3, Google review, Kyra R.** Label: *Had her knees, lower back and hip treated* · ★★★★★ "Before then I was unable to walk without a back brace and I was in a lot of pain. Now I am feeling much better and I'm able to golf, hike and ride my bike again. … The only drawback is cost. I found it was well worth the sacrifice and I strongly recommend his work."
 
 *Individual results vary.*
 
@@ -158,7 +157,7 @@ Dr. Lewis
 
 1. **Save your seat.** Fill out the form below. It takes about a minute.
 2. **Check your email.** Your webinar link arrives after you register, and reminders come by email and text before the webinar.
-3. **Bring your questions.** Jot down what you want to ask about your joints. Send in your questions during the webinar.
+3. **Bring your questions.** Jot down what you want to ask about your joints or back. Send in your questions during the webinar.
 4. **Join the webinar.** Open the link a few minutes before.
 
 ---
@@ -242,7 +241,7 @@ The page ends on the ask: the closing heading, then the form card, on the dark t
 - **What you'll learn (section 4).** Heading and button on the left; the left column stays in view while the rows scroll on desktop, which needs `position:sticky; top:96px` in custom CSS. If GHL can't do that, stack it: heading on top, rows under it at 820px wide, button after the last row. Five rows, each with a teal 01 to 05 and the line as one sentence, bold opening first. On mobile that button is hidden; the sticky bar carries it.
 - **How the webinar works (section 8).** Sits right above the FAQ and the form, so "what happens after I sign up" comes just before the ask. Four steps on one thin teal line, each with a 36px numbered circle (1 to 4), the step title and its line underneath. No cards. Desktop: four across. Mobile: the line runs down the left with the circles on it and the text beside them. No button.
 - **Meet Dr. Lewis (section 5).** Square photo left on the blue offset block, text right, both aligned to the top: bio, his wife's story, the quote (italic, no box, with a large teal quote mark above it), the clinic line under a hairline, then the button. Photo on top on mobile, and the button hidden there. This replaces the current build's bio and quote.
-- **Reviews (section 6).** Three white cards with a thin border, aligned to the top: 5 stars, the label, the review, then the Google mark with first name and initial. All three reviews (Donna L., Christine H., Sue H.) are copied word for word above from the Google listing "Northwest Center for Regenerative Medicine - Spokane," trimmed with "…" only, their spelling and punctuation kept. Paste them exactly as written. Remove the three unnamed quotes on the current build. "Individual results vary." under the cards. Stacked on mobile.
+- **Reviews (section 6).** Three white cards with a thin border, aligned to the top: 5 stars, the label, the review, then the Google mark with first name and initial. All three reviews (Donna L., Christine H., Kyra R.) are copied word for word above from the Google listing "Northwest Center for Regenerative Medicine - Spokane," trimmed with "…" only, their spelling and punctuation kept. Paste them exactly as written. Remove the three unnamed quotes on the current build. "Individual results vary." under the cards. Stacked on mobile.
 - **Fit filter (section 7).** One column, 760px wide and centered on the page, everything inside it left-aligned: the heading, then "Probably not a fit if:" and the two lines, each with a small grey dash, hairlines between. This replaces the current build's "Is This The Right Webinar For You?" list.
 - **Form (section 10).** Inside the dark teal closing band, under the closing heading: a white card (620px wide, soft shadow, no border). A top row inside the card with Dr. Lewis's round headshot and the card top line, then the form heading and the form.
   - **If the page stays on GHL, it's a GHL form** (the current build uses "Webinar Form - Spokane CDA"). Same fields, labels and checkbox as above: add **ZIP code** (required), **Who's this for?** (required, two tappable options, one per line) and the **self-pay checkbox** (required). With no Zapier step, map them straight to GHL fields: ZIP code to the contact's Postal Code field, the checkbox to "Self-pay acknowledged" (Yes/No), and "Who's this for?" to a new custom field, "Registering for" (Me / A family member), so the setters see it. Nothing filters, tags out or stops on any answer.
@@ -277,7 +276,8 @@ Everything else stays: Meet Dr. Lewis, the fit filter, how it works, the FAQ, th
 ## Before we go live
 
 - 🔴 Format, platform, form, session date, offer and page address confirmed (Emily, Ahmed)
-- 🔴 Recording or transcript checked against the hero, section 3 and the learn rows, and the session's close offers the confirmed consultation (Onkar)
+- ✅ Transcript (22303) checked against the hero, section 3 and the learn rows (done 2026-11-14)
+- 🔴 The session's close offers the $299 consultation, not the recording's $499 offer (Emily, with Dr. Lewis)
 - 🔴 Running time filled in (Ahmed)
 - 🔴 Kyle's compliance read done (Kyle)
 - ☐ Countdown reads correctly on each day, including "Tomorrow" and "Today"

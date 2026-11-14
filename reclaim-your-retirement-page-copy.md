@@ -26,8 +26,7 @@ The page the Nov 17 Meta ads send people to. Its job is to get retirees and near
 
 | | Need | Owner |
 |---|---|---|
-| 🔴 | The Reclaim video's recorded close (28:32 to 29:22 in the transcript) still offers a free candidacy call and $200 off a procedure booked within 30 days. The page's FAQ says the webinar ends on the $299 in-office consultation. Fix the video's close or the offer before Nov 17, so attendees don't hear one offer on the page and another in the video. | Emily, with Dr. Lewis |
-| 🔴 | The webinar's running time, from eWebinar, for the form card's top line. The transcript's content ends at about 30 minutes; confirm the length eWebinar shows. | Ahmed |
+| ⚠️ | Running time. The form card says "About 28 minutes" because the video's content ends at 28:19 in the Nov 14 transcript. Check it against the length eWebinar 25188 shows. | Ahmed |
 | 🔴 | Go-live timing. Nov 17 is three days out. Say whether this rebuild can be live and tested by Monday, Nov 16. If it can't, the current page runs for Nov 17 and this one goes live with the Dec 15 date. | Ahmed |
 | 🔴 | Compliance read of the page, including the subheadline claims and the WA stem cell line in the footer | Kyle |
 | ⚠️ | HSA and payment plans for webinar patients, as section 7 says. If not confirmed before the page goes live, cut the fit filter line to "It's self-pay." | Emily, with the clinic |
@@ -186,7 +185,7 @@ The page ends on the ask: the closing heading, then the form card, on the dark t
 
 **Heading:** Your Retirement Is Worth One Evening
 
-**Card top line (with Dr. Lewis's round headshot):** Tuesday, November 17 · 7:00 PM Pacific · About [running time] · Online, from home · Free
+**Card top line (with Dr. Lewis's round headshot):** Tuesday, November 17 · 7:00 PM Pacific · About 28 minutes · Online, from home · Free
 
 **Form heading:** Where Should We Send Your Webinar Link?
 
@@ -253,7 +252,7 @@ The page ends on the ask: the closing heading, then the form card, on the dark t
 - **FAQ (section 9).** Heading and button on the left, questions on the right. Open list on desktop; accordion on mobile with all answers closed at first, and the button hidden (the sticky bar carries it). The live FAQ's "Will the webinar be recorded?" comes off.
 - **Closing band (section 10) and footer.** Full-width teal gradient: a small three-dot line, the closing heading, then the form card (above), centered on desktop and full width on mobile. The page ends on the form. The footer sits inside the same band under the form: white logo, addresses and phone, then the two disclaimers.
 - **Buttons.** All say Save My Free Seat and scroll to the form. Nothing links off the page.
-- **Preview-only pieces: don't rebuild these.** The yellow "Layout preview" bar at the top, the dashed placeholder box in the form (it marks where eWebinar's SMS consent and age questions go), the "Preview only" message under the form button, and "[running time]" (replace it with the real length).
+- **Preview-only pieces: don't rebuild these.** The yellow "Layout preview" bar at the top, the dashed placeholder box in the form (it marks where eWebinar's SMS consent and age questions go), and the "Preview only" message under the form button.
 
 ## Cloning this page for the other webinars
 
@@ -274,7 +273,7 @@ Everything else stays: Meet Dr. Lewis, the fit filter, how it works, the FAQ, th
 
 ## Before we go live
 
-- 🔴 The video's close and the FAQ agree on the $299 consultation (Emily, with Dr. Lewis)
+- ✅ The video's close and the FAQ agree on the $299 consultation (the Nov 14 export closes on the $299 consult, refunded if you're not a candidate)
 - 🔴 Running time filled in (Ahmed)
 - 🔴 Kyle's compliance read done (Kyle)
 - ☐ Countdown reads correctly on each day, including "Tomorrow" and "Today"

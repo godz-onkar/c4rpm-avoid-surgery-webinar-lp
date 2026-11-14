@@ -19,19 +19,19 @@ The page the knee webinar's Meta ads send people to. Its job is to get people in
 | Price on the page | $299 in-office consultation, in the FAQ only |
 | Qualifying | ZIP code, the self-pay checkbox and "Who's this for?" are collected. No answer blocks registration. The fit filter (section 7) lets people opt out. |
 | Address | [page address]. The current build is the GHL funnel "Spokane CDA \| K-S Pre-Recorded Webinar \| Knee Surgery [Updated]" (pages /webinar-ks and /thank-you-ks), not on a live domain yet. |
-| Form | eWebinar registration widget [eWebinar ID], synced to GHL by Zapier |
+| Form | eWebinar registration widget 23573, synced to GHL by Zapier |
 | Workflows | URM1 to URM4 with a tag for this session, once Ahmed confirms the knee webinar runs on them |
 
 ## Open items before launch
 
 | | Need | Owner |
 |---|---|---|
-| 🔴 | Knee webinar transcript export and check. Export it from eWebinar and check the hero, section 3 and the learn rows against what the video says. The learn rows stay within what the current build's "What you'll learn" list covers until this is done. | Ahmed to export, Onkar to check |
-| 🔴 | Confirm the knee webinar's offer and that its video close matches. The current build offered a free candidacy call with a survey and calendar; the other Spokane webinars now offer the $299 in-office consultation, which is what this page's FAQ says. | Emily, with Dr. Lewis |
-| 🔴 | The eWebinar ID. The current build's widget and the C4RPM account record both point to 23573 ("Avoid Knee Surgery"). Confirm that's the webinar to use, or give the new ID. | Ahmed |
+| 🔴 | The video's close offers the old free 15-minute candidate call (from 24:50 in the transcript), and this page's FAQ says the webinar ends on the $299 in-office consultation. Re-record the close to match the other Spokane webinars, or confirm the knee webinar keeps the free call, and the FAQ changes to match. | Emily, with Dr. Lewis |
+| ⚠️ | The video calls Dr. Lewis an "associate professor at WSU School of Medicine" (02:59). The page, the other webinars and his own words elsewhere say he teaches at WSU, as a clinical assistant professor. Fix it in the video when the close is re-recorded. | Emily, with Dr. Lewis |
+| ⚠️ | The eWebinar ID. The transcript, the current build's widget and the C4RPM account record all point to 23573 ("Avoid Knee Surgery"). The page uses 23573 unless a new webinar replaces it. | Ahmed |
 | 🔴 | The page address, plus which workflows and session tag the page fires. The eWebinar widget's own page setting still reads c4rpm.com/webinar-knee-surgery, so update it to match. | Ahmed |
 | 🔴 | The next session date, for the sticky bar, hero, form card and countdown | Emily |
-| 🔴 | The webinar's running time, from eWebinar, for the form card's top line. The current widget's settings list 1,590 seconds (about 26 minutes); confirm it against the video. | Ahmed |
+| ⚠️ | Running time. The form card says "About 26 minutes": the transcript's content ends at 25:59, and the current widget lists 1,590 seconds. Check it against the length eWebinar 23573 shows. | Ahmed |
 | 🔴 | Compliance read of the page, including the subheadline claims and the WA stem cell line in the footer | Kyle |
 | ⚠️ | HSA and payment plans for webinar patients, as section 7 says. If not confirmed before launch, cut the fit filter line to "It's self-pay." | Emily, with the clinic |
 | ⚠️ | The thank-you page (/thank-you-ks) still offers "Schedule My Consultation" to skip the line and says reminders come "before we go live." It needs new copy once the offer is confirmed. | Onkar (copy), Ahmed (build) |
@@ -88,9 +88,9 @@ Shown as the proof line under the hero button (section 1). There is no separate 
 
 Your knee aches going down the stairs and stiffens up after you sit. A long day on your feet costs you the rest of the evening.
 
-You've given physical therapy a fair try. Cortisone shots helped for a while, but each one seems to wear off sooner than the last.
+You've done the usual steps: rest, pain pills, physical therapy, then cortisone or gel shots. Each one helped for a while, and the knee still hurts.
 
-Now surgery is starting to look like the only step left. It's a big one to take before you know what else is out there.
+Now surgery is starting to look like the only step left, and waiting doesn't keep it away. The knee keeps wearing, and the longer it goes, the fewer choices you have.
 
 In this webinar, Dr. Lewis shows where regenerative medicine fits between the shots and surgery.
 
@@ -100,11 +100,11 @@ In this webinar, Dr. Lewis shows where regenerative medicine fits between the sh
 
 **Heading:** What You'll Learn
 
-1. **Why your knee pain may not be improving,** even after the treatments you've already tried.
-2. **What platelet-rich plasma (PRP) and bone marrow concentrate are,** and how they differ from cortisone and surgery.
-3. **Who can benefit,** and what to expect if you're a candidate.
-4. **When knee surgery may still be the right call,** and how to make that decision.
-5. **Your next steps,** based on your knee and the things you want to keep doing.
+1. **What the research says about the treatments you've likely tried,** from cortisone and gel shots to knee scopes.
+2. **Why worn cartilage and meniscus struggle to heal,** and how regenerative medicine gets your own healing cells to them.
+3. **What platelet-rich plasma (PRP) and bone marrow concentrate are,** and why the dose matters so much.
+4. **What a 15-year study found** when people had one knee replaced and the other treated with their own cells.
+5. **Who tends to be a good candidate,** and what recovery looks like in the days and weeks after treatment.
 
 **Button:** Save My Free Seat
 
@@ -189,7 +189,7 @@ The page ends on the ask: the closing heading, then the form card, on the dark t
 
 **Heading:** Get the Whole Picture Before You Book Knee Surgery
 
-**Card top line (with Dr. Lewis's round headshot):** [Day], [Month] [Date] · 7:00 PM Pacific · About [running time] · Online, from home · Free
+**Card top line (with Dr. Lewis's round headshot):** [Day], [Month] [Date] · 7:00 PM Pacific · About 26 minutes · Online, from home · Free
 
 **Form heading:** Where Should We Send Your Webinar Link?
 
@@ -244,7 +244,7 @@ The page ends on the ask: the closing heading, then the form card, on the dark t
 - **Meet Dr. Lewis (section 5).** Square photo left on the blue offset block, text right, both aligned to the top: bio, his wife's story, the quote (italic, no box, with a large teal quote mark above it), the clinic line under a hairline, then the button. Photo on top on mobile, and the button hidden there. The current build's bio, its "top three" line and its quote all come off.
 - **Reviews (section 6).** Three white cards with a thin border, aligned to the top: 5 stars, the label, the review, then the Google mark with first name and initial. All three reviews (Richard E., Jan E., Dave S.) are copied word for word above from the Google listing "Northwest Center for Regenerative Medicine - Spokane," trimmed with "…" only, their spelling and punctuation kept. Paste them exactly as written. Remove the unnamed quotes in the current build. "Individual results vary." under the cards. Stacked on mobile.
 - **Fit filter (section 7).** One column, 760px wide and centered on the page, everything inside it left-aligned: the heading, then "Probably not a fit if:" and the two lines, each with a small grey dash, hairlines between. It replaces the current "Is This The Right Webinar For You?" list and the "No prior testing required" line.
-- **Form (section 10, eWebinar widget [eWebinar ID]).** Inside the dark teal closing band, under the closing heading: a white card (620px wide, soft shadow, no border). A top row inside the card with Dr. Lewis's round headshot and the card top line, then the form heading and the widget. Made in eWebinar's registration settings, not in GHL:
+- **Form (section 10, eWebinar widget 23573).** Inside the dark teal closing band, under the closing heading: a white card (620px wide, soft shadow, no border). A top row inside the card with Dr. Lewis's round headshot and the card top line, then the form heading and the widget. Made in eWebinar's registration settings, not in GHL:
   - Add **ZIP code** (required), **Who's this for?** (required, two tappable options, one per line) and the **self-pay checkbox** (required).
   - The checkbox label carries the whole self-pay line ("I understand treatment is self-pay and not covered by insurance or Medicare."), so nothing else needs to sit above it.
   - Field labels exactly as written above, including "Mobile phone (for your reminder texts)" and "ZIP code (so we know which clinic is closer to you)."
@@ -255,7 +255,7 @@ The page ends on the ask: the closing heading, then the form card, on the dark t
 - **FAQ (section 9).** Heading and button on the left, questions on the right. Open list on desktop; accordion on mobile with all answers closed at first, and the button hidden (the sticky bar carries it). The current build's three questions (recording, sales presentation, live Q&A) come off, replay answer included.
 - **Closing band (section 10) and footer.** Full-width teal gradient: a small three-dot line, the closing heading, then the form card (above), centered on desktop and full width on mobile. The page ends on the form. The footer sits inside the same band under the form: white logo, addresses and phone, then the two disclaimers.
 - **Buttons.** All say Save My Free Seat and scroll to the form. Nothing links off the page.
-- **Preview-only pieces: don't rebuild these.** The yellow "Layout preview" bar at the top, the dashed placeholder box in the form (it marks where eWebinar's SMS consent and age questions go), the "Preview only" message under the form button, and the bracketed placeholders: "[Day], [Month] [Date]," "[N] days left" and "[running time]" (replace each with the real value).
+- **Preview-only pieces: don't rebuild these.** The yellow "Layout preview" bar at the top, the dashed placeholder box in the form (it marks where eWebinar's SMS consent and age questions go), the "Preview only" message under the form button, and the bracketed placeholders: "[Day], [Month] [Date]" and "[N] days left" (replace each with the real value).
 
 ## Cloning this page for the other webinars
 
@@ -276,9 +276,9 @@ Everything else stays: Meet Dr. Lewis, the fit filter, how it works, the FAQ, th
 
 ## Before we go live
 
-- 🔴 Knee webinar transcript checked against the hero, section 3 and the learn rows (Onkar)
+- ✅ Knee webinar transcript checked against the hero, section 3 and the learn rows (done 2026-11-14)
 - 🔴 The knee webinar's offer confirmed, and the video's close offers the $299 consultation (Emily, with Dr. Lewis)
-- 🔴 eWebinar ID, page address, session date and running time filled in everywhere the cloning list names (Ahmed, Emily)
+- 🔴 Page address and session date filled in everywhere the cloning list names; eWebinar ID (23573) and running time checked (Ahmed, Emily)
 - 🔴 Kyle's compliance read done (Kyle)
 - ☐ Countdown reads correctly on each day, including "Tomorrow" and "Today"
 - ☐ Register a test contact on a phone and on a computer. The webinar link opens in a browser with nothing to install, the confirmation email arrives with a working link, the ZIP, checkbox and "Registering for" values land in GHL, and URM1 fires with this session's tag

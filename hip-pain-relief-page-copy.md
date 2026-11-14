@@ -27,8 +27,7 @@ The page the hip webinar's Meta ads send people to. Its job is to get people in 
 | | Need | Owner |
 |---|---|---|
 | 🔴 | Next session date. It goes in the sticky bar, the hero date line, the form card top line and `EVENT` in the countdown script, and the ads need it too. | Emily, with the clinic |
-| 🔴 | Hip webinar transcript check, from eWebinar 25230. Check the hero, section 3 and the learn rows against what the video says: the four most common sources of hip pain, groin pain that starts in the hip, the hip's limited blood supply, aim, dose and image guidance in a deep joint, a limp straining the back and knees, the price compared with a hip replacement, and the "rest it, get a shot, wait for a replacement" advice the lead-in and section 3 now answer (the waiting-room point and "the sooner a hip is treated, the more there is to save" in the September hip copy and ads, both taken from this transcript). Also check that the close offers the $299 hip consultation (the earlier hip copy was written when the consultation was free, so the video may still describe a free one). | Onkar (Ahmed exports the transcript) |
-| 🔴 | The webinar's running time, from eWebinar, for the form card's top line | Ahmed |
+| ⚠️ | Running time. The form card says "About 42 minutes" because the video's content ends at 42:02 in the transcript. Check it against the length eWebinar 25230 shows. | Ahmed |
 | 🔴 | Compliance read of the page, including the subheadline claims and the WA stem cell line in the footer | Kyle |
 | ⚠️ | eWebinar 25230's schedule set to 7:00 PM Pacific. The live page still says 12 PM Pacific. | Ahmed |
 | ⚠️ | HSA and payment plans for webinar patients, as section 7 says. If not confirmed before the page goes live, cut the fit filter line to "It's self-pay." | Emily, with the clinic |
@@ -187,7 +186,7 @@ The page ends on the ask: the closing heading, then the form card, on the dark t
 
 **Heading:** Before You Decide on Hip Surgery, Spend an Evening With Dr. Lewis
 
-**Card top line (with Dr. Lewis's round headshot):** [Day], [Month] [Date] · 7:00 PM Pacific · About [running time] · Online, from home · Free
+**Card top line (with Dr. Lewis's round headshot):** [Day], [Month] [Date] · 7:00 PM Pacific · About 42 minutes · Online, from home · Free
 
 **Form heading:** Where Should We Send Your Webinar Link?
 
@@ -252,7 +251,7 @@ The page ends on the ask: the closing heading, then the form card, on the dark t
 - **FAQ (section 9).** Heading and button on the left, questions on the right. Open list on desktop; accordion on mobile with all answers closed at first, and the button hidden (the sticky bar carries it).
 - **Closing band (section 10) and footer.** Full-width teal gradient: a small three-dot line, the closing heading, then the form card (above), centered on desktop and full width on mobile. The page ends on the form. The footer sits inside the same band under the form: white logo, addresses and phone, then the two disclaimers.
 - **Buttons.** All say Save My Free Seat and scroll to the form. Nothing links off the page.
-- **Placeholders: don't publish these.** "[Day], [Month] [Date]" (the next session date, in the sticky bar, hero, form card and `EVENT`), "[number] days left" (the countdown script fills it in) and "[running time]" (replace it with the real length).
+- **Placeholders: don't publish these.** "[Day], [Month] [Date]" (the next session date, in the sticky bar, hero, form card and `EVENT`), and "[number] days left" (the countdown script fills it in).
 
 ## Cloning this page for the other webinars
 
@@ -274,7 +273,7 @@ Everything else stays: Meet Dr. Lewis, the fit filter, how it works, the FAQ, th
 ## Before we go live
 
 - 🔴 Next session date set in the sticky bar, hero, form card and `EVENT` (Emily for the date, Ahmed to place it)
-- 🔴 Transcript checked against the hero, section 3 and the learn rows, and the video's close offers the $299 hip consultation (Onkar)
+- ✅ Transcript checked against the hero, section 3 and the learn rows, and the video's close offers the $299 consult (done 2026-11-14)
 - 🔴 Running time filled in (Ahmed)
 - 🔴 Kyle's compliance read done (Kyle)
 - ☐ eWebinar 25230 runs the session at 7:00 PM Pacific, and its confirmation email shows that time

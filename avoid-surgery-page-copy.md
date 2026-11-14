@@ -26,8 +26,7 @@ The page the Dec 1 Meta ads send people to. Its job is to get people in or near 
 
 | | Need | Owner |
 |---|---|---|
-| 🔴 | The Avoid Surgery video transcript, exported from eWebinar 25611, to check the hero, section 3 and the learn bullets against what the video says, including what the 15-year study is and what the close offers. The close has to offer the $299 consultation. | Ahmed to export, Onkar to check |
-| 🔴 | The webinar's running time, from eWebinar, for the form card's top line | Ahmed |
+| ⚠️ | Running time. The form card says "About 27 minutes" because the video's content ends at 26:29 in the transcript. Check it against the length eWebinar 25611 shows. | Ahmed |
 | 🔴 | Compliance read of the page, including the subheadline claims and the WA stem cell line in the footer | Kyle |
 | ⚠️ | HSA and payment plans for webinar patients, as section 7 says. If not confirmed by Nov 20, cut the fit filter line to "It's self-pay." | Emily, with the clinic |
 | ⚠️ | The eWebinar title still says "Shoulder," and it shows in eWebinar's confirmation emails and on the watch page. Dr. Lewis approves a new title, or we accept the mismatch. | Emily, with Dr. Lewis |
@@ -66,9 +65,9 @@ The page the Dec 1 Meta ads send people to. Its job is to get people in or near 
 
 **Lead-in (card under the hero):** This is for you if:
 
-- A doctor has brought up a replacement, and you want to know your options first
-- You've watched someone close to you recover from a replacement, and you'd rather not go through it
-- You've started turning down walks, hikes or a round of golf because of the pain
+- A doctor has looked at your X-ray, said "bone on bone" and brought up a replacement
+- You've watched someone close to you go through a hard recovery, and you'd rather not
+- You live alone, or someone counts on you, and weeks of needing help isn't an option
 - You want to see the evidence before you decide
 
 ---
@@ -83,13 +82,13 @@ Shown as the proof line under the hero button (section 1). There is no separate 
 
 **Heading:** When the Shots Wear Off and Surgery Is Next
 
-Stairs take a hand on the rail. Walks get cut short.
+You take the stairs one at a time now. You sit down partway through a walk, and the pain wakes you when you roll over at night.
 
 You've done what you were told. Physical therapy helped for a while. Cortisone shots helped too, until each one wore off sooner than the last.
 
-Now the next step on the list is a replacement, and it's a big one to take without knowing what else is out there.
+Now the next step on the list is a replacement. For some people it's the right call, but recovery gets harder with age, and once it's done, you can't take it back.
 
-In this webinar, Dr. Lewis shows how regenerative medicine works with your body's own healing, so you can see whether it could fit your knee or hip.
+In this webinar, Dr. Lewis shows the three things that decide whether your own cells can help a worn knee or hip, so you can weigh them before you agree to surgery.
 
 ---
 
@@ -97,11 +96,11 @@ In this webinar, Dr. Lewis shows how regenerative medicine works with your body'
 
 **Heading:** What You'll Learn
 
-1. **What the 15-year study showed,** and what it could mean for your knee or hip.
-2. **What platelet-rich plasma (PRP) and bone marrow concentrate are,** and how they differ from cortisone shots and surgery.
-3. **Who can benefit,** and what to expect if you're a candidate.
-4. **When surgery may still be the right call,** and how to make that decision.
-5. **Your next steps,** based on your joint and what you want to get back to.
+1. **Why a widely quoted 2021 study made platelet-rich plasma (PRP) look like a failure,** and how the dose it tested compares with ordinary blood.
+2. **Whether your cells are too old to help,** and what grew in lab dishes from people aged 64 to 73.
+3. **What "bone on bone" really means,** and what a 15-year study found when the same people had cells placed in two different spots in their knees.
+4. **What treatment day and recovery look like,** including the bone marrow draw and the first few days after.
+5. **Three questions to ask any clinic,** so you know what to look for before you agree to a treatment.
 
 **Button:** Save My Free Seat
 
@@ -186,7 +185,7 @@ The page ends on the ask: the closing heading, then the form card, on the dark t
 
 **Heading:** Know Your Options Before You Set a Surgery Date
 
-**Card top line (with Dr. Lewis's round headshot):** Tuesday, December 1 · 7:00 PM Pacific · About [running time] · Online, from home · Free
+**Card top line (with Dr. Lewis's round headshot):** Tuesday, December 1 · 7:00 PM Pacific · About 27 minutes · Online, from home · Free
 
 **Form heading:** Where Should We Send Your Webinar Link?
 
@@ -250,7 +249,7 @@ The page ends on the ask: the closing heading, then the form card, on the dark t
 - **FAQ (section 9).** Heading and button on the left, questions on the right. Open list on desktop; accordion on mobile with all answers closed at first, and the button hidden (the sticky bar carries it).
 - **Closing band (section 10) and footer.** Full-width teal gradient: a small three-dot line, the closing heading, then the form card (above), centered on desktop and full width on mobile. The page ends on the form. The footer sits inside the same band under the form: white logo, addresses and phone, then the two disclaimers.
 - **Buttons.** All say Save My Free Seat and scroll to the form. Nothing links off the page.
-- **Preview-only pieces: don't rebuild these.** The yellow "Layout preview" bar at the top, the dashed placeholder box in the form (it marks where eWebinar's SMS consent and age questions go), the "Preview only" message under the form button, and "[running time]" (replace it with the real length).
+- **Preview-only pieces: don't rebuild these.** The yellow "Layout preview" bar at the top, the dashed placeholder box in the form (it marks where eWebinar's SMS consent and age questions go), and the "Preview only" message under the form button.
 
 ## Cloning this page for the other webinars
 
@@ -271,7 +270,7 @@ Everything else stays: Meet Dr. Lewis, the fit filter, how it works, the FAQ, th
 
 ## Before we go live
 
-- 🔴 Transcript checked against the hero, section 3 and the learn bullets, and the video's close offers the $299 consultation (Onkar)
+- ✅ Transcript checked against the hero, section 3 and the learn rows, and the video's close offers the $299 consultation (done 2026-11-14)
 - 🔴 Running time filled in (Ahmed)
 - 🔴 Kyle's compliance read done (Kyle)
 - ☐ Countdown reads correctly on each day, including "Tomorrow" and "Today"
