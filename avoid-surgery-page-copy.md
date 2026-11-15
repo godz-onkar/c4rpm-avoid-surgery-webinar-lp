@@ -51,7 +51,7 @@ The page the Dec 1 Meta ads send people to. Its job is to get people in or near 
 
 **Headline:** Avoid Surgery: Your Knee or Hip Has More Options Than a Replacement
 
-**Subheadline:** Dr. Jamie Lewis explains the advanced, non-surgical treatments that skip the hospital stay and long recovery, so you can get back to the trips and time with family you planned.
+**Subheadline:** Dr. Jamie Lewis shows three things to know if you'd rather keep your own joint, including what a study that followed patients for 15 years found.
 
 **Host card:** Dr. Jamie Lewis · Your presenter
 
@@ -88,7 +88,7 @@ You've done what you were told. Physical therapy helped for a while. Cortisone s
 
 Now the next step on the list is a replacement. For some people it's the right call, but recovery gets harder with age, and once it's done, you can't take it back.
 
-In this webinar, Dr. Lewis shows the three things that decide whether your own cells can help a worn knee or hip, so you can weigh them before you agree to surgery.
+In this webinar, Dr. Lewis explains what decides whether your own cells can help a worn knee or hip, and why your age may matter less than you think.
 
 ---
 

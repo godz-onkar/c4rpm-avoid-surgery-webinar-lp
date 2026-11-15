@@ -54,7 +54,7 @@ The page the next session's ads send people to. Its job is to get people in or n
 
 **Headline:** Skip The Surgery: Before You Agree to Joint Surgery, Hear What Else Is Possible
 
-**Subheadline:** Dr. Jamie Lewis explains the non-surgical treatments for shoulder, knee, hip and back pain that skip the hospital stay and long recovery.
+**Subheadline:** Dr. Jamie Lewis explains the options between a shot and an operation for shoulder, knee, hip and back pain, and the myths that hold people back.
 
 **Host card:** Dr. Jamie Lewis · Your presenter
 
@@ -89,9 +89,9 @@ It might be a shoulder that won't let you reach the top shelf, a knee or hip tha
 
 You've rested it, done the exercises and had the shots, and the pain still comes back.
 
-Now surgery is on the table, and you haven't heard much about anything between a shot and an operation.
+Now surgery is on the table, and it's hard to get a straight answer about what else is out there.
 
-In this webinar, Dr. Lewis covers that middle ground, called regenerative medicine, and how it puts your body's own healing system to work.
+In this webinar, Dr. Lewis explains regenerative medicine and how it puts your body's own healing system to work.
 
 ---
 

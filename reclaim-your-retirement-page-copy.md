@@ -51,7 +51,7 @@ The page the Nov 17 Meta ads send people to. Its job is to get retirees and near
 
 **Headline:** Reclaim Your Retirement: Joint Pain Was Never Part of the Plan
 
-**Subheadline:** Dr. Jamie Lewis explains the non-surgical treatments for knee, hip and shoulder pain that use your own blood or bone marrow, so you can weigh them before you give up another season.
+**Subheadline:** Dr. Jamie Lewis explains what's behind sore knees, hips and shoulders, and why you likely have more options than you've been told.
 
 **Host card:** Dr. Jamie Lewis · Your presenter
 

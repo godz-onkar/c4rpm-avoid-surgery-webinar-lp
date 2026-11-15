@@ -55,7 +55,7 @@ The page the knee webinar's Meta ads send people to. Its job is to get people in
 
 **Headline:** Avoid Knee Surgery: What to Know Before You Say Yes to a New Knee
 
-**Subheadline:** Dr. Jamie Lewis explains the non-surgical knee treatments that skip the hospital stay and long recovery, so you can get back to the walks and outings your knee has put on hold.
+**Subheadline:** Dr. Jamie Lewis explains why the usual knee treatments often stop working, and what long-term studies show about your other options.
 
 **Host card:** Dr. Jamie Lewis · Your presenter
 
@@ -88,7 +88,7 @@ Shown as the proof line under the hero button (section 1). There is no separate 
 
 Your knee aches going down the stairs and stiffens up after you sit. A long day on your feet costs you the rest of the evening.
 
-You've done the usual steps: rest, pain pills, physical therapy, then cortisone or gel shots. Each one helped for a while, and the knee still hurts.
+You've done what you were told: rest, pain pills, physical therapy, then cortisone or gel shots. Each one helped for a while, and the knee still hurts.
 
 Now surgery is starting to look like the only step left, and waiting doesn't keep it away. The knee keeps wearing, and the longer it goes, the fewer choices you have.
 

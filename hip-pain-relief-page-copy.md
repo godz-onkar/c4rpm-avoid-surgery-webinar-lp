@@ -52,7 +52,7 @@ The page the hip webinar's Meta ads send people to. Its job is to get people in 
 
 **Headline:** The Hip Pain Solution: What to Know Before You Agree to a New Hip
 
-**Subheadline:** Dr. Jamie Lewis explains the non-surgical hip treatments that use your own blood or bone marrow and skip the hospital stay and long recovery.
+**Subheadline:** Dr. Jamie Lewis explains where hip pain comes from, and why the right treatment depends on which part of the hip is hurting.
 
 **Host card:** Dr. Jamie Lewis · Your presenter
 
