@@ -97,7 +97,7 @@ In this webinar, Dr. Lewis shows why the hip's limited blood supply makes it slo
 
 **Heading:** What You'll Learn
 
-1. **The four most common sources of hip pain,** and why an ache in the groin often starts in the hip.
+1. **The four most common sources of hip pain,** from worn cartilage and a torn labrum to the tendon trouble often called bursitis.
 2. **What platelet-rich plasma (PRP) and bone marrow concentrate are,** and how they differ from the cortisone shots you've had.
 3. **Why aim and dose matter in a joint as deep as the hip,** and how image guidance helps an injection reach the right spot.
 4. **What a limp does to your back and knees,** and why a bad hip rarely stays a hip problem.
@@ -274,7 +274,7 @@ Everything else stays: Meet Dr. Lewis, the fit filter, how it works, the FAQ, th
 
 - 🔴 Next session date set in the sticky bar, hero, form card and `EVENT` (Emily for the date, Ahmed to place it)
 - ✅ Transcript checked against the hero, section 3 and the learn rows, and the video's close offers the $299 consult (done 2026-11-14)
-- 🔴 Running time filled in (Ahmed)
+- ☐ Running time ("About 42 minutes") checked against eWebinar 25230 (Ahmed)
 - 🔴 Kyle's compliance read done (Kyle)
 - ☐ eWebinar 25230 runs the session at 7:00 PM Pacific, and its confirmation email shows that time
 - ☐ Countdown reads correctly on each day, including "Tomorrow" and "Today"

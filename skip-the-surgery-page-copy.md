@@ -6,7 +6,7 @@
 
 The page copy runs top to bottom first. Build notes, the cloning list for the other webinars and the go-live checklist are at the end.
 
-The page the next session's ads send people to. Its job is to get people in or near Spokane and Coeur d'Alene who've been told a shoulder, knee, hip or other joint needs surgery, and are fine with self-pay, registered for the webinar. Everyone else gets what they need to opt themselves out.
+The page the next session's ads send people to. Its job is to get people in or near Spokane and Coeur d'Alene whose shoulder, knee, hip or back pain has outlasted shots and therapy, who've had surgery brought up, and who are fine with self-pay, registered for the webinar. Everyone else gets what they need to opt themselves out.
 
 ## Page configuration
 
@@ -14,7 +14,7 @@ The page the next session's ads send people to. Its job is to get people in or n
 |---|---|
 | What it is | Dr. Jamie Lewis's webinar "Skip The Surgery: Regenerative Treatments for Joint Pain," covering joint and spine pain (the shoulder, knee, hip and back in the patient stories). Free, online, from home. The last session ran live on Zoom at 7:00 PM Pacific on a weeknight; that recording is now in eWebinar as 22303 (transcript: Skip The Surgery transcript (22303)). Whether the next session plays that recording or runs live again is not confirmed. This is C4RPM Spokane's webinar, not Dr. Grattan's C4RPM Vancouver webinar of the same name. |
 | Date | [Day], [Month] [Date] · 7:00 PM Pacific |
-| Reason to register | Hear about the non-surgical choices for any joint before deciding on surgery |
+| Reason to register | Hear the options between a shot and an operation for shoulder, knee, hip and back pain before deciding on surgery |
 | Replay | Never mentioned on the page. The old page's replay and live Q&A answers come off. |
 | Price on the page | $299 in-office consultation, in the FAQ only (the offer is not confirmed yet; the old offer was a "priority consult" request) |
 | Qualifying | ZIP code, the self-pay checkbox and "Who's this for?" are collected. No answer blocks registration. The fit filter (section 7) lets people opt out. |
@@ -286,5 +286,5 @@ Everything else stays: Meet Dr. Lewis, the fit filter, how it works, the FAQ, th
 - ☐ Every button scrolls to the form; nothing links off the page
 - ☐ On a 390px phone: eyebrow, headline, subheadline, date and button on the first screen; the sticky bar shows the button once the hero button scrolls away
 - ☐ Opened from a Facebook ad on a small phone (375 by 667, inside the Facebook or Instagram app): the button still shows on the first screen. If it doesn't, shrink the logo row first, not the copy
-- ☐ Searched the live page for "Grattan," "Vancouver," "replay," "cutting-edge," "cure," "guarantee" and "heal," and for "live" unless the session is confirmed live
+- ☐ Searched the live page for "Grattan," "Vancouver," "replay," "cutting-edge," "cure," "guarantee" and "heal," and for "live" unless the session is confirmed live (expected: "healing system" in section 3 and "heal" in learn row 2)
 - ☐ Onkar signs off the page before it's published

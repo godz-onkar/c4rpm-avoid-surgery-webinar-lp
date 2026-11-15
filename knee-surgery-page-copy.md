@@ -71,7 +71,7 @@ The page the knee webinar's Meta ads send people to. Its job is to get people in
 
 - A doctor has called your knee bone on bone, and you want to hear about other treatments before a replacement
 - You've watched a friend or family member go through a knee replacement, and you'd rather not
-- You've started planning your days around your knee
+- You want to stay active, and a long recovery from surgery doesn't fit your life
 - You want straight answers from a doctor, without the medical jargon
 
 ---
@@ -286,5 +286,5 @@ Everything else stays: Meet Dr. Lewis, the fit filter, how it works, the FAQ, th
 - ☐ Every button scrolls to the form; nothing links off the page
 - ☐ On a 390px phone: eyebrow, headline, subheadline, date and button on the first screen; the sticky bar shows the button once the hero button scrolls away
 - ☐ Opened from a Facebook ad on a small phone (375 by 667, inside the Facebook or Instagram app): the button still shows on the first screen. If it doesn't, shrink the logo row first, not the copy
-- ☐ Searched the live page for "hip," "shoulder," "wrist," "live," "replay," "cure," "guarantee" and "heal" (Dr. Lewis's story about his wife's hip in section 5 is expected)
+- ☐ Searched the live page for "hip," "shoulder," "wrist," "live," "replay," "cure," "guarantee" and "heal" (expected: Dr. Lewis's story about his wife's hip in section 5, and "heal" and "healing cells" in learn row 2)
 - ☐ Onkar signs off the preview before it's published

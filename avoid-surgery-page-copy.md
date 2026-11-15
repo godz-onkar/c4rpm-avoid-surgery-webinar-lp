@@ -66,9 +66,9 @@ The page the Dec 1 Meta ads send people to. Its job is to get people in or near 
 **Lead-in (card under the hero):** This is for you if:
 
 - A doctor has looked at your X-ray, said "bone on bone" and brought up a replacement
-- You've watched someone close to you go through a hard recovery, and you'd rather not
+- You've watched someone close to you go through a hard surgery recovery, and you don't want that for yourself
 - You live alone, or someone counts on you, and weeks of needing help isn't an option
-- You want to see the evidence before you decide
+- You want to see the evidence for yourself
 
 ---
 
@@ -88,7 +88,7 @@ You've done what you were told. Physical therapy helped for a while. Cortisone s
 
 Now the next step on the list is a replacement. For some people it's the right call, but recovery gets harder with age, and once it's done, you can't take it back.
 
-In this webinar, Dr. Lewis explains what decides whether your own cells can help a worn knee or hip, and what to ask any clinic before you agree to surgery.
+In this webinar, Dr. Lewis explains what decides whether treatment with your own cells can help a worn knee or hip, so you can weigh it before you agree to surgery.
 
 ---
 
@@ -98,9 +98,9 @@ In this webinar, Dr. Lewis explains what decides whether your own cells can help
 
 1. **Why a widely quoted 2021 study made platelet-rich plasma (PRP) look like a failure,** and how the dose it tested compares with ordinary blood.
 2. **Whether your cells are too old to help,** and what grew in lab dishes from people aged 64 to 73.
-3. **What "bone on bone" really means,** and what a 15-year study found when the same people had cells placed in two different spots in their knees.
+3. **What "bone on bone" means on an X-ray,** and what a 15-year study found when the same people had cells placed in two different spots in their knees.
 4. **What treatment day and recovery look like,** including the bone marrow draw and the first few days after.
-5. **Three questions to ask any clinic,** so you know what to look for before you agree to a treatment.
+5. **Three questions to ask any clinic,** so you know what to look for wherever you're treated.
 
 **Button:** Save My Free Seat
 
@@ -271,7 +271,7 @@ Everything else stays: Meet Dr. Lewis, the fit filter, how it works, the FAQ, th
 ## Before we go live
 
 - ✅ Transcript checked against the hero, section 3 and the learn rows, and the video's close offers the $299 consultation (done 2026-11-14)
-- 🔴 Running time filled in (Ahmed)
+- ☐ Running time ("About 27 minutes") checked against eWebinar 25611 (Ahmed)
 - 🔴 Kyle's compliance read done (Kyle)
 - ☐ Countdown reads correctly on each day, including "Tomorrow" and "Today"
 - ☐ Register a test contact on a phone and on a computer. The webinar link opens in a browser with nothing to install, the confirmation email arrives with a working link, the ZIP, checkbox and "Registering for" values land in GHL, and URM1 fires with the Dec 1 session tag
@@ -279,5 +279,5 @@ Everything else stays: Meet Dr. Lewis, the fit filter, how it works, the FAQ, th
 - ☐ Every button scrolls to the form; nothing links off the page
 - ☐ On a 390px phone: eyebrow, headline, subheadline, date and button on the first screen; the sticky bar shows the button once the hero button scrolls away
 - ☐ Opened from a Facebook ad on a small phone (375 by 667, inside the Facebook or Instagram app): the button still shows on the first screen. If it doesn't, shrink the logo row first, not the copy
-- ☐ Searched the live page for "shoulder," "cure," "guarantee" and "heal" (section 3's "body's own healing" is expected; it goes through Kyle's compliance read)
+- ☐ Searched the live page for "shoulder," "replay," "cure," "guarantee" and "heal": none expected
 - ☐ Onkar signs off the preview before it's published

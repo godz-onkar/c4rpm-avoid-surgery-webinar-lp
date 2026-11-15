@@ -27,7 +27,7 @@ The page the Nov 17 Meta ads send people to. Its job is to get retirees and near
 | | Need | Owner |
 |---|---|---|
 | ⚠️ | Running time. The form card says "About 28 minutes" because the video's content ends at 28:19 in the Nov 14 transcript. Check it against the length eWebinar 25188 shows. | Ahmed |
-| 🔴 | Go-live timing. Nov 17 is three days out. Say whether this rebuild can be live and tested by Monday, Nov 16. If it can't, the current page runs for Nov 17 and this one goes live with the Dec 15 date. | Ahmed |
+| 🔴 | Go-live timing. Nov 17 is two days out. Say whether this rebuild can be live and tested by Monday, Nov 16. If it can't, the current page runs for Nov 17 and this one goes live with the Dec 15 date. | Ahmed |
 | 🔴 | Compliance read of the page, including the subheadline claims and the WA stem cell line in the footer | Kyle |
 | ⚠️ | HSA and payment plans for webinar patients, as section 7 says. If not confirmed before the page goes live, cut the fit filter line to "It's self-pay." | Emily, with the clinic |
 | ⚠️ | Hero message match. The ad copy file for this session leads with "Morning rounds of golf, long trips, active days with the grandkids. Joint pain was never part of the retirement plan." and the headline "Reclaim Your Retirement," which this hero follows. The Nov 11 check of the ad account found the running ad's headline as "Before You Book That Surgery." Confirm which headline is live, and switch it to one from the ad copy file. Primary text 3 also says "No testing or diagnosis needed," a line taken off this page. | Vijay |
@@ -51,7 +51,7 @@ The page the Nov 17 Meta ads send people to. Its job is to get retirees and near
 
 **Headline:** Reclaim Your Retirement: Joint Pain Was Never Part of the Plan
 
-**Subheadline:** Dr. Jamie Lewis explains what's behind sore knees, hips and shoulders, and why you likely have more options than you've been told, so pain doesn't get to decide how you spend these years.
+**Subheadline:** Dr. Jamie Lewis explains what's behind sore knees, hips and shoulders, and why you likely have more options than you've been told, so you can get back to the things you retired to enjoy.
 
 **Host card:** Dr. Jamie Lewis · Your presenter
 
@@ -86,7 +86,7 @@ You worked for decades to get here. You finally have the time, and the people yo
 
 Pain rarely holds still. To stay comfortable, you move less. The muscles around the joint lose strength and the joint gets stiffer, which brings more pain, less moving and a higher chance of a fall.
 
-Dr. Lewis sees pain and stiffness as signals you can act on, and the sooner the better, while there's more of your own joint to work with.
+Dr. Lewis sees pain and stiffness as signals to act on, ideally early, while there's more of your own joint to work with.
 
 In the webinar, he shows where regenerative medicine fits between living with the pain and having surgery.
 
@@ -274,7 +274,7 @@ Everything else stays: Meet Dr. Lewis, the fit filter, how it works, the FAQ, th
 ## Before we go live
 
 - ✅ The video's close and the FAQ agree on the $299 consultation (the Nov 14 export closes on the $299 consult, refunded if you're not a candidate)
-- 🔴 Running time filled in (Ahmed)
+- ☐ Running time ("About 28 minutes") checked against eWebinar 25188 (Ahmed)
 - 🔴 Kyle's compliance read done (Kyle)
 - ☐ Countdown reads correctly on each day, including "Tomorrow" and "Today"
 - ☐ Register a test contact on a phone and on a computer. The webinar link opens in a browser with nothing to install, the confirmation email arrives with a working link, the ZIP, checkbox and "Registering for" values land in GHL, and WF1 fires with the Nov 17 session tag
