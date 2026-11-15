@@ -51,7 +51,7 @@ The page the Dec 1 Meta ads send people to. Its job is to get people in or near 
 
 **Headline:** Avoid Surgery: Your Knee or Hip Has More Options Than a Replacement
 
-**Subheadline:** Dr. Jamie Lewis shows three things to know if you'd rather keep your own joint, including what a study that followed patients for 15 years found.
+**Subheadline:** Dr. Jamie Lewis shows three things to know if you'd rather keep your own joint, including a study that followed patients for 15 years.
 
 **Host card:** Dr. Jamie Lewis · Your presenter
 
