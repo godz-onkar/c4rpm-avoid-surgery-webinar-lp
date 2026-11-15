@@ -51,7 +51,7 @@ The page the Nov 17 Meta ads send people to. Its job is to get retirees and near
 
 **Headline:** Reclaim Your Retirement: Joint Pain Was Never Part of the Plan
 
-**Subheadline:** Dr. Jamie Lewis explains what's behind sore knees, hips and shoulders, and why you likely have more options than you've been told.
+**Subheadline:** Dr. Jamie Lewis explains what's behind sore knees, hips and shoulders, and why you likely have more options than you've been told, so pain doesn't get to decide how you spend these years.
 
 **Host card:** Dr. Jamie Lewis · Your presenter
 

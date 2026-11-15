@@ -55,7 +55,7 @@ The page the knee webinar's Meta ads send people to. Its job is to get people in
 
 **Headline:** Avoid Knee Surgery: What to Know Before You Say Yes to a New Knee
 
-**Subheadline:** Dr. Jamie Lewis explains why the usual knee treatments often stop working, and what long-term studies show about your other options.
+**Subheadline:** If your knee has put walks and outings on hold, Dr. Jamie Lewis explains why the usual treatments often stop working, and what long-term studies show about your other options.
 
 **Host card:** Dr. Jamie Lewis · Your presenter
 

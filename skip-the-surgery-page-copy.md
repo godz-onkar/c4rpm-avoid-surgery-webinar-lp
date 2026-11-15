@@ -54,7 +54,7 @@ The page the next session's ads send people to. Its job is to get people in or n
 
 **Headline:** Skip The Surgery: Before You Agree to Joint Surgery, Hear What Else Is Possible
 
-**Subheadline:** Dr. Jamie Lewis explains the options between a shot and an operation for shoulder, knee, hip and back pain, and the myths that hold people back.
+**Subheadline:** Dr. Jamie Lewis explains the options between a shot and an operation for shoulder, knee, hip and back pain. He also clears up the myths that keep people from trying them, so surgery isn't the only choice you hear about.
 
 **Host card:** Dr. Jamie Lewis · Your presenter
 

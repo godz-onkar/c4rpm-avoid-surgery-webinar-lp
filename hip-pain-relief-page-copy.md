@@ -52,7 +52,7 @@ The page the hip webinar's Meta ads send people to. Its job is to get people in 
 
 **Headline:** The Hip Pain Solution: What to Know Before You Agree to a New Hip
 
-**Subheadline:** Dr. Jamie Lewis explains where hip pain comes from, and why the right treatment depends on which part of the hip is hurting.
+**Subheadline:** Dr. Jamie Lewis explains where hip pain comes from and why the right treatment depends on which part of the hip is hurting. An ache in the groin, the outside of the hip or the buttock can each point to a different problem.
 
 **Host card:** Dr. Jamie Lewis · Your presenter
 
