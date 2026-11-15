@@ -218,7 +218,7 @@ The page ends on the ask: the closing heading, then the form card, on the dark t
 
 ## Build notes
 
-- **Deadline.** Live by Thursday, Nov 20. The Dec 1 ads go live Nov 21.
+- **Deadline.** Live by Friday, Nov 20. The Dec 1 ads go live Nov 21.
 - **Design.** The C4RPM webinar look (the Reclaim and Avoid Surgery pages) on a cleaner layout:
   - Open Sans everywhere. Remove the Inter, DM Sans and Space Grotesk the live page mixes in. Sizes, desktop / phone: headline 44 / 30px ("Avoid Surgery:" line 22 / 17px), section headings 34 / 24px, card titles 18 / 16.5px, body 17 / 16px, the date line 16 / 15px, form labels and the form card's top line 15px, small print 14px, eyebrow 12 / 11.5px.
   - Spacing: sections 72px top and bottom on desktop, 48px on phones; 28px from a section heading to its content (20px on phones); 48px between columns; content 1140px wide with 32px side margins (20px on phones). On phones every section lines up on the same 20px left edge, and every bulleted or dashed list indents its text 28px.
